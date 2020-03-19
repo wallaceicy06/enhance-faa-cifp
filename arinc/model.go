@@ -3,8 +3,9 @@ package arinc
 const (
 	SectionCodeAirport string = "P"
 
+	SubsectionCodeTerminalWaypoint  = "C"
 	SubsectionCodeApproachProcedure = "F"
-	SubsectionCodeLocGS = "I"
+	SubsectionCodeLocGS             = "I"
 )
 
 // Record is a base struct that all ARINC records follow.
@@ -24,6 +25,22 @@ type AirportRecord struct {
 	ICAOCode          string `fixed:"11,12"`
 	SubsectionCode    string `fixed:"13,13"`
 	Data              string `fixed:"14,123"`
+}
+
+// AirportWaypointPrimaryRecord is a record associated with an airport waypoint.
+type AirportWaypointPrimaryRecord struct {
+	AirportRecord            `fixed:"1,13"`
+	WaypointID               string `fixed:"14,18"`
+	ICAOCode                 string `fixed:"20,21"`
+	ContinuationRecordNumber string `fixed:"22,22"`
+	WaypointType             string `fixed:"27,29"`
+	WaypointUsage            string `fixed:"30,31"`
+	WaypointLatitude         string `fixed:"33,41"`
+	WaypointLongitude        string `fixed:"42,51"`
+	DynamicMagVar            string `fixed:"75,79"`
+	DatumCode                string `fixed:"85,87"`
+	NameFormatIndicator      string `fixed:"96,98"`
+	WaypointNameDesc         string `fixed:"99,123"`
 }
 
 // AirportLocGSPrimaryRecord ia a record for a glideslope or localizer at an airport.
