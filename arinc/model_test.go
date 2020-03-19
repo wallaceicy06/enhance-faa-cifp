@@ -75,35 +75,3 @@ func TestIsFinalApproachFix(t *testing.T) {
 		})
 	}
 }
-
-func TestIsMissedApproachPoint(t *testing.T) {
-	for _, tt := range []struct {
-		name   string
-		record *AirportProcedurePrimaryRecord
-		want   bool
-	}{
-		{
-			name:   "Good",
-			record: &AirportProcedurePrimaryRecord{WaypointDescriptionCode: "   M"},
-			want:   true,
-		},
-		{
-			name:   "NotMissedApproachPoint",
-			record: &AirportProcedurePrimaryRecord{WaypointDescriptionCode: "   F"},
-			want:   false,
-		},
-		{
-			name:   "InvalidData",
-			record: &AirportProcedurePrimaryRecord{WaypointDescriptionCode: ""},
-			want:   false,
-		},
-	} {
-		t.Run(tt.name, func(t *testing.T) {
-			t.Parallel()
-			got := tt.record.IsMissedApproachPoint()
-			if got != tt.want {
-				t.Errorf("IsLocalizerFrontCourseApproach() = %t want %t", got, tt.want)
-			}
-		})
-	}
-}

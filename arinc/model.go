@@ -138,13 +138,3 @@ func (p *AirportProcedurePrimaryRecord) IsFinalApproachFix() bool {
 	}
 	return false
 }
-
-// IsMissedApproachPoint returns true if the record is for the missed approach
-// point on an approach procedure.
-func (p *AirportProcedurePrimaryRecord) IsMissedApproachPoint() bool {
-	d := p.WaypointDescriptionCode
-	if len(d) >= 4 && d[3] == 'M' {
-		return true
-	}
-	return false
-}
