@@ -7,6 +7,7 @@ import (
 	"io"
 
 	"github.com/wallaceicy06/enhance-faa-cifp/arinc"
+
 	fixedwidth "github.com/wallaceicy06/go-fixedwidth"
 )
 
@@ -24,12 +25,12 @@ func Process(in io.Reader, out io.Writer) error {
 		if err := dec.Decode(&p); err != nil {
 			return fmt.Errorf("problem unmarshalling data: %v", err)
 		}
-		if p.SectionCode == "P" {
+		if p.SectionCode == arinc.SectionCodeAirport {
 			a := arinc.AirportRecord{}
 			if err := fixedwidth.Unmarshal(s.Bytes(), &a); err != nil {
 				return fmt.Errorf("problem unmarshalling data: %v", err)
 			}
-			if a.SubsectionCode == "I" || a.SubsectionCode == "L" {
+			if a.SubsectionCode == arinc.SubsectionCodeLocGS {
 				loc := arinc.AirportLocGSPrimaryRecord{}
 				if err := fixedwidth.Unmarshal(s.Bytes(), &loc); err != nil {
 					return fmt.Errorf("problem unmarshalling data: %v", err)
