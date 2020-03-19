@@ -1,5 +1,12 @@
 package arinc
 
+const (
+	SectionCodeAirport string = "P"
+
+	SubsectionCodeApproachProcedure = "F"
+	SubsectionCodeLocGS = "I"
+)
+
 // Record is a base struct that all ARINC records follow.
 type Record struct {
 	RecordType       string `fixed:"1,1"`
@@ -110,4 +117,34 @@ type AirportProcedurePrimaryRecord struct {
 	SpeedLimitDescription        string `fixed:"118,118"`
 	ApproachRouteQualifier1      string `fixed:"119,119"`
 	ApproachRouteQualifier2      string `fixed:"120,120"`
+}
+
+// IsLocalizerFrontCourseApproach returns true if the approach procedure is a
+// LOC, SDF, ILS, or LDA approach.
+func (p *AirportProcedurePrimaryRecord) IsLocalizerFrontCourseApproach() bool {
+	id := p.ProcedureID
+	if len(id) >= 1 && (id[0] == 'I' || id[0] == 'L' || id[0] == 'U' || id[0] == 'X') {
+		return true
+	}
+	return false
+}
+
+// IsFinalApproachFix returns true if the record is for the final approach
+// fix on an approach procedure.
+func (p *AirportProcedurePrimaryRecord) IsFinalApproachFix() bool {
+	d := p.WaypointDescriptionCode
+	if len(d) >= 4 && d[3] == 'F' {
+		return true
+	}
+	return false
+}
+
+// IsMissedApproachPoint returns true if the record is for the missed approach
+// point on an approach procedure.
+func (p *AirportProcedurePrimaryRecord) IsMissedApproachPoint() bool {
+	d := p.WaypointDescriptionCode
+	if len(d) >= 4 && d[3] == 'M' {
+		return true
+	}
+	return false
 }
