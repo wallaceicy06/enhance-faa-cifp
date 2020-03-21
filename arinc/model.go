@@ -1,5 +1,10 @@
 package arinc
 
+import (
+	"fmt"
+	"strconv"
+)
+
 const (
 	SectionCodeAirport string = "P"
 
@@ -41,6 +46,53 @@ type AirportWaypointPrimaryRecord struct {
 	DatumCode                string `fixed:"85,87"`
 	NameFormatIndicator      string `fixed:"96,98"`
 	WaypointNameDesc         string `fixed:"99,123"`
+}
+
+// parsePoint parses a latitude or longitude string into degrees, minutes, and
+// seconds. All numerical values are negative if the direction is 'S' or 'W'.
+func parsePoint(point string) (int, int, float64, error) {
+	if len(point) < 9 || len(point) > 10 {
+		return 0, 0, 0.0, fmt.Errorf("invalid length for latitude or longitude string: %v", point)
+	}
+	// If the string is a latitude string (length 9), add an extra 0 to make
+	// math easier.
+	if len(point) == 9 {
+		point = fmt.Sprintf("%s0%s", point[0:1], point[1:9])
+	}
+	dir := 1
+	if point[0] == 'S' || point[0] == 'W' {
+		dir *= -1
+	}
+	degrees, err := strconv.Atoi(point[1:4])
+	if err != nil {
+		return 0, 0.0, 0.0, fmt.Errorf("invalid degrees: %q", point[1:4])
+	}
+
+	minutes, err := strconv.Atoi(point[4:6])
+	if err != nil {
+		return 0, 0.0, 0.0, fmt.Errorf("invalid minutes: %q", point[4:6])
+	}
+	seconds, err := strconv.ParseFloat(fmt.Sprintf("%s.%s", point[6:8], point[8:10]), 64)
+	if err != nil {
+		return 0, 0.0, 0.0, fmt.Errorf("invalid seconds: %q", point[6:10])
+	}
+	return dir * degrees, dir * minutes, float64(dir) * seconds, nil
+}
+
+// LatLon calculates the numerical latitude and longitude for the provided
+// latitude and longitude strings. If the data is invalid, an error is returned.
+func LatLon(latitude, longitude string) (float64, float64, error) {
+	latDeg, latMin, latSec, err := parsePoint(latitude)
+	if err != nil {
+		return 0.0, 0.0, fmt.Errorf("could not calculate latitude: %v", err)
+	}
+	lonDeg, lonMin, lonSec, err := parsePoint(longitude)
+	if err != nil {
+		return 0.0, 0.0, fmt.Errorf("could not calculate longitude: %v", err)
+	}
+	lat := float64(latDeg) + (float64(latMin) / 60.0) + (latSec / 3600.0)
+	lon := float64(lonDeg) + (float64(lonMin) / 60.0) + (lonSec / 3600.0)
+	return lat, lon, nil
 }
 
 // AirportLocGSPrimaryRecord ia a record for a glideslope or localizer at an airport.

@@ -1,6 +1,117 @@
 package arinc
 
-import "testing"
+import (
+	"math"
+	"testing"
+)
+
+func TestLatLon(t *testing.T) {
+	const tolerance = 0.0001
+	for _, tt := range []struct {
+		name    string
+		latStr  string
+		lonStr  string
+		wantLat float64
+		wantLon float64
+		wantErr bool
+	}{
+		{
+			name:    "GoodNE",
+			latStr:  "N39513881",
+			lonStr:  "E104450794",
+			wantLat: 39.860781,
+			wantLon: 104.752206,
+		},
+		{
+			name:    "GoodNW",
+			latStr:  "N39513881",
+			lonStr:  "W104450794",
+			wantLat: 39.860781,
+			wantLon: -104.752206,
+		},
+		{
+			name:    "GoodSE",
+			latStr:  "S39513881",
+			lonStr:  "E104450794",
+			wantLat: -39.860781,
+			wantLon: 104.752206,
+		},
+		{
+			name:    "GoodSW",
+			latStr:  "S39513881",
+			lonStr:  "W104450794",
+			wantLat: -39.860781,
+			wantLon: -104.752206,
+		},
+		{
+			name:    "InvalidLatLen",
+			latStr:  "881",
+			lonStr:  "W104450794",
+			wantErr: true,
+		},
+		{
+			name:    "InvalidLatDeg",
+			latStr:  "N3F513881",
+			lonStr:  "W104450794",
+			wantErr: true,
+		},
+		{
+			name:    "InvalidLatMin",
+			latStr:  "N39F13881",
+			lonStr:  "W104450794",
+			wantErr: true,
+		},
+		{
+			name:    "InvalidLatSec",
+			latStr:  "N395138F1",
+			lonStr:  "W104450794",
+			wantErr: true,
+		},
+		{
+			name:    "InvalidLonLen",
+			latStr:  "S39513881",
+			lonStr:  "W1044507945",
+			wantErr: true,
+		},
+		{
+			name:    "InvalidLonDeg",
+			latStr:  "S39513881",
+			lonStr:  "W10F450794",
+			wantErr: true,
+		},
+		{
+			name:    "InvalidLonLen",
+			latStr:  "S39513881",
+			lonStr:  "W104F50794",
+			wantErr: true,
+		},
+		{
+			name:    "InvalidLonSec",
+			latStr:  "S39513881",
+			lonStr:  "W104450F945",
+			wantErr: true,
+		},
+	} {
+		t.Run(tt.name, func(t *testing.T) {
+			gotLat, gotLon, err := LatLon(tt.latStr, tt.lonStr)
+			if tt.wantErr {
+				if err == nil {
+					t.Fatalf("LatLon(%q, %q) = _, _, <nil> want _, _, <non-nil>", tt.latStr, tt.lonStr)
+				}
+				return
+			}
+			if err != nil {
+				t.Fatalf("LatLon(%q, %q) = _, _, %v want _, _, <nil>", tt.latStr, tt.lonStr, err)
+			}
+			if diff := math.Abs(gotLat - tt.wantLat); diff > tolerance {
+				t.Errorf("latitude = %f want %f", gotLat, tt.wantLat)
+			}
+			if diff := math.Abs(gotLon - tt.wantLon); diff > tolerance {
+				t.Errorf("longitude = %f want %f", gotLon, tt.wantLon)
+			}
+		})
+	}
+}
 
 func TestIsLocalizerFrontCourseApproach(t *testing.T) {
 	for _, tt := range []struct {
