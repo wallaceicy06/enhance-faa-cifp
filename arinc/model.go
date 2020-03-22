@@ -6,8 +6,13 @@ import (
 )
 
 const (
+	SectionCodeNavaid  string = "D"
+	SectionCodeEnroute string = "E"
 	SectionCodeAirport string = "P"
 
+	SubsectionCodeNavaidNDB         = "B"
+	SubsectionCodeNavaidVHF         = ""
+	SubsectionCodeEnrouteWaypoint   = "A"
 	SubsectionCodeTerminalWaypoint  = "C"
 	SubsectionCodeApproachProcedure = "F"
 	SubsectionCodeLocGS             = "I"
@@ -18,23 +23,65 @@ type Record struct {
 	RecordType       string `fixed:"1,1"`
 	CustomerAreaCode string `fixed:"2,4"`
 	SectionCode      string `fixed:"5,5"`
-	Data             string `fixed:"6,123"`
+	SubsectionCode   string `fixed:"6,6"`
+	Data             string `fixed:"7,123"`
 	FileRecordNumber string `fixed:"124,128"`
 	CycleDate        string `fixed:"129,132"`
 }
 
-// AirportRecord is a record associated with an airport.
-type AirportRecord struct {
-	Record            `fixed:"1,6"`
-	AirportIdentifier string `fixed:"7,10"`
-	ICAOCode          string `fixed:"11,12"`
-	SubsectionCode    string `fixed:"13,13"`
-	Data              string `fixed:"14,123"`
+// VHFNavaidRecord is a record for a VHF navaid.
+type VHFNavaidRecord struct {
+	Record                   `fixed:"1,6"`
+	AirportICAOID            string `fixed:"7,10"`
+	ICAOCode1                string `fixed:"11,12"`
+	VORID                    string `fixed:"14,17"`
+	ICAOCode2                string `fixed:"20,21"`
+	ContinuationRecordNumber string `fixed:"22,22"`
+	VORFrequency             string `fixed:"23,27"`
+	NavaidClass              string `fixed:"28,32"`
+	VORLatitude              string `fixed:"33,41"`
+	VORLongitude             string `fixed:"42,51"`
+	DMEID                    string `fixed:"52,55"`
+	DMELatitude              string `fixed:"56,64"`
+	DMELongitude             string `fixed:"65,74"`
+	StationDeclination       string `fixed:"75,79"`
+	DMEElevation             string `fixed:"80,84"`
+	FigureOfMerit            string `fixed:"85,85"`
+	ILSDMEBias               string `fixed:"86,87"`
+	FrequencyProtection      string `fixed:"88,90"`
+	DatumCode                string `fixed:"91,93"`
+	VORName                  string `fixed:"94,123"`
 }
 
-// AirportWaypointPrimaryRecord is a record associated with an airport waypoint.
-type AirportWaypointPrimaryRecord struct {
-	AirportRecord            `fixed:"1,13"`
+// NDBNavaidRecord is a record for an NDB.
+type NDBNavaidRecord struct {
+	Record                   `fixed:"1,6"`
+	AirportID                string `fixed:"7,10"`
+	ICAOCode1                string `fixed:"11,12"`
+	NDBID                    string `fixed:"14,17"`
+	ICAOCode2                string `fixed:"20,21"`
+	ContinuationRecordNumber string `fixed:"22,22"`
+	NDBFrequency             string `fixed:"23,27"`
+	NDBClass                 string `fixed:"28,32"`
+	NDBLatitude              string `fixed:"33,41"`
+	NDBLongitude             string `fixed:"42,51"`
+	MagneticVar              string `fixed:"75,79"`
+	DatumCode                string `fixed:"91,93"`
+	NDBName                  string `fixed:"94,123"`
+}
+
+// AirportEnrouteRecord is a record associated with an airport or enroute.
+type AirportEnrouteRecord struct {
+	Record         `fixed:"1,6"`
+	AirportID      string `fixed:"7,10"`
+	ICAOCode       string `fixed:"11,12"`
+	SubsectionCode string `fixed:"13,13"`
+	Data           string `fixed:"14,123"`
+}
+
+// WaypointPrimaryRecord is a record associated with a waypoint.
+type WaypointPrimaryRecord struct {
+	AirportEnrouteRecord     `fixed:"1,13"`
 	WaypointID               string `fixed:"14,18"`
 	ICAOCode                 string `fixed:"20,21"`
 	ContinuationRecordNumber string `fixed:"22,22"`
@@ -98,7 +145,7 @@ func LatLon(latitude, longitude string) (float64, float64, error) {
 // AirportLocGSPrimaryRecord ia a record for a glideslope or localizer at an airport.
 // See 4.1.11.1 Airport and Heliport Localizer and Glide Slope Primary Records
 type AirportLocGSPrimaryRecord struct {
-	AirportRecord                    `fixed:"1,13"`
+	AirportEnrouteRecord             `fixed:"1,13"`
 	LocalizerID                      string `fixed:"14,17"`
 	ILSCategory                      string `fixed:"18,18"`
 	ContinuationRecordNumber         string `fixed:"22,22"`
@@ -126,7 +173,7 @@ type AirportLocGSPrimaryRecord struct {
 // AirportLocGSSimContinuationRecord is a continuation record for an AirportLocGSPrimaryRecord.
 // See 4.1.11.3 Airport and Heliport Localizer and Glide Slope Simulation Continuation Records
 type AirportLocGSSimContinuationRecord struct {
-	AirportRecord            `fixed:"1,13"`
+	AirportEnrouteRecord     `fixed:"1,13"`
 	LocalizerID              string `fixed:"14,17"`
 	ILSCategory              string `fixed:"18,18"`
 	ContinuationRecordNumber string `fixed:"22,22"`
@@ -146,7 +193,7 @@ type AirportLocGSSimContinuationRecord struct {
 // at an airport.
 // See 4.1.9.1 Airport SID/STAR/Approach Primary Records
 type AirportProcedurePrimaryRecord struct {
-	AirportRecord                `fixed:"1,13"`
+	AirportEnrouteRecord         `fixed:"1,13"`
 	ProcedureID                  string `fixed:"14,19"`
 	RouteType                    string `fixed:"20,20"`
 	TransitionID                 string `fixed:"21,25"`
