@@ -17,7 +17,8 @@ const (
 	SubsectionCodeApproachProcedure = "F"
 	SubsectionCodeLocGS             = "I"
 
-	ContinuationRecordSimulation = "S"
+	ContinuationRecordSimulation  = "S"
+	LocalizerBearingSourceNotGovt = "N"
 )
 
 // Record is a base struct that all ARINC records follow.
