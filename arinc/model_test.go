@@ -113,6 +113,37 @@ func TestLatLon(t *testing.T) {
 	}
 }
 
+func TestEncodeBearing(t *testing.T) {
+	for _, tt := range []struct {
+		name    string
+		bearing float64
+		want    string
+	}{
+		{
+			name:    "Simple",
+			bearing: 123.456,
+			want:    "123456",
+		},
+		{
+			name:    "LongDecimal",
+			bearing: 123.45678,
+			want:    "123456",
+		},
+		{
+			name:    "LessThan100Degrees",
+			bearing: 23.45678,
+			want:    "023457",
+		},
+	} {
+		t.Run(tt.name, func(t *testing.T) {
+			t.Parallel()
+			if got := EncodeBearing(tt.bearing); got != tt.want {
+				t.Errorf("EncodeBearing(%f) = %q want %q", tt.bearing, got, tt.want)
+			}
+		})
+	}
+}
+
 func TestIsLocalizerFrontCourseApproach(t *testing.T) {
 	for _, tt := range []struct {
 		name   string

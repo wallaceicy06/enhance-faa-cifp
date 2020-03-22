@@ -144,6 +144,15 @@ func LatLon(latitude, longitude string) (float64, float64, error) {
 	return lat, lon, nil
 }
 
+// EncodeBearing encodes the specified bearing into a six character string,
+// where the decimal point is implied after the third character. If the provided
+// bearing is negative or greater than 360, then the output is undefined.
+// Example: EncodeBearing(190.123) = "190123"
+func EncodeBearing(bearing float64) string {
+	s := fmt.Sprintf("%07.3f", bearing)
+	return s[:3] + s[4:]
+}
+
 // AirportLocGSPrimaryRecord ia a record for a glideslope or localizer at an airport.
 // See 4.1.11.1 Airport and Heliport Localizer and Glide Slope Primary Records
 type AirportLocGSPrimaryRecord struct {
