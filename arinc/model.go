@@ -11,11 +11,13 @@ const (
 	SectionCodeAirport string = "P"
 
 	SubsectionCodeNavaidNDB         = "B"
-	SubsectionCodeNavaidVHF         = ""
+	SubsectionCodeNavaidVHF         = " "
 	SubsectionCodeEnrouteWaypoint   = "A"
 	SubsectionCodeTerminalWaypoint  = "C"
 	SubsectionCodeApproachProcedure = "F"
 	SubsectionCodeLocGS             = "I"
+
+	ContinuationRecordSimulation = "S"
 )
 
 // Record is a base struct that all ARINC records follow.
