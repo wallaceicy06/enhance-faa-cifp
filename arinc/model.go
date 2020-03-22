@@ -145,12 +145,12 @@ func LatLon(latitude, longitude string) (float64, float64, error) {
 	return lat, lon, nil
 }
 
-// EncodeBearing encodes the specified bearing into a six character string,
+// EncodeBearing encodes the specified bearing into a five character string,
 // where the decimal point is implied after the third character. If the provided
 // bearing is negative or greater than 360, then the output is undefined.
-// Example: EncodeBearing(190.123) = "190123"
+// Example: EncodeBearing(190.123) = "19012"
 func EncodeBearing(bearing float64) string {
-	s := fmt.Sprintf("%07.3f", bearing)
+	s := fmt.Sprintf("%06.2f", bearing)
 	return s[:3] + s[4:]
 }
 

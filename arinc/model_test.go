@@ -121,18 +121,18 @@ func TestEncodeBearing(t *testing.T) {
 	}{
 		{
 			name:    "Simple",
-			bearing: 123.456,
-			want:    "123456",
+			bearing: 123.45,
+			want:    "12345",
 		},
 		{
 			name:    "LongDecimal",
 			bearing: 123.45678,
-			want:    "123456",
+			want:    "12346",
 		},
 		{
 			name:    "LessThan100Degrees",
 			bearing: 23.45678,
-			want:    "023457",
+			want:    "02346",
 		},
 	} {
 		t.Run(tt.name, func(t *testing.T) {
