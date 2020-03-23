@@ -1,0 +1,103 @@
+HDR01FAACIFP18      001P013203804972003  06-FEB-202013:41:57  U.S.A. DOT FAA                                                252E2B62
+HDR02                                 FEDERAL AVIATION ADMINISTRATION                                                               
+HDR03                                 AERONAUTICAL INFORMATION SERVICES                                                             
+HDR04                                 CODED INSTRUMENT FLIGHT PROCEDURES VOLUME 2003  EFFECTIVE 27 FEB 2020                         
+HDR05                                 REPORT DATA ERRORS TO FAA                 TEL 800 638 8972                                    
+SUSAP KHWDK2AHWD     0     056YHN37393214W122071825E015000052         1800018000C    MNAR    HAYWARD EXECUTIVE             107981608
+SUSAP KHWDK2CBOGRE K20    W     N37372195W122023769                       E0133     NAR           BOGRE                    107992002
+SUSAP KHWDK2CBRIEN K20    R     N37312313W121513109                       E0132     NAR           BRIEN                    108002002
+SUSAP KHWDK2CCIGDU K20    R     N37351652W122010188                       E0132     NAR           CIGDU                    108012002
+SUSAP KHWDK2CFENRA K20    W     N37361304W122000715                       E0132     NAR           FENRA                    108022002
+SUSAP KHWDK2CFERNE K20    R     N37354475W121595747                       E0132     NAR           FERNE                    108032002
+SUSAP KHWDK2CHIVSO K20    R     N37391039W122065108                       E0133     NAR           HIVSO                    108042002
+SUSAP KHWDK2CHUZBY K20    W     N37375488W122034972                       E0133     NAR           HUZBY                    108052002
+SUSAP KHWDK2CJIBAN K20    R     N37325041W121541977                       E0132     NAR           JIBAN                    108062002
+SUSAP KHWDK2CJOBUS K20    W     N37300471W121464565                       E0132     NAR           JOBUS                    108072002
+SUSAP KHWDK2CJORPA K20    R     N37321215W121562732                       E0132     NAR           JORPA                    108082002
+SUSAP KHWDK2COKIVY K20    W     N37314215W121501717                       E0132     NAR           OKIVY                    108092002
+SUSAP KHWDK2CRISHE K20    R     N37370879W122024051                       E0133     NAR           RISHE                    108102002
+SUSAP KHWDK2CSUDGE K20    W     N37343512W121563357                       E0132     NAR           SUDGE                    108112002
+SUSAP KHWDK2CWESCH K20    W     N37331949W121534883                       E0132     NAR           WESCH                    108122002
+SUSAP KHWDK2CWUTOX K20    R     N37380459W122051273                       E0133     NAR           WUTOX                    108132002
+SUSAP KHWDK2CZENUG K20    R     N37360567W122021518                       E0133     NAR           ZENUG                    108141901
+SUSAP KHWDK2EPXN6  1AVE   010AVE  K2D 0V       IF                                             18000                        108151909
+SUSAP KHWDK2EPXN6  1AVE   020PXN  K2D 0VE      TF                                                                          108161909
+SUSAP KHWDK2EPXN6  1GMN   010GMN  K2D 0V       IF                                             18000                        108171909
+SUSAP KHWDK2EPXN6  1GMN   020SRENAK2EA0E       TF                                                                          108181909
+SUSAP KHWDK2EPXN6  1GMN   030PXN  K2D 0VE      TF                                                                          108191909
+SUSAP KHWDK2EPXN6  2ALL   010PXN  K2D 0V       IF                                             18000                        108201909
+SUSAP KHWDK2EPXN6  2ALL   020KARNNK2EA0E       TF                                                                          108211909
+SUSAP KHWDK2EPXN6  2ALL   030BOREDK2EA0E       TF                                                                          108221909
+SUSAP KHWDK2EPXN6  2ALL   040BUSHYK2EA0E       TF                                                                          108231909
+SUSAP KHWDK2EPXN6  2ALL   050SUNOLK2EA0EE      TF                                                                          108241909
+SUSAP KHWDK2ESHARR14MRLET 010MRLETK2EA0E       IF                                             18000                        108251707
+SUSAP KHWDK2ESHARR14MRLET 020POYSNK2EA0E       TF                                                                          108261707
+SUSAP KHWDK2ESHARR14MRLET 030BIFFYK2EA0E       TF                                   FL200          280                     108271707
+SUSAP KHWDK2ESHARR14MRLET 040WRAPSK2EA0E  H    TF                                                                          108281707
+SUSAP KHWDK2ESHARR14MRLET 050MAMIEK2EA0E       TF                                                                          108291707
+SUSAP KHWDK2ESHARR14MRLET 060SHARRK2EA0EE      TF                                                                          108301707
+SUSAP KHWDK2ESHARR14RPARK 010RPARKK2EA0E       IF                                             18000                        108311707
+SUSAP KHWDK2ESHARR14RPARK 020JOFAYK2EA0E       TF                                                                          108321707
+SUSAP KHWDK2ESHARR14RPARK 030MATEEK2EA0E       TF                                                                          108331707
+SUSAP KHWDK2ESHARR14RPARK 040DUCKEK2EA0E       TF                                                                          108341707
+SUSAP KHWDK2ESHARR14RPARK 050BIFFYK2EA0E       TF                                   FL200          280                     108351707
+SUSAP KHWDK2ESHARR14RPARK 060WRAPSK2EA0E  H    TF                                                                          108361707
+SUSAP KHWDK2ESHARR14RPARK 070MAMIEK2EA0E       TF                                                                          108371707
+SUSAP KHWDK2ESHARR14RPARK 080SHARRK2EA0EE      TF                                                                          108381707
+SUSAP KHWDK2ESHARR14RUSME 010RUSMEK2EA0E       IF                                             18000                        108391707
+SUSAP KHWDK2ESHARR14RUSME 020BIFFYK2EA0E       TF                                   FL200          280                     108401707
+SUSAP KHWDK2ESHARR14RUSME 030WRAPSK2EA0E  H    TF                                                                          108411707
+SUSAP KHWDK2ESHARR14RUSME 040MAMIEK2EA0E       TF                                                                          108421707
+SUSAP KHWDK2ESHARR14RUSME 050SHARRK2EA0EE      TF                                                                          108431707
+SUSAP KHWDK2ESHARR15ALL   010SHARRK2EA0E       IF                                             18000                        108441707
+SUSAP KHWDK2ESHARR15ALL   020LOCKEK2EA0E  H    TF                                                                          108451707
+SUSAP KHWDK2ESHARR15ALL   030CATTYK2EA0EY      TF                                   08000                                  108461707
+SUSAP KHWDK2ESHARR15ALL   040KHWD K2PA0AE      VM                     2318                                                 108471707
+SUSAP KHWDK2FL28L  ASJC   010SJC  K2D 0V  A    IF                                             18000                 0 DS   108481212
+SUSAP KHWDK2FL28L  ASJC   020BRIENK2PC0E  B    TF                                 + 04300                           0 DS   108491310
+SUSAP KHWDK2FL28L  ASJC   030JIBANK2PC0EE      CF IHWDK2      1079012728790027PI  + 03700                           0 DS   108501310
+SUSAP KHWDK2FL28L  L      010JIBANK2PC0E  I    IF IHWDK2      10790127        PI  + 03700     18000                 0 DS   108511310
+SUSAP KHWDK2FL28L  L      020FERNEK2PC0E  F    CF IHWDK2      1079007428800053PI  + 02500                 OAK   K2D 0 DS   108521310
+SUSAP KHWDK2FL28L  L      021RISHEK2PC0E S     CF IHWDK2      1079004828800026PI  + 01560             -344          0 DS   108531310
+SUSAP KHWDK2FL28L  L      030RW28LK2PG0GY M    CF IHWDK2      1079000828800040PI    00105             -344          0 DS   108541212
+SUSAP KHWDK2FL28L  L      040OAK  K2D 0VYM     DF                                 + 02100                           0 DS   108551907
+SUSAP KHWDK2FL28L  L      050OAK  K2D 0VE  R   HM                     1200T010    + 02100                           0 DS   108561907
+SUSAP KHWDK2FR28L  ASJC   010SJC  K2D 0V       IF                                             18000                 A JS   108571212
+SUSAP KHWDK2FR28L  ASJC   020JOBUSK2PC0EY   020TF                     03110110    + 05700                           A JS   108581310
+SUSAP KHWDK2FR28L  ASJC   030JOBUSK2PC0EE AR   HF                     28510050    + 05700                           A JS   108591310
+SUSAP KHWDK2FR28L  ASUNOL 010SUNOLK2EA0E       IF                                             18000                 A JS   108601212
+SUSAP KHWDK2FR28L  ASUNOL 020JOBUSK2PC0EY   020TF                     15170064    + 05700                           A JS   108611310
+SUSAP KHWDK2FR28L  ASUNOL 030JOBUSK2PC0EE AR   HF                     28510050    + 05700                           A JS   108621310
+SUSAP KHWDK2FR28L  AVINCO 010VINCOK2EA0E  A    IF                                             18000                 A JS   108631212
+SUSAP KHWDK2FR28L  AVINCO 020JOBUSK2PC0EE B 010TF                     32320081    + 05700                           A JS   108641310
+SUSAP KHWDK2FR28L  R      010JOBUSK2PC0E  I    IF                                 + 05700     18000                 A JS   108651310
+SUSAP KHWDK2FR28L  R      011OKIVYK2PC0E    010TF                     28510032    + 04800                           A JS   108661610
+SUSAP KHWDK2FR28L  R      012WESCHK2PC0E    010TF                     28500032    + 03900                           A JS   108671610
+SUSAP KHWDK2FR28L  R      020SUDGEK2PC1E  F 010TF                     28500025    + 03200                 RW28L K2PGA JS   108681610
+SUSAP KHWDK2FR28L  R      020SUDGEK2PC2WALPV       ALNAV/VNAV ALNAV                                                   JS   108691310
+SUSAP KHWDK2FR28L  R      021FENRAK2PC0E S  031TF                     28500033    V 0212002126        -310          A JS   108701310
+SUSAP KHWDK2FR28L  R      022BOGREK2PC0E S  031TF                     28490023    V 0136001369        -310          A JS   108711310
+SUSAP KHWDK2FR28L  R      023HUZBYK2PC0E S  031TF                     28490011    V 0100001007        -310          A JS   108721310
+SUSAP KHWDK2FR28L  R      030RW28LK2PG0GY M 031TF                     28490028      00085             -310          A JS   108731212
+SUSAP KHWDK2FR28L  R      040         0  M     CA                     2849        + 00600                           A JS   108741212
+SUSAP KHWDK2FR28L  R      050OAK  K2D 0VY  R   DF                                 + 02100                           A JS   108751907
+SUSAP KHWDK2FR28L  R      060OAK  K2D 0VE  R   HM                     12200040    + 02100                           A JS   108761907
+SUSAP KHWDK2FVDM-A ASJC   010SJC  K2D 0V  A    IF                                             18000                 0  C   108771611
+SUSAP KHWDK2FVDM-A ASJC   020JORPAK2PC0EE B    TF                                 + 04200                           0  C   108781611
+SUSAP KHWDK2FVDM-A D      010JORPAK2PC0E  I    IF OAK K2      11300176        D   + 04200     18000                 0  C   108791611
+SUSAP KHWDK2FVDM-A D      011CIGDUK2PC0E S     CF OAK K2      1130012829300048D   + 02700                           0  C   108801611
+SUSAP KHWDK2FVDM-A D      020ZENUGK2PC0E  F    CF OAK K2      1130011629300013D   + 02300                 OAK   K2D 0  C   108811611
+SUSAP KHWDK2FVDM-A D      021WUTOXK2PC0E S     CF OAK K2      1130008529300031D   + 01180              000          0  C   108821611
+SUSAP KHWDK2FVDM-A D      030HIVSOK2PC0EY M    CF OAK K2      1130006829300017D     00620              000          0  C   108831611
+SUSAP KHWDK2FVDM-A D      040OAK  K2D 0VYM     DF                                 + 02100                           0  C   108841907
+SUSAP KHWDK2FVDM-A D      050OAK  K2D 0VE  R   HM                     1200T010    + 02100                           0  C   108851907
+SUSAP KHWDK2GRW10L   0031071040 N37394491W122073814         -0024000028000029075V                                          108861707
+SUSAP KHWDK2GRW10R   0056941040 N37393935W122073845         -0023600029081625150V                                          108871707
+SUSAP KHWDK2GRW28L   0056942840 N37391866W122065313         -0017200050067635150RIHWD0                                     108881707
+SUSAP KHWDK2GRW28R   0031072840 N37392962W122070463         -0021200037000044075V                                          108891707
+SUSAP KHWDK2IIHWD0   111150RW28LN37394620W1220746752879                   0109     0500   E0150                            108901212
+SUSAP KHWDK2IIHWD0   2S                            30305N                                                                  108901212
+SUSAP KHWDK2PR28L  RW28L001 0000W28A0N3739186640W12206531315-001720310N3740030660W12208304530106751224000350F40050040227B2E108911212
+SUSAP KHWDK2PR28L  RW28L002E      +00152+00152LPV       40330                                                              108921212
+SUSAP KHWDK2SOAK  K2D                 0   1703500512535017003825                                                       M   108931212
+SUSAP KHWDK2SRW28LK2PG                0   18018005325                                                                  M   108940804

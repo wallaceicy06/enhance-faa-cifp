@@ -6,10 +6,17 @@ import (
 	"testing"
 )
 
-const testDataFile = "test_data"
+const (
+	testDataFile    = "test_data"
+	testDataOutFile = "test_data_out"
+)
 
 func TestProcess(t *testing.T) {
 	testData, err := ioutil.ReadFile(testDataFile)
+	if err != nil {
+		t.Fatalf("Could not read test data file: %v", err)
+	}
+	testDataOut, err := ioutil.ReadFile(testDataOutFile)
 	if err != nil {
 		t.Fatalf("Could not read test data file: %v", err)
 	}
@@ -19,7 +26,7 @@ func TestProcess(t *testing.T) {
 	if err := Process(in, &out); err != nil {
 		t.Fatalf("Process() = %v want <nil>", err)
 	}
-	if !bytes.Equal(out.Bytes(), testData) {
-		t.Errorf("Process() out content does not equal input")
+	if !bytes.Equal(out.Bytes(), testDataOut) {
+		t.Errorf("Process() out content not as expected")
 	}
 }
