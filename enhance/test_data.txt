@@ -1,8 +1,8 @@
 HDR01FAACIFP18      001P013203804972003  06-FEB-202013:41:57  U.S.A. DOT FAA                                                252E2B62
-HDR02                                 FEDERAL AVIATION ADMINISTRATION                                                               
-HDR03                                 AERONAUTICAL INFORMATION SERVICES                                                             
-HDR04                                 CODED INSTRUMENT FLIGHT PROCEDURES VOLUME 2003  EFFECTIVE 27 FEB 2020                         
-HDR05                                 REPORT DATA ERRORS TO FAA                 TEL 800 638 8972                                    
+HDR02                                 FEDERAL AVIATION ADMINISTRATION
+HDR03                                 AERONAUTICAL INFORMATION SERVICES
+HDR04                                 CODED INSTRUMENT FLIGHT PROCEDURES VOLUME 2003  EFFECTIVE 27 FEB 2020
+HDR05                                 REPORT DATA ERRORS TO FAA                 TEL 800 638 8972
 SUSAP KHWDK2AHWD     0     056YHN37393214W122071825E015000052         1800018000C    MNAR    HAYWARD EXECUTIVE             107981608
 SUSAP KHWDK2CBOGRE K20    W     N37372195W122023769                       E0133     NAR           BOGRE                    107992002
 SUSAP KHWDK2CBRIEN K20    R     N37312313W121513109                       E0132     NAR           BRIEN                    108002002

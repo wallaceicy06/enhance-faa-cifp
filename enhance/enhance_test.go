@@ -7,8 +7,8 @@ import (
 )
 
 const (
-	testDataFile    = "test_data"
-	testDataOutFile = "test_data_out"
+	testDataFile    = "test_data.txt"
+	testDataOutFile = "test_data_out.txt"
 )
 
 func TestProcess(t *testing.T) {
