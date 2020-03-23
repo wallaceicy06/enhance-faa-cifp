@@ -24,6 +24,30 @@ fix](https://en.wikipedia.org/wiki/Final_approach_(aeronautics)#Final_approach_p
 and this program makes use of that data to augment every localizer with a more
 accurate bearing.
 
+## Install
+
+To install this package, you need to install
+[Go](https://golang.org/doc/install) on your system. The following commands
+are for Unix-like systems. I am very sorry if you use Windows.
+
+1. Fetch the repository.
+
+   ```shell
+   go get github.com/wallaceicy06/enhance-faa-cifp
+   ```
+
+1. Build the code from source. This will install the program under `$GOPATH/bin`.
+
+   ```shell
+   go install github.com/wallaceicy06/enhance-faa-cifp
+   ```
+   
+1. Make sure that `$GOPATH/bin` is in your `$PATH`.
+
+    ```shell
+    export PATH="${PATH}:${GOPATH}/bin"
+    ```
+
 ## Usage
 
 To use this program, you need to have a CIFP file in the ARINC 424 format. The
