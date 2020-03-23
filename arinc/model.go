@@ -180,6 +180,7 @@ type AirportLocGSPrimaryRecord struct {
 	SupportingFacilityICAOCode       string `fixed:"107,108"`
 	SupportingFacilitySectionCode    string `fixed:"109,109"`
 	SupportingFacilitySubsectionCode string `fixed:"110,110"`
+	Data                             string `fixed:"124,132"`
 }
 
 // AirportLocGSSimContinuationRecord is a continuation record for an AirportLocGSPrimaryRecord.
@@ -199,6 +200,7 @@ type AirportLocGSSimContinuationRecord struct {
 	ApproachRouteIdent3      string `fixed:"103,108"`
 	ApproachRouteIdent4      string `fixed:"109,114"`
 	ApproachRouteIdent5      string `fixed:"115,120"`
+	Data                     string `fixed:"124,132"`
 }
 
 // AirportProcedurePrimaryRecord is a record for a SID, STAR, or approach procedure
