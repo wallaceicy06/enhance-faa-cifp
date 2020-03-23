@@ -54,11 +54,12 @@ enhance-faa-cifp --help
 
 ## Side Note For Pilots
 
-I wrote this enhancer because I discovered the bug myself while practicing
-the ILS KMOD 28R in X-Plane. I popped out of the clouds to see that the runway
-was offset hundreds of feet to my left. Having flown the approach in real life,
-I know that this is not accurate. This project was my deep dive into learning
-why that error happened, and to offer a potential fix.
+I wrote this enhancer because I discovered the bug myself while practicing the
+ILS 28R at
+[KMOD](https://skyvector.com/airport/MOD/Modesto-City-Co-Harry-Sham-Field-Airport)
+in X-Plane. I popped out of the clouds to see that the runway was offset
+hundreds of feet to my left. Having flown the approach in real life, I know that
+this is not accurate. This project was my deep dive into learning why that error happened, and to offer a potential fix.
 
 We are often reminded during instrument training that flying a localizer
 approach with a GPS is illegal. This little project proved to me why doing so
