@@ -54,7 +54,6 @@ func RemoveDuplicateLocalizers(enabled bool) Option {
 // point.
 func Process(in io.ReadSeeker, out io.Writer, opts ...Option) error {
 	p := newProcessor(opts...)
-	log.Println(p)
 
 	// If duplicate localizer removal is enabled, the data must be pre-processed
 	// to collect all localizers.
@@ -126,7 +125,6 @@ func (p *processor) preProcess(recordBytes []byte) error {
 			}
 
 			if _, ok := p.DuplicateLocalizers[loc.LocalizerID]; ok {
-				log.Printf("Found duplicate localizer at %q: %q, already exists at %q", loc.AirportID, loc.LocalizerID, a)
 				p.DuplicateLocalizers[loc.LocalizerID] = true
 			} else {
 				p.DuplicateLocalizers[loc.LocalizerID] = false
