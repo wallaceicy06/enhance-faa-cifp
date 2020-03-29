@@ -1,0 +1,972 @@
+HDR01FAACIFP18      001P013203800762004  05-MAR-202018:37:24  U.S.A. DOT FAA                                                9FFA19BC
+HDR02                                 FEDERAL AVIATION ADMINISTRATION                                                               
+HDR03                                 AERONAUTICAL INFORMATION SERVICES                                                             
+HDR04                                 CODED INSTRUMENT FLIGHT PROCEDURES VOLUME 2004  EFFECTIVE 26 MAR 2020                         
+HDR05                                 REPORT DATA ERRORS TO FAA                 TEL 800 638 8972                                    
+SUSAEAENRT   BUDDE K20    R     N34115818W118292794                       E0119     NAR           BUDDE                    275092002
+SUSAEAENRT   SILEX K20    C  RL N34120381W118364189                       E0120     NAR           SILEX                    452121901
+SUSAP KBURK2ABUR     0     068YHN34120250W118213120E012000778         1800018000C    MNAR    BOB HOPE                      360721606
+SUSAP KBURK2CBUBNE K20    W     N34115897W118303143                       E0119     NAR           BUBNE                    360732002
+SUSAP KBURK2CCEZKA K20    W     N34233504W118345420                       E0120     NAR           CEZKA                    360742002
+SUSAP KBURK2CCFBXN K20    W     N34115335W118231400                       E0119     NAR           CFBXN(CNF)               360752002
+SUSAP KBURK2CCFCDJ K20    A     N34144387W118304604                       E0119     NAR           CFCDJ(CNF)               360762002
+SUSAP KBURK2CCFCGT K20    A     N34144383W118304607                       E0119     NAR           CFCGT(CNF)               360772002
+SUSAP KBURK2CCOTSI K20    W     N34041510W118274237                       E0119     NAR           COTSI                    360782002
+SUSAP KBURK2CELMRR K20    W     N34285057W118291172                       E0120     NAR           ELMRR                    360792002
+SUSAP KBURK2CHIMEN K20    W     N34115374W118234294                       E0119     NAR           HIMEN                    360802002
+SUSAP KBURK2CHIMVI K20    W     N34121867W118321966                       E0119     NAR           HIMVI                    360812002
+SUSAP KBURK2CIGAXY K20    W     N34122674W118215976                       E0119     NAR           IGAXY                    360822002
+SUSAP KBURK2CMAURK K20    W     N34212360W118413900                       E0120     NAR           MAURK                    360832002
+SUSAP KBURK2CNIBYI K20    W     N34173333W118341779                       E0120     NAR           NIBYI                    360842002
+SUSAP KBURK2CRAYVE K20    W     N34230939W118220250                       E0119     NAR           RAYVE                    360852002
+SUSAP KBURK2CSUMXY K20    W     N34174847W118281237                       E0119     NAR           SUMXY                    360862002
+SUSAP KBURK2CTILLR K20    W     N34222450W118384247                       E0120     NAR           TILLR                    360872002
+SUSAP KBURK2CUNCIA K20    R     N34120398W118230408                       E0119     NAR           UNCIA                    360882002
+SUSAP KBURK2CWABBT K20    W     N34220418W118342706                       E0120     NAR           WABBT                    360892002
+SUSAP KBURK2CWESKI K20    W     N34115813W118292330                       E0119     NAR           WESKI                    360902002
+SUSAP KBURK2CYEBUN K20    W     N34115918W118304898                       E0119     NAR           YEBUN                    360912002
+SUSAP KBURK2CYOLYY K20    W     N34064371W119003419                       E0120     NAR           YOLYY                    360922002
+SUSAP KBURK2CZEMEP K20    W     N34143344W118340398                       E0120     NAR           ZEMEP                    360931901
+SUSAP KBURK2DELMOO91RW08  010         0        CA                     0789        + 01178     18000                        360941905
+SUSAP KBURK2DELMOO91RW08  020         0        VI                     1230                                                 360951905
+SUSAP KBURK2DELMOO91RW08  030ELMOOK2EA0EE      CF VNY K2      0950021809500170D   + 04000                                  360961905
+SUSAP KBURK2DELMOO91RW15  010         0        CA                     1551        + 01178     18000                        360971905
+SUSAP KBURK2DELMOO91RW15  020         0        VI                     1130                                                 360981905
+SUSAP KBURK2DELMOO91RW15  030ELMOOK2EA0EE      CF VNY K2      0950021809500170D   + 04000                                  360991905
+SUSAP KBURK2DELMOO91RW26  010         0        CA                     2589        + 01178     18000                        361001905
+SUSAP KBURK2DELMOO91RW26  020         0    L   VIY                    1130                                                 361011905
+SUSAP KBURK2DELMOO91RW26  030ELMOOK2EA0EE      CF VNY K2      0950021809500170D   + 04000                                  361021905
+SUSAP KBURK2DELMOO91RW33  010         0        CA                     3351        + 01178     18000                        361031905
+SUSAP KBURK2DELMOO91RW33  020         0    L   VIY                    1230                                                 361041905
+SUSAP KBURK2DELMOO91RW33  030ELMOOK2EA0EE      CF VNY K2      0950021809500170D   + 04000                                  361051905
+SUSAP KBURK2DOROSZ25ALL   010TILLRK2PC0E       IF                                 + 08000     18000                        361061802
+SUSAP KBURK2DOROSZ25ALL   020OROSZK2EA0EE      TF                                 + 09000                                  361071802
+SUSAP KBURK2DOROSZ26COREZ 010OROSZK2EA0E       IF                                 + 09000     18000                        361081802
+SUSAP KBURK2DOROSZ26COREZ 020BRRKKK2EA0E       TF                                                                          361091802
+SUSAP KBURK2DOROSZ26COREZ 030MDWAYK2EA0E       TF                                                                          361101802
+SUSAP KBURK2DOROSZ26COREZ 040COREZK2EA0EE      TF                                                                          361111802
+SUSAP KBURK2DOROSZ26CSTRO 010OROSZK2EA0E       IF                                 + 09000     18000                        361121802
+SUSAP KBURK2DOROSZ26CSTRO 020HEYJOK2EA0E       TF                                                                          361131802
+SUSAP KBURK2DOROSZ26CSTRO 030CSTROK2EA0EE      TF                                                                          361141802
+SUSAP KBURK2DSLAPP15ALL   010RAYVEK2PC0E       IF                                 + 07000     18000                        361151703
+SUSAP KBURK2DSLAPP15ALL   020SLAPPK2EA0EE      TF                                 + 13000                                  361161703
+SUSAP KBURK2DSLAPP16BLH   010SLAPPK2EA0E       IF                                 + 13000     18000                        361171703
+SUSAP KBURK2DSLAPP16BLH   020YAAPYK2EA0E       TF                                 + 15000                                  361181703
+SUSAP KBURK2DSLAPP16BLH   030JETHKK2EA0E       TF                                 - FL190                                  361191703
+SUSAP KBURK2DSLAPP16BLH   040AERROK2EA0E       TF                                                                          361201703
+SUSAP KBURK2DSLAPP16BLH   050DECASK2EA0E       TF                                                                          361211703
+SUSAP KBURK2DSLAPP16BLH   060BLH  K2D 0VE      TF                                                                          361221703
+SUSAP KBURK2DSLAPP16HAILO 010SLAPPK2EA0E       IF                                 + 13000     18000                        361231703
+SUSAP KBURK2DSLAPP16HAILO 020YAAPYK2EA0E       TF                                 + 15000                                  361241703
+SUSAP KBURK2DSLAPP16HAILO 030JETHKK2EA0E       TF                                 - FL190                                  361251703
+SUSAP KBURK2DSLAPP16HAILO 040BBITEK2EA0E       TF                                 + FL200                                  361261703
+SUSAP KBURK2DSLAPP16HAILO 050ANTLPK2EA0E       TF                                                                          361271703
+SUSAP KBURK2DSLAPP16HAILO 060GUNNRK2EA0E       TF                                                                          361281703
+SUSAP KBURK2DSLAPP16HAILO 070ARRMYK2EA0E       TF                                                                          361291703
+SUSAP KBURK2DSLAPP16HAILO 080HAILOK2EA0EE      TF                                                                          361301703
+SUSAP KBURK2DSLAPP16HEC   010SLAPPK2EA0E       IF                                 + 13000     18000                        361311703
+SUSAP KBURK2DSLAPP16HEC   020YAAPYK2EA0E       TF                                 + 15000                                  361321703
+SUSAP KBURK2DSLAPP16HEC   030JETHKK2EA0E       TF                                 - FL190                                  361331703
+SUSAP KBURK2DSLAPP16HEC   040BBITEK2EA0E       TF                                 + FL200                                  361341703
+SUSAP KBURK2DSLAPP16HEC   050ANTLPK2EA0E       TF                                                                          361351703
+SUSAP KBURK2DSLAPP16HEC   060HEC  K2D 0VE      TF                                                                          361361703
+SUSAP KBURK2DSLAPP16LAS   010SLAPPK2EA0E       IF                                 + 13000     18000                        361371703
+SUSAP KBURK2DSLAPP16LAS   020YAAPYK2EA0E       TF                                 + 15000                                  361381703
+SUSAP KBURK2DSLAPP16LAS   030JETHKK2EA0E       TF                                 - FL190                                  361391703
+SUSAP KBURK2DSLAPP16LAS   040BBITEK2EA0E       TF                                 + FL200                                  361401703
+SUSAP KBURK2DSLAPP16LAS   050ANTLPK2EA0E       TF                                                                          361411703
+SUSAP KBURK2DSLAPP16LAS   060NNAVYK2EA0E       TF                                                                          361421703
+SUSAP KBURK2DSLAPP16LAS   070BLAZNK2EA0E       TF                                                                          361431703
+SUSAP KBURK2DSLAPP16LAS   080LAS  K2D 0VE      TF                                                                          361441703
+SUSAP KBURK2DSLAPP16MISEN 010SLAPPK2EA0E       IF                                 + 13000     18000                        361451703
+SUSAP KBURK2DSLAPP16MISEN 020YAAPYK2EA0E       TF                                 + 15000                                  361461703
+SUSAP KBURK2DSLAPP16MISEN 030JETHKK2EA0E       TF                                 - FL190                                  361471703
+SUSAP KBURK2DSLAPP16MISEN 040BBITEK2EA0E       TF                                 + FL200                                  361481703
+SUSAP KBURK2DSLAPP16MISEN 050ANTLPK2EA0E       TF                                                                          361491703
+SUSAP KBURK2DSLAPP16MISEN 060NNAVYK2EA0E       TF                                                                          361501703
+SUSAP KBURK2DSLAPP16MISEN 070MISENK2EA0EE      TF                                                                          361511703
+SUSAP KBURK2DVNY3  1RW08  010         0        CA                     0789        + 01178     18000                        361521606
+SUSAP KBURK2DVNY3  1RW08  020         0 E  R   VMY                    2130                                                 361531908
+SUSAP KBURK2DVNY3  1RW15  010         0        CA                     1551        + 01178     18000                        361541606
+SUSAP KBURK2DVNY3  1RW15  020         0 E      VM                     2130                                                 361551908
+SUSAP KBURK2DVNY3  1RW26  010         0        CA                     2589        + 01178     18000                        361561606
+SUSAP KBURK2DVNY3  1RW26  020         0 E      VM                     2930                                                 361571908
+SUSAP KBURK2DVNY3  1RW33  010         0        CA                     3351        + 01178     18000                        361581606
+SUSAP KBURK2DVNY3  1RW33  020         0 E      VM                     2730                                                 361591908
+SUSAP KBURK2DVNY3  3AVE   010VNY  K2D 0V       IF                                             18000                        361601606
+SUSAP KBURK2DVNY3  3AVE   020IPIHOK2EA0E       TF                                                                          361611606
+SUSAP KBURK2DVNY3  3AVE   030TWINEK2EA0E       TF                                                                          361621606
+SUSAP KBURK2DVNY3  3AVE   040CASTAK2EA0E       TF                                 + 08300                                  361631606
+SUSAP KBURK2DVNY3  3AVE   050GMN  K2D 0V       TF                                                                          361641606
+SUSAP KBURK2DVNY3  3AVE   060COREZK2EA0E       TF                                                                          361651606
+SUSAP KBURK2DVNY3  3AVE   070AVE  K2D 0VE      TF                                                                          361661606
+SUSAP KBURK2DVNY3  3DAG   010VNY  K2D 0V       IF                                             18000                        361671606
+SUSAP KBURK2DVNY3  3DAG   020IPIHOK2EA0E       TF                                                                          361681606
+SUSAP KBURK2DVNY3  3DAG   030TWINEK2EA0E       TF                                                                          361691606
+SUSAP KBURK2DVNY3  3DAG   040LANGEK2EA0E       TF                                                                          361701606
+SUSAP KBURK2DVNY3  3DAG   050SLAPPK2EA0E       TF                                                                          361711606
+SUSAP KBURK2DVNY3  3DAG   060BOGETK2EA0E       TF                                                                          361721606
+SUSAP KBURK2DVNY3  3DAG   070PMD  K2D 0V       TF                                                                          361731606
+SUSAP KBURK2DVNY3  3DAG   080ETHERK2EA0E       TF                                                                          361741606
+SUSAP KBURK2DVNY3  3DAG   090DAG  K2D 0VE      TF                                                                          361751606
+SUSAP KBURK2DVNY3  3FIM   010VNY  K2D 0V       IF                                             18000                        361761606
+SUSAP KBURK2DVNY3  3FIM   020IPIHOK2EA0E       TF                                                                          361771606
+SUSAP KBURK2DVNY3  3FIM   030SUANAK2EA0E       TF                                 + 03700                                  361781606
+SUSAP KBURK2DVNY3  3FIM   040FIM  K2D 0VE      TF                                                                          361791606
+SUSAP KBURK2DVNY3  3GMN   010VNY  K2D 0V       IF                                             18000                        361801606
+SUSAP KBURK2DVNY3  3GMN   020IPIHOK2EA0E       TF                                                                          361811606
+SUSAP KBURK2DVNY3  3GMN   030TWINEK2EA0E       TF                                                                          361821606
+SUSAP KBURK2DVNY3  3GMN   040CASTAK2EA0E       TF                                 + 08300                                  361831606
+SUSAP KBURK2DVNY3  3GMN   050GMN  K2D 0VE      TF                                                                          361841606
+SUSAP KBURK2DVNY3  3PMD   010VNY  K2D 0V       IF                                             18000                        361851606
+SUSAP KBURK2DVNY3  3PMD   020IPIHOK2EA0E       TF                                                                          361861606
+SUSAP KBURK2DVNY3  3PMD   030TWINEK2EA0E       TF                                                                          361871606
+SUSAP KBURK2DVNY3  3PMD   040LANGEK2EA0E       TF                                                                          361881606
+SUSAP KBURK2DVNY3  3PMD   050SLAPPK2EA0E       TF                                                                          361891606
+SUSAP KBURK2DVNY3  3PMD   060BOGETK2EA0E       TF                                                                          361901606
+SUSAP KBURK2DVNY3  3PMD   070PMD  K2D 0VE      TF                                                                          361911606
+SUSAP KBURK2DVNY3  3TWINE 010VNY  K2D 0V       IF                                             18000                        361921606
+SUSAP KBURK2DVNY3  3TWINE 020IPIHOK2EA0E       TF                                                                          361931606
+SUSAP KBURK2DVNY3  3TWINE 030TWINEK2EA0EE      TF                                                                          361941606
+SUSAP KBURK2DVVERA25ALL   010CCHUMK2EA0E       IF                                 + 06800     18000                        361951711
+SUSAP KBURK2DVVERA25ALL   020KIMMOK2EA0E       TF                                 + 07000                                  361961711
+SUSAP KBURK2DVVERA25ALL   030SLAPPK2EA0E       TF                                                                          361971711
+SUSAP KBURK2DVVERA25ALL   040JARZOK2EA0E       TF                                                                          361981711
+SUSAP KBURK2DVVERA25ALL   050VVERAK2EA0EE      TF                                                                          361991711
+SUSAP KBURK2DVVERA26DAG   010VVERAK2EA0E       IF                                             18000                        362001711
+SUSAP KBURK2DVVERA26DAG   020SSETHK2EA0E       TF                                                                          362011711
+SUSAP KBURK2DVVERA26DAG   030DAG  K2D 0VE      TF                                                                          362021711
+SUSAP KBURK2DVVERA26HEC   010VVERAK2EA0E       IF                                             18000                        362031711
+SUSAP KBURK2DVVERA26HEC   020SSETHK2EA0E       TF                                                                          362041711
+SUSAP KBURK2DVVERA26HEC   030HEC  K2D 0VE      TF                                                                          362051711
+SUSAP KBURK2EFERN7 1AVE   010AVE  K2D 0V       IF                                             18000                        362061612
+SUSAP KBURK2EFERN7 1AVE   020DERBBK2EA0E       TF                     12900290                                             362071612
+SUSAP KBURK2EFERN7 1AVE   030REYESK2EA0E  H    TF                     12900430                                             362081612
+SUSAP KBURK2EFERN7 1AVE   040PIRUEK2EA0E       TF                     13000120                                             362091612
+SUSAP KBURK2EFERN7 1AVE   050FIM  K2D 0VE      TF                     13000100                                             362101612
+SUSAP KBURK2EFERN7 1DERBB 010DERBBK2EA0E       IF                                             18000                        362111612
+SUSAP KBURK2EFERN7 1DERBB 020REYESK2EA0E  H    TF                     12900430                                             362121612
+SUSAP KBURK2EFERN7 1DERBB 030PIRUEK2EA0E       TF                     13000120                                             362131612
+SUSAP KBURK2EFERN7 1DERBB 040FIM  K2D 0VE      TF                     13000100                                             362141612
+SUSAP KBURK2EFERN7 1FLW   010FLW  K2D 0V       IF                                             18000                        362151612
+SUSAP KBURK2EFERN7 1FLW   020BURNZK2EA0E       TF                     11600460                                             362161612
+SUSAP KBURK2EFERN7 1FLW   030BAILLK2EA0E       TF                     11700100                                             362171612
+SUSAP KBURK2EFERN7 1FLW   040FIM  K2D 0VE      TF                     11700100                                             362181612
+SUSAP KBURK2EFERN7 1OHIGH 010OHIGHK2EA0E       IF                                             18000                        362191612
+SUSAP KBURK2EFERN7 1OHIGH 020CANYNK2EA0E       TF                     08700120                                             362201612
+SUSAP KBURK2EFERN7 1OHIGH 030FIM  K2D 0VE      TF                     08700100                                             362211612
+SUSAP KBURK2EFERN7 3RW08  010FIM  K2D 0V       IF                                             18000                        362221612
+SUSAP KBURK2EFERN7 3RW08  020TOAKSK2EA0E       TF                     13600110                                             362231612
+SUSAP KBURK2EFERN7 3RW08  030KBUR K2PA0AE      VM                     0760                                                 362241612
+SUSAP KBURK2EJANNY54BUGGA 010BUGGAK2EA0E       IF                                             18000                        362251808
+SUSAP KBURK2EJANNY54BUGGA 020JOEESK2EA0E       TF                                   FL240                                  362261808
+SUSAP KBURK2EJANNY54BUGGA 030DNUTTK2EA0E       TF                                   FL230                                  362271808
+SUSAP KBURK2EJANNY54BUGGA 040JOHHNK2EA0E       TF                                   FL220                                  362281808
+SUSAP KBURK2EJANNY54BUGGA 050BASALK2EA0E       TF                                                                          362291808
+SUSAP KBURK2EJANNY54BUGGA 060DYVERK2EA0E       TF                                 - FL190                                  362301808
+SUSAP KBURK2EJANNY54BUGGA 070CHKNZK2EA0E       TF                                                                          362311808
+SUSAP KBURK2EJANNY54BUGGA 080KOPLEK2EA0E       TF                                   14000                                  362321808
+SUSAP KBURK2EJANNY54BUGGA 090PMD  K2D 0V       TF                                 - 13000                                  362331808
+SUSAP KBURK2EJANNY54BUGGA 100JANNYK2EA0EE      TF                                   08000                                  362341808
+SUSAP KBURK2EJANNY54EED   010EED  K2D 0V       IF                                             18000                        362351808
+SUSAP KBURK2EJANNY54EED   020COOOPK2EA0E       TF                                                                          362361808
+SUSAP KBURK2EJANNY54EED   030TAAAPK2EA0E       TF                                                                          362371808
+SUSAP KBURK2EJANNY54EED   040JOEESK2EA0E       TF                                   FL240                                  362381808
+SUSAP KBURK2EJANNY54EED   050DNUTTK2EA0E       TF                                   FL230                                  362391808
+SUSAP KBURK2EJANNY54EED   060JOHHNK2EA0E       TF                                   FL220                                  362401808
+SUSAP KBURK2EJANNY54EED   070BASALK2EA0E       TF                                                                          362411808
+SUSAP KBURK2EJANNY54EED   080DYVERK2EA0E       TF                                 - FL190                                  362421808
+SUSAP KBURK2EJANNY54EED   090CHKNZK2EA0E       TF                                                                          362431808
+SUSAP KBURK2EJANNY54EED   100KOPLEK2EA0E       TF                                   14000                                  362441808
+SUSAP KBURK2EJANNY54EED   110PMD  K2D 0V       TF                                 - 13000                                  362451808
+SUSAP KBURK2EJANNY54EED   120JANNYK2EA0EE      TF                                   08000                                  362461808
+SUSAP KBURK2EJANNY54KREME 010KREMEK2EA0E       IF                                   FL240     18000                        362471808
+SUSAP KBURK2EJANNY54KREME 020DNUTTK2EA0E       TF                                   FL230                                  362481808
+SUSAP KBURK2EJANNY54KREME 030JOHHNK2EA0E       TF                                   FL220                                  362491808
+SUSAP KBURK2EJANNY54KREME 040BASALK2EA0E       TF                                                                          362501808
+SUSAP KBURK2EJANNY54KREME 050DYVERK2EA0E       TF                                 - FL190                                  362511808
+SUSAP KBURK2EJANNY54KREME 060CHKNZK2EA0E       TF                                                                          362521808
+SUSAP KBURK2EJANNY54KREME 070KOPLEK2EA0E       TF                                   14000                                  362531808
+SUSAP KBURK2EJANNY54KREME 080PMD  K2D 0V       TF                                 - 13000                                  362541808
+SUSAP KBURK2EJANNY54KREME 090JANNYK2EA0EE      TF                                   08000                                  362551808
+SUSAP KBURK2EJANNY54PURSE 010PURSEK2EA0E       IF                                             18000                        362561808
+SUSAP KBURK2EJANNY54PURSE 020NIPIYK2EA0E       TF                                                                          362571808
+SUSAP KBURK2EJANNY54PURSE 030KREMEK2EA0E       TF                                   FL240                                  362581808
+SUSAP KBURK2EJANNY54PURSE 040DNUTTK2EA0E       TF                                   FL230                                  362591808
+SUSAP KBURK2EJANNY54PURSE 050JOHHNK2EA0E       TF                                   FL220                                  362601808
+SUSAP KBURK2EJANNY54PURSE 060BASALK2EA0E       TF                                                                          362611808
+SUSAP KBURK2EJANNY54PURSE 070DYVERK2EA0E       TF                                 - FL190                                  362621808
+SUSAP KBURK2EJANNY54PURSE 080CHKNZK2EA0E       TF                                                                          362631808
+SUSAP KBURK2EJANNY54PURSE 090KOPLEK2EA0E       TF                                   14000                                  362641808
+SUSAP KBURK2EJANNY54PURSE 100PMD  K2D 0V       TF                                 - 13000                                  362651808
+SUSAP KBURK2EJANNY54PURSE 110JANNYK2EA0EE      TF                                   08000                                  362661808
+SUSAP KBURK2EJANNY54WELUM 010WELUMK2EA0E       IF                                             18000                        362671808
+SUSAP KBURK2EJANNY54WELUM 020NIPIYK2EA0E       TF                                                                          362681808
+SUSAP KBURK2EJANNY54WELUM 030KREMEK2EA0E       TF                                   FL240                                  362691808
+SUSAP KBURK2EJANNY54WELUM 040DNUTTK2EA0E       TF                                   FL230                                  362701808
+SUSAP KBURK2EJANNY54WELUM 050JOHHNK2EA0E       TF                                   FL220                                  362711808
+SUSAP KBURK2EJANNY54WELUM 060BASALK2EA0E       TF                                                                          362721808
+SUSAP KBURK2EJANNY54WELUM 070DYVERK2EA0E       TF                                 - FL190                                  362731808
+SUSAP KBURK2EJANNY54WELUM 080CHKNZK2EA0E       TF                                                                          362741808
+SUSAP KBURK2EJANNY54WELUM 090KOPLEK2EA0E       TF                                   14000                                  362751808
+SUSAP KBURK2EJANNY54WELUM 100PMD  K2D 0V       TF                                 - 13000                                  362761808
+SUSAP KBURK2EJANNY54WELUM 110JANNYK2EA0EE      TF                                   08000                                  362771808
+SUSAP KBURK2EJANNY54WNCHL 010WNCHLK2EA0E       IF                                             18000                        362781808
+SUSAP KBURK2EJANNY54WNCHL 020GLAZDK2EA0E       TF                                                                          362791808
+SUSAP KBURK2EJANNY54WNCHL 030SNTRAK2EA0E       TF                                 - FL190                                  362801808
+SUSAP KBURK2EJANNY54WNCHL 040COWWSK2EA0E       TF                                                                          362811808
+SUSAP KBURK2EJANNY54WNCHL 050KOPLEK2EA0E       TF                                   14000                                  362821808
+SUSAP KBURK2EJANNY54WNCHL 060PMD  K2D 0V       TF                                 - 13000                                  362831808
+SUSAP KBURK2EJANNY54WNCHL 070JANNYK2EA0EE      TF                                   08000                                  362841808
+SUSAP KBURK2EJANNY56RW08  010JANNYK2EA0E       IF                                   08000     18000                        362851808
+SUSAP KBURK2EJANNY56RW08  020PUCCKK2EA0E       TF                                   08000                                  362861808
+SUSAP KBURK2EJANNY56RW08  030ELMRRK2PC0E       TF                                 + 07000                                  362871808
+SUSAP KBURK2EJANNY56RW08  040WABBTK2PC0EY      TF                                   06000                                  362881808
+SUSAP KBURK2EJANNY56RW08  050WABBTK2PC0EE      FM UTI K2      226829362008    D                                            362891808
+SUSAP KBURK2ELYNXX81DAG   010DAG  K2D 0V       IF                                             18000                        362900804
+SUSAP KBURK2ELYNXX81DAG   020WOOLIK2EA0E       TF                     23950661                                             362910804
+SUSAP KBURK2ELYNXX81DAG   030PMD  K2D 0V       TF                     24500100                                             362920804
+SUSAP KBURK2ELYNXX81DAG   040JANNYK2EA0E       TF                     24000150                                             362930804
+SUSAP KBURK2ELYNXX81DAG   050EIFELK2EA0E       TF                     24000069                                             362940804
+SUSAP KBURK2ELYNXX81DAG   060LYNXXK2EA0EE H    TF                     24000054                                             362950804
+SUSAP KBURK2ELYNXX81HEC   010HEC  K2D 0V       IF                                             18000                        362960804
+SUSAP KBURK2ELYNXX81HEC   020BASALK2EA0E       TF                     24830199                                             362970804
+SUSAP KBURK2ELYNXX81HEC   030KOPLEK2EA0E       TF                     24740500                                             362980804
+SUSAP KBURK2ELYNXX81HEC   040PMD  K2D 0V       TF                     24740100                                             362990804
+SUSAP KBURK2ELYNXX81HEC   050JANNYK2EA0E       TF                     24000150                                             363000804
+SUSAP KBURK2ELYNXX81HEC   060EIFELK2EA0E       TF                     24000069                                             363010804
+SUSAP KBURK2ELYNXX81HEC   070LYNXXK2EA0EE H    TF                     24000054                                             363020804
+SUSAP KBURK2ELYNXX81LHS   010LHS  K2D 0V       IF                                             18000                        363030804
+SUSAP KBURK2ELYNXX81LHS   020LAAMBK2EA0E       TF                     17000052                                             363040804
+SUSAP KBURK2ELYNXX81LHS   030LYNXXK2EA0EE H    TF                     17000051                                             363050804
+SUSAP KBURK2ELYNXX81PMD   010PMD  K2D 0V       IF                                             18000                        363060804
+SUSAP KBURK2ELYNXX81PMD   020JANNYK2EA0E       TF                     24000150                                             363070804
+SUSAP KBURK2ELYNXX81PMD   030EIFELK2EA0E       TF                     24000069                                             363080804
+SUSAP KBURK2ELYNXX81PMD   040LYNXXK2EA0EE H    TF                     24000054                                             363090804
+SUSAP KBURK2ELYNXX82ALL   010LYNXXK2EA0E  H    IF                                             18000                        363100804
+SUSAP KBURK2ELYNXX82ALL   020VNY  K2D 0VE      TF                     14850180                                             363110804
+SUSAP KBURK2EROKKR24HIHWY 010HIHWYK2EA0E       IF                                 B FL220FL20018000280                     363121804
+SUSAP KBURK2EROKKR24HIHWY 020MAIDDK2EA0E       TF                                 B FL19017000                             363131804
+SUSAP KBURK2EROKKR24HIHWY 030PEPRZK2EA0E       TF                                 B 1600014000     270                     363141804
+SUSAP KBURK2EROKKR24HIHWY 040HEVVYK2EA0E       TF                                                                          363151804
+SUSAP KBURK2EROKKR24HIHWY 050ROKKRK2EA0EE      TF                                 B 1200011000     250                     363161804
+SUSAP KBURK2EROKKR24HONZK 010HONZKK2EA0E       IF                                 + FL240     18000                        363171804
+SUSAP KBURK2EROKKR24HONZK 020PRPLEK2EA0E       TF                                 B FL220FL200     280                     363181804
+SUSAP KBURK2EROKKR24HONZK 030XXELLK2EA0E       TF                                 B FL19017000                             363191804
+SUSAP KBURK2EROKKR24HONZK 040YUTOOK2EA0E       TF                                 B 1600014000     270                     363201804
+SUSAP KBURK2EROKKR24HONZK 050TRAVVK2EA0E       TF                                                                          363211804
+SUSAP KBURK2EROKKR24HONZK 060ROKKRK2EA0EE      TF                                 B 1200011000     250                     363221804
+SUSAP KBURK2EROKKR24PRPLE 010PRPLEK2EA0E       IF                                 B FL220FL20018000280                     363231804
+SUSAP KBURK2EROKKR24PRPLE 020XXELLK2EA0E       TF                                 B FL19017000                             363241804
+SUSAP KBURK2EROKKR24PRPLE 030YUTOOK2EA0E       TF                                 B 1600014000     270                     363251804
+SUSAP KBURK2EROKKR24PRPLE 040TRAVVK2EA0E       TF                                                                          363261804
+SUSAP KBURK2EROKKR24PRPLE 050ROKKRK2EA0EE      TF                                 B 1200011000     250                     363271804
+SUSAP KBURK2EROKKR24RDHOT 010RDHOTK2EA0E       IF                                             18000                        363281804
+SUSAP KBURK2EROKKR24RDHOT 020HONZKK2EA0E       TF                                 + FL240                                  363291804
+SUSAP KBURK2EROKKR24RDHOT 030PRPLEK2EA0E       TF                                 B FL220FL200     280                     363301804
+SUSAP KBURK2EROKKR24RDHOT 040XXELLK2EA0E       TF                                 B FL19017000                             363311804
+SUSAP KBURK2EROKKR24RDHOT 050YUTOOK2EA0E       TF                                 B 1600014000     270                     363321804
+SUSAP KBURK2EROKKR24RDHOT 060TRAVVK2EA0E       TF                                                                          363331804
+SUSAP KBURK2EROKKR24RDHOT 070ROKKRK2EA0EE      TF                                 B 1200011000     250                     363341804
+SUSAP KBURK2EROKKR24REBRG 010REBRGK2EA0E       IF                                             18000                        363351804
+SUSAP KBURK2EROKKR24REBRG 020MMTLYK2EA0E       TF                                                                          363361804
+SUSAP KBURK2EROKKR24REBRG 030CRUUEK2EA0E       TF                                 + FL290          280                     363371804
+SUSAP KBURK2EROKKR24REBRG 040EEAZYK2EA0E       TF                                 B FL290FL240     280                     363381804
+SUSAP KBURK2EROKKR24REBRG 050HIHWYK2EA0E       TF                                 B FL220FL200     280                     363391804
+SUSAP KBURK2EROKKR24REBRG 060MAIDDK2EA0E       TF                                 B FL19017000                             363401804
+SUSAP KBURK2EROKKR24REBRG 070PEPRZK2EA0E       TF                                 B 1600014000     270                     363411804
+SUSAP KBURK2EROKKR24REBRG 080HEVVYK2EA0E       TF                                                                          363421804
+SUSAP KBURK2EROKKR24REBRG 090ROKKRK2EA0EE      TF                                 B 1200011000     250                     363431804
+SUSAP KBURK2EROKKR25      010ROKKRK2EA0E       IF                                 B 120001100018000250                     363441804
+SUSAP KBURK2EROKKR25      020ZEPPEK2EA0E       TF                                 B 1000009000                             363451804
+SUSAP KBURK2EROKKR25      030IVINSK2EA0EE      TF                                 + 08000                                  363461804
+SUSAP KBURK2EROKKR26RW08  010IVINSK2EA0E       IF                                 + 08000     18000                        363471804
+SUSAP KBURK2EROKKR26RW08  020MIKEIK2EA0EE      TF                                   07000                                  363481804
+SUSAP KBURK2EROKKR26RW15  010IVINSK2EA0E       IF                                 + 08000     18000                        363491804
+SUSAP KBURK2EROKKR26RW15  020MAURKK2PC0EY      TF                                   06000                                  363501804
+SUSAP KBURK2EROKKR26RW15  030MAURKK2PC0EE      FM TFD K2      274435110830    D                                            363511804
+SUSAP KBURK2EROKKR26RW33  010IVINSK2EA0E       IF                                 + 08000     18000                        363521804
+SUSAP KBURK2EROKKR26RW33  020MIKEIK2EA0E       TF                                   07000                                  363531804
+SUSAP KBURK2EROKKR26RW33  030EHUNTK2EA0EY      TF                                   06000                                  363541804
+SUSAP KBURK2EROKKR26RW33  040EHUNTK2EA0EE      FM TFD K2      272834991258    D                                            363551804
+SUSAP KBURK2ETHRNE34PHRED 010PHREDK2EA0E       IF                                             18000                        363561804
+SUSAP KBURK2ETHRNE34PHRED 020FOILDK2EA0E       TF                                                                          363571804
+SUSAP KBURK2ETHRNE34PHRED 030QUTIPK2EA0E       TF                                 - FL290                                  363581804
+SUSAP KBURK2ETHRNE34PHRED 040VLLMAK2EA0E       TF                                                                          363591804
+SUSAP KBURK2ETHRNE34PHRED 050DROGOK2EA0E       TF                                 + FL240                                  363601804
+SUSAP KBURK2ETHRNE34PHRED 060DEWWWK2EA0E       TF                                 + FL210                                  363611804
+SUSAP KBURK2ETHRNE34PHRED 070DNERYK2EA0E       TF                                 - FL200                                  363621804
+SUSAP KBURK2ETHRNE34PHRED 080ARRYAK2EA0E       TF                                   16000                                  363631804
+SUSAP KBURK2ETHRNE34PHRED 090YATZEK2EA0E       TF                                 B 1500014000                             363641804
+SUSAP KBURK2ETHRNE34PHRED 100IRONNK2EA0E       TF                                   13000                                  363651804
+SUSAP KBURK2ETHRNE34PHRED 110THRNEK2EA0EE      TF                                 - 11000                                  363661804
+SUSAP KBURK2ETHRNE35ALL   010THRNEK2EA0E       IF                                 - 11000     18000                        363671804
+SUSAP KBURK2ETHRNE35ALL   020BFOONK2EA0E       TF                                   10000                                  363681804
+SUSAP KBURK2ETHRNE35ALL   030CRCUSK2EA0E       TF                                   10000                                  363691804
+SUSAP KBURK2ETHRNE35ALL   040NNEDDK2EA0EY      TF                                   08000                                  363701804
+SUSAP KBURK2ETHRNE35ALL   050NNEDDK2EA0EE      FM TFD K2      273631492530    D                                            363711804
+SUSAP KBURK2EWEESL14EHF   010EHF  K2D 0V       IF                                             18000                        363721612
+SUSAP KBURK2EWEESL14EHF   020BASKKK2EA0E       TF                                                                          363731612
+SUSAP KBURK2EWEESL14EHF   030AMANYK2EA0E       TF                                                                          363741612
+SUSAP KBURK2EWEESL14EHF   040WEESLK2EA0EE      TF                                                                          363751612
+SUSAP KBURK2EWEESL14NINTY 010NINTYK2EA0E       IF                                             18000                        363761612
+SUSAP KBURK2EWEESL14NINTY 020WEESLK2EA0EE      TF                                                                          363771612
+SUSAP KBURK2EWEESL14WRING 010WRINGK2EA0E       IF                                             18000                        363781612
+SUSAP KBURK2EWEESL14WRING 020AMANYK2EA0E       TF                                                                          363791612
+SUSAP KBURK2EWEESL14WRING 030WEESLK2EA0EE      TF                                                                          363801612
+SUSAP KBURK2EWEESL15ALL   010WEESLK2EA0E       IF                                             18000                        363811612
+SUSAP KBURK2EWEESL15ALL   020GRRITK2EA0E       TF                                                                          363821612
+SUSAP KBURK2EWEESL15ALL   030SWIIMK2EA0E       TF                                   09000                                  363831612
+SUSAP KBURK2EWEESL15ALL   040LYNXXK2EA0EY      TF                                   09000                                  363841612
+SUSAP KBURK2EWEESL15ALL   050LYNXXK2EA0EE      FM TFD K2      276134851920    D                                            363851612
+SUSAP KBURK2FH08-Y AMIKEI 010MIKEIK2EA0E  A    IF                                   07000     18000                 A FS   363861802
+SUSAP KBURK2FH08-Y AMIKEI 020SILEXK2EA0E  B 010TF                                 + 04500                           A FS   363871612
+SUSAP KBURK2FH08-Y AMIKEI 030YEBUNK2PC0EE   010TF                                 + 03000                           A FS   363881903
+SUSAP KBURK2FH08-Y AWABBT 010WABBTK2PC0E  B    IF                                   06000     18000                 A FS   363891612
+SUSAP KBURK2FH08-Y AWABBT 020NIBYIK2PC0E    010TF                                 + 05100                           A FS   363901612
+SUSAP KBURK2FH08-Y AWABBT 030ZEMEPK2PC0E    010TF                                 + 04200          210              A-FS   363911612
+SUSAP KBURK2FH08-Y AWABBT 040HIMVIK2PC0E   L010RF       0027401644    10620028    + 03400                 CFCDJ K2PCA FS   363921612
+SUSAP KBURK2FH08-Y AWABBT 050YEBUNK2PC0EE  L010RF       0027401062    07880013    + 03000                 CFCGT K2PCA FS   363931903
+SUSAP KBURK2FH08-Y H      010YEBUNK2PC0E  I    IF                                 + 03000     18000                 A FS   363941903
+SUSAP KBURK2FH08-Y H      020WESKIK2PC1E  F 010TF                                 + 02700                 RW08  K2PGA FS   363951903
+SUSAP KBURK2FH08-Y H      020WESKIK2PC2W                                                A031A021                      FS   363961310
+SUSAP KBURK2FH08-Y H      030RW08 K2PG0GY M 031TF                                   00787             -300          A FS   363971606
+SUSAP KBURK2FH08-Y H      040         0  M     CA                     0789        + 01200                           A FS   363981606
+SUSAP KBURK2FH08-Y H      050COTSIK2PC0E   R010DF                                                                   A FS   363991903
+SUSAP KBURK2FH08-Y H      060YOLYYK2PC0EY   010TF                                 + 04600                           A FS   364001612
+SUSAP KBURK2FH08-Y H      070YOLYYK2PC0EE  L   HM                     31060050    + 04600                           A FS   364011612
+SUSAP KBURK2FI08-Y ALAX   010LAX  K2D 0V       IF                                             18000                 0 NS   364021606
+SUSAP KBURK2FI08-Y ALAX   020SILEXK2EA0EY      TF                                 + 04600                           0 NS   364031606
+SUSAP KBURK2FI08-Y ALAX   030SILEXK2EA0EE AR   HF IBURK2      258901190789T010PI  + 04000                           0 NS   364041903
+SUSAP KBURK2FI08-Y AMIKEI 010MIKEIK2EA0E  A    IF                                   07000     18000                 0 PS   364051802
+SUSAP KBURK2FI08-Y AMIKEI 020SILEXK2EA0EE B 010TF                                 + 03700                           0 PS   364061903
+SUSAP KBURK2FI08-Y ASMO   010SMO  K2D 0V       IF                                             18000                 0 NS   364071606
+SUSAP KBURK2FI08-Y ASMO   020SILEXK2EA0EY      TF                                 + 04400                           0 NS   364081606
+SUSAP KBURK2FI08-Y ASMO   030SILEXK2EA0EE AR   HF IBURK2      258901190789T010PI  + 04000                           0 NS   364091903
+SUSAP KBURK2FI08-Y ATOAKS 010TOAKSK2EA0E  A    IF                                             18000                 0 NS   364101606
+SUSAP KBURK2FI08-Y ATOAKS 020SILEXK2EA0EE B    CF IBURK2      2589011907890083PI  + 03700                           0 NS   364111903
+SUSAP KBURK2FI08-Y AVNY   010VNY  K2D 0V       IF                                             18000                 0 NS   364121606
+SUSAP KBURK2FI08-Y AVNY   020SILEXK2EA0EY      TF                                 + 04400                           0 NS   364131606
+SUSAP KBURK2FI08-Y AVNY   030SILEXK2EA0EE AR   HF IBURK2      258901190789T010PI  + 04000                           0 NS   364141903
+SUSAP KBURK2FI08-Y AVTU   010VTU  K2D 0V  A    IF                                             18000                 0 NS   364151606
+SUSAP KBURK2FI08-Y AVTU   020TOAKSK2EA0E       TF                                 + 04600                           0 NS   364161606
+SUSAP KBURK2FI08-Y AVTU   030SILEXK2EA0EE B    CF IBURK2      2589011907890083PI  + 03700                           0 NS   364171903
+SUSAP KBURK2FI08-Y I      010SILEXK2EA0E  I    IF IBURK2      25890119        PI  J 037000300018000                 0 NS   364181903
+SUSAP KBURK2FI08-Y I      020BUDDEK2EA0E  F    CF IBURK2      2589005907900060PI  G 0300002753        -300VNY   K2D 0 NS   364191903
+SUSAP KBURK2FI08-Y I      030RW08 K2PG0GY M    CF IBURK2      0789000207900061PI    00787             -300          0 NS   364201606
+SUSAP KBURK2FI08-Y I      040         0  M     CA                     0789        + 01800                           0 NS   364211606
+SUSAP KBURK2FI08-Y I      050         0    R   VIY                    2100                                          0 NS   364221606
+SUSAP KBURK2FI08-Y I      060VTU  K2D 0VY      CF VTU K2      0000000026600310D   + 04600                           0 NS   364231903
+SUSAP KBURK2FI08-Y I      070VTU  K2D 0VE  L   HM                     1306T010    + 04600                           0 NS   364241606
+SUSAP KBURK2FI08-Z ALAX   010LAX  K2D 0V       IF                                             18000                 0 NS   364251606
+SUSAP KBURK2FI08-Z ALAX   020SILEXK2EA0EY      TF                                 + 04600                           0 NS   364261606
+SUSAP KBURK2FI08-Z ALAX   030SILEXK2EA0EE AR   HF IBURK2      258901190789T010PI  + 04000                           0 NS   364271903
+SUSAP KBURK2FI08-Z AMIKEI 010MIKEIK2EA0E  A    IF                                   07000     18000                 0 PS   364281802
+SUSAP KBURK2FI08-Z AMIKEI 020SILEXK2EA0EE B 010TF                                 + 03700                           0 PS   364291903
+SUSAP KBURK2FI08-Z ASMO   010SMO  K2D 0V       IF                                             18000                 0 NS   364301606
+SUSAP KBURK2FI08-Z ASMO   020SILEXK2EA0EY      TF                                 + 04400                           0 NS   364311606
+SUSAP KBURK2FI08-Z ASMO   030SILEXK2EA0EE AR   HF IBURK2      258901190789T010PI  + 04000                           0 NS   364321903
+SUSAP KBURK2FI08-Z ATOAKS 010TOAKSK2EA0E  A    IF                                             18000                 0 NS   364331606
+SUSAP KBURK2FI08-Z ATOAKS 020SILEXK2EA0EE B    CF IBURK2      2589011907890083PI  + 03700                           0 NS   364341903
+SUSAP KBURK2FI08-Z AVNY   010VNY  K2D 0V       IF                                             18000                 0 NS   364351606
+SUSAP KBURK2FI08-Z AVNY   020SILEXK2EA0EY      TF                                 + 04400                           0 NS   364361606
+SUSAP KBURK2FI08-Z AVNY   030SILEXK2EA0EE AR   HF IBURK2      258901190789T010PI  + 04000                           0 NS   364371903
+SUSAP KBURK2FI08-Z AVTU   010VTU  K2D 0V  A    IF                                             18000                 0 NS   364381606
+SUSAP KBURK2FI08-Z AVTU   020TOAKSK2EA0E       TF                                 + 04600                           0 NS   364391606
+SUSAP KBURK2FI08-Z AVTU   030SILEXK2EA0EE B    CF IBURK2      2589011907890083PI  + 03700                           0 NS   364401903
+SUSAP KBURK2FI08-Z I      010SILEXK2EA0E  I    IF IBURK2      25890119        PI  J 037000300018000                 0 NS   364411903
+SUSAP KBURK2FI08-Z I      020BUDDEK2EA0E  F    CF IBURK2      2589005907900060PI  G 0300002753        -300VNY   K2D 0 NS   364421903
+SUSAP KBURK2FI08-Z I      030RW08 K2PG0GY M    CF IBURK2      0789000207900061PI    00787             -300          0 NS   364431606
+SUSAP KBURK2FI08-Z I      040         0  M     CA                     0789        + 01300                           0 NS   364441606
+SUSAP KBURK2FI08-Z I      050         0    R   VIY                    2100                                          0 NS   364451606
+SUSAP KBURK2FI08-Z I      060VTU  K2D 0VY      CF VTU K2      0000000026600310D   + 04600                           0 NS   364461606
+SUSAP KBURK2FI08-Z I      070VTU  K2D 0VE  L   HM                     1306T010    + 04600                           0 NS   364471606
+SUSAP KBURK2FL08-Y ALAX   010LAX  K2D 0V       IF                                             18000                 0 NS   364481606
+SUSAP KBURK2FL08-Y ALAX   020SILEXK2EA0EY      TF                                 + 04600                           0 NS   364491606
+SUSAP KBURK2FL08-Y ALAX   030SILEXK2EA0EE AR   HF IBURK2      258901190789T010PI  + 04000                           0 NS   364501903
+SUSAP KBURK2FL08-Y AMIKEI 010MIKEIK2EA0E  A    IF                                   07000     18000                 0 PS   364511802
+SUSAP KBURK2FL08-Y AMIKEI 020SILEXK2EA0EE B 010TF                                 + 03700                           0 PS   364521903
+SUSAP KBURK2FL08-Y ASMO   010SMO  K2D 0V       IF                                             18000                 0 NS   364531606
+SUSAP KBURK2FL08-Y ASMO   020SILEXK2EA0EY      TF                                 + 04400                           0 NS   364541606
+SUSAP KBURK2FL08-Y ASMO   030SILEXK2EA0EE AR   HF IBURK2      258901190789T010PI  + 04000                           0 NS   364551903
+SUSAP KBURK2FL08-Y ATOAKS 010TOAKSK2EA0E  A    IF                                             18000                 0 NS   364561606
+SUSAP KBURK2FL08-Y ATOAKS 020SILEXK2EA0EE B    CF IBURK2      2589011907890083PI  + 03700                           0 NS   364571903
+SUSAP KBURK2FL08-Y AVNY   010VNY  K2D 0V       IF                                             18000                 0 NS   364581606
+SUSAP KBURK2FL08-Y AVNY   020SILEXK2EA0EY      TF                                 + 04400                           0 NS   364591606
+SUSAP KBURK2FL08-Y AVNY   030SILEXK2EA0EE AR   HF IBURK2      258901190789T010PI  + 04000                           0 NS   364601903
+SUSAP KBURK2FL08-Y AVTU   010VTU  K2D 0V  A    IF                                             18000                 0 NS   364611606
+SUSAP KBURK2FL08-Y AVTU   020TOAKSK2EA0E       TF                                 + 04600                           0 NS   364621606
+SUSAP KBURK2FL08-Y AVTU   030SILEXK2EA0EE B    CF IBURK2      2589011907890083PI  + 03700                           0 NS   364631903
+SUSAP KBURK2FL08-Y L      010SILEXK2EA0E  I    IF IBURK2      25890119        PI  + 03700     18000                 0 NS   364641903
+SUSAP KBURK2FL08-Y L      020BUDDEK2EA0E  F    CF IBURK2      2589005907900060PI    03000                 VNY   K2D 0 NS   364651606
+SUSAP KBURK2FL08-Y L      030CFBXNK2PC0EY M    CF IBURK2      2589000707900052PI    01115             -344          0 NS   364661903
+SUSAP KBURK2FL08-Y L      040         0  M     CA                     0789        + 01800                           0 NS   364671606
+SUSAP KBURK2FL08-Y L      050         0    R   VIY                    2100                                          0 NS   364681606
+SUSAP KBURK2FL08-Y L      060VTU  K2D 0VY      CF VTU K2      0000000026600310D   + 04600                           0 NS   364691903
+SUSAP KBURK2FL08-Y L      070VTU  K2D 0VE  L   HM                     1306T010    + 04600                           0 NS   364701606
+SUSAP KBURK2FL08-Z ALAX   010LAX  K2D 0V       IF                                             18000                 0 NS   364711606
+SUSAP KBURK2FL08-Z ALAX   020SILEXK2EA0EY      TF                                 + 04600                           0 NS   364721606
+SUSAP KBURK2FL08-Z ALAX   030SILEXK2EA0EE AR   HF IBURK2      258901190789T010PI  + 04000                           0 NS   364731903
+SUSAP KBURK2FL08-Z AMIKEI 010MIKEIK2EA0E  A    IF                                   07000     18000                 0 PS   364741802
+SUSAP KBURK2FL08-Z AMIKEI 020SILEXK2EA0EE B 010TF                                 + 03700                           0 PS   364751903
+SUSAP KBURK2FL08-Z ASMO   010SMO  K2D 0V       IF                                             18000                 0 NS   364761606
+SUSAP KBURK2FL08-Z ASMO   020SILEXK2EA0EY      TF                                 + 04400                           0 NS   364771606
+SUSAP KBURK2FL08-Z ASMO   030SILEXK2EA0EE AR   HF IBURK2      258901190789T010PI  + 04000                           0 NS   364781903
+SUSAP KBURK2FL08-Z ATOAKS 010TOAKSK2EA0E  A    IF                                             18000                 0 NS   364791606
+SUSAP KBURK2FL08-Z ATOAKS 020SILEXK2EA0EE B    CF IBURK2      2589011907890083PI  + 03700                           0 NS   364801903
+SUSAP KBURK2FL08-Z AVNY   010VNY  K2D 0V       IF                                             18000                 0 NS   364811606
+SUSAP KBURK2FL08-Z AVNY   020SILEXK2EA0EY      TF                                 + 04400                           0 NS   364821606
+SUSAP KBURK2FL08-Z AVNY   030SILEXK2EA0EE AR   HF IBURK2      258901190789T010PI  + 04000                           0 NS   364831903
+SUSAP KBURK2FL08-Z AVTU   010VTU  K2D 0V  A    IF                                             18000                 0 NS   364841606
+SUSAP KBURK2FL08-Z AVTU   020TOAKSK2EA0E       TF                                 + 04600                           0 NS   364851606
+SUSAP KBURK2FL08-Z AVTU   030SILEXK2EA0EE B    CF IBURK2      2589011907890083PI  + 03700                           0 NS   364861903
+SUSAP KBURK2FL08-Z L      010SILEXK2EA0E  I    IF IBURK2      25890119        PI  + 03700     18000                 0 NS   364871903
+SUSAP KBURK2FL08-Z L      020BUDDEK2EA0E  F    CF IBURK2      2589005907900060PI    03000                 VNY   K2D 0 NS   364881606
+SUSAP KBURK2FL08-Z L      030CFBXNK2PC0EY M    CF IBURK2      2589000707900052PI    01115             -344          0 NS   364891903
+SUSAP KBURK2FL08-Z L      040         0  M     CA                     0789        + 01300                           0 NS   364901606
+SUSAP KBURK2FL08-Z L      050         0    R   VIY                    2100                                          0 NS   364911606
+SUSAP KBURK2FL08-Z L      060VTU  K2D 0VY      CF VTU K2      0000000026600310D   + 04600                           0 NS   364921606
+SUSAP KBURK2FL08-Z L      070VTU  K2D 0VE  L   HM                     1306T010    + 04600                           0 NS   364931606
+SUSAP KBURK2FR08-Z AMIKEI 010MIKEIK2EA0E  A    IF                                   07000     18000                 A JS   364941802
+SUSAP KBURK2FR08-Z AMIKEI 020SILEXK2EA0EE B 010TF                     10180098    + 04100                           A JS   364951612
+SUSAP KBURK2FR08-Z ASILEX 010SILEXK2EA0EE AR   HF                     07890050    + 04100     18000                 A JS   364961606
+SUSAP KBURK2FR08-Z AVTU   010VTU  K2D 0V  A    IF                                             18000                 A JS   364971606
+SUSAP KBURK2FR08-Z AVTU   020TOAKSK2EA0E    010TF                     05670145    + 04600                           A JS   364981606
+SUSAP KBURK2FR08-Z AVTU   030SILEXK2EA0EE B 010TF                     07870083    + 04100                           A JS   364991606
+SUSAP KBURK2FR08-Z R      010SILEXK2EA0E  I    IF                                 + 04100     18000                 A JS   365001606
+SUSAP KBURK2FR08-Z R      020BUBNEK2PC1E  F 010TF                     07890051    + 03000                 HIMEN K2PCA JS   365011606
+SUSAP KBURK2FR08-Z R      020BUBNEK2PC2WALP        N          ALNAV                                                   JS   365021606
+SUSAP KBURK2FR08-Z R      030HIMENK2PC0EY M 031TF                     07890057      01201             -300          A JS   365031606
+SUSAP KBURK2FR08-Z R      040         0  M     CA                     0789        + 01178                           A JS   365041606
+SUSAP KBURK2FR08-Z R      050COTSIK2PC0E   R010DF                                                                   A JS   365051903
+SUSAP KBURK2FR08-Z R      060VTU  K2D 0VY   010TF                     26330294    + 04600                           A JS   365061606
+SUSAP KBURK2FR08-Z R      070VTU  K2D 0VE  L   HM                     13060050    + 04600                           A JS   365071606
+SUSAP KBURK2FRNV-A ASAUGS 010SAUGSK2EA0E  A    IF                                             18000                 B PC   365081903
+SUSAP KBURK2FRNV-A ASAUGS 020CEZKAK2PC0EE B 010TF                     21040084    + 05200                           B PC   365091903
+SUSAP KBURK2FRNV-A AVAZCU 010VAZCUK2EA0E  A    IF                                             18000                 B PC   365101903
+SUSAP KBURK2FRNV-A AVAZCU 020CEZKAK2PC0EE B 010TF                     10180050    + 05200                           B PC   365111903
+SUSAP KBURK2FRNV-A R      010CEZKAK2PC0E  I    IF                                 + 05200     18000                 B PC   365121903
+SUSAP KBURK2FRNV-A R      020SUMXYK2PC0E  F 010TF                     12410080    + 04100                 KBUR  K2PAB PC   365131903
+SUSAP KBURK2FRNV-A R      030IGAXYK2PC0EY M 031TF                     12410074      02320              000          B PC   365141903
+SUSAP KBURK2FRNV-A R      040         0  M     CA                     1241        + 01178                           B PC   365151903
+SUSAP KBURK2FRNV-A R      050COTSIK2PC0E   R010DF                                                                   B PC   365161903
+SUSAP KBURK2FRNV-A R      060VTU  K2D 0VY   010TF                     26330294    + 04600                           B PC   365171903
+SUSAP KBURK2FRNV-A R      070VTU  K2D 0VE  L   HM                     13060050    + 04600                           B PC   365181903
+SUSAP KBURK2FS08   AFIM   010FIM  K2D 0V  A    IF                                             18000                 0  S   365191903
+SUSAP KBURK2FS08   AFIM   020SUANAK2EA0EE B    TF                                 + 04400                           0  S   365201903
+SUSAP KBURK2FS08   AGINNA 010GINNAK2EA0E  A    IF                                             18000                 0  S   365211903
+SUSAP KBURK2FS08   AGINNA 020SUANAK2EA0EE B    TF                                 + 04400                           0  S   365221903
+SUSAP KBURK2FS08   ALAX   010LAX  K2D 0V       IF                                             18000                 0  S   365231903
+SUSAP KBURK2FS08   ALAX   020SUANAK2EA0EY      TF                                 + 05100                           0  S   365241903
+SUSAP KBURK2FS08   ALAX   030SUANAK2EA0EE AR   HF VNY K2      255001140750T010D   + 04400                           0  S   365251903
+SUSAP KBURK2FS08   ASMO   010SMO  K2D 0V       IF                                             18000                 0  S   365261903
+SUSAP KBURK2FS08   ASMO   020SUANAK2EA0EY      TF                                 + 05100                           0  S   365271903
+SUSAP KBURK2FS08   ASMO   030SUANAK2EA0EE AR   HF VNY K2      255001140750T010D   + 04400                           0  S   365281903
+SUSAP KBURK2FS08   ASUANA 010SUANAK2EA0EE AR   HF VNY K2      255001140750T010D   + 04400     18000                 0  S   365291903
+SUSAP KBURK2FS08   AVNY   010VNY  K2D 0V       IF                                             18000                 0  S   365301903
+SUSAP KBURK2FS08   AVNY   020SUANAK2EA0EY      TF                                 + 04600                           0  S   365311903
+SUSAP KBURK2FS08   AVNY   030SUANAK2EA0EE AR   HF VNY K2      255001140750T010D   + 04400                           0  S   365321903
+SUSAP KBURK2FS08   AVTU   010VTU  K2D 0V  A    IF                                             18000                 0  S   365331903
+SUSAP KBURK2FS08   AVTU   020SUANAK2EA0EE B    TF                                 + 04600                           0  S   365341903
+SUSAP KBURK2FS08   S      010SUANAK2EA0E  I    IF VNY K2      25500114        D   + 04400     18000                 0  S   365351903
+SUSAP KBURK2FS08   S      011CANOGK2EA0E       CF VNY K2      2550005107500063D   + 03700                           0  S   365361903
+SUSAP KBURK2FS08   S      020VNY  K2D 0V  F    CF VNY K2      0000000007500051D   + 03100                 VNY   K2D 0  S   365371903
+SUSAP KBURK2FS08   S      030UNCIAK2PC0EY M    CF VNY K2      0891005508910055D     01078             -346          0  S   365381903
+SUSAP KBURK2FS08   S      040         0  M     CA                     0891        + 01178                           0  S   365391903
+SUSAP KBURK2FS08   S      050         0    R   VIY                    2100                                          0  S   365401903
+SUSAP KBURK2FS08   S      060VTU  K2D 0VY  R   CFYVTU K2      0000000026600340D   + 04600                           0  S   365412004
+SUSAP KBURK2FS08   S      070VTU  K2D 0VE  L   HM                     1306T010    + 04600                           0  S   365421903
+SUSAP KBURK2GRW08    0058020790 N34115248W118220891         +0187400727000060150IIBUR1                                     365431903
+SUSAP KBURK2GRW15    0068861550 N34123568W118213524         +0199800768090952150V                                          365441808
+SUSAP KBURK2GRW26    0058022590 N34115154W118205986         +0178300697000050150D                                          365451612
+SUSAP KBURK2GRW33    0068863350 N34114143W118212026         +0178500698035062150V                                          365461612
+SUSAP KBURK2IIBUR1   110950RW08 N34115264W1182220910789N34115527W1182154266809-12260500300E01206000725                     365471903
+SUSAP KBURK2IIBUR1   2S                            09087N                                                                  365471903
+SUSAP KBURK2PR08-Z RW08 001Z0000W08A0N3411524790W11822089145+018740300N3411510215W11820215105106750984000600F40000097C8DB7B365481903
+SUSAP KBURK2PR08-Z RW08 002E      +02217+02217LP        53638                                                              365491606
+SUSAP KBURK2SHIMENK2PC                0   18018009525                                                                  M   365501310
+SUSAP KBURK2SKBUR K2PA                0   18018010225                                                                  M   365511903
+SUSAP KBURK2SRW08 K2PG                0   18018009825                                                                  M   365521903
+SUSAP KBURK2SVNY  K2D                 0   00509504725095185073251852750932527500504425                                 M   365531606
+SUSAP KVNYK2AVNY     0     080YHN34123530W118292390E012000802         1800018000C    MNAR    VAN NUYS                      292081608
+SUSAP KVNYK2CBSHOW K20    W     N34142574W118255422                       E0119     NAR           BSHOW                    292092002
+SUSAP KVNYK2CCANTI K20    R     N34360147W118400482                       E0120     NAR           CANTI                    292102002
+SUSAP KVNYK2CCONDS K20    W     N34155900W118295900                       E0119     NAR           CONDS                    292112002
+SUSAP KVNYK2CDYSPO K20    W     N34242500W118364900                       E0120     NAR           DYSPO                    292122002
+SUSAP KVNYK2CFURRY K20    C     N34205090W118301228                       E0120     NAR           FURRY                    292132002
+SUSAP KVNYK2CGRANS K20    R     N34280877W118323829                       E0120     NAR           GRANS                    292142002
+SUSAP KVNYK2CHARYS K20    W     N34202596W118271649                       E0120     NAR           HARYS                    292151901
+SUSAP KVNYK2CHAYEZ K20    W     N34224000W118312900                       E0120     NAR           HAYEZ                    292162002
+SUSAP KVNYK2CHIRVI K20    R     N34053592W118272000                       E0119     NAR           HIRVI                    292172002
+SUSAP KVNYK2CHNTUN K20    W     N34233980W118482040                       E0120     NAR           HNTUN                    292182002
+SUSAP KVNYK2CJINAT K20    R     N34244939W118303492                       E0120     NAR           JINAT                    292192002
+SUSAP KVNYK2CLUVVY K20    W     N34163775W118364392                       E0120     NAR           LUVVY                    292202002
+SUSAP KVNYK2CLYDEY K20    W     N34203800W118310200                       E0120     NAR           LYDEY                    292212002
+SUSAP KVNYK2CPPRRY K20    W     N34103488W118291399                       E0119     NAR           PPRRY                    292222002
+SUSAP KVNYK2CPURSY K20    R     N34182040W118303291                       E0120     NAR           PURSY                    292231901
+SUSAP KVNYK2CTRAFF K20    W     N34180100W118302700                       E0120     NAR           TRAFF                    292241901
+SUSAP KVNYK2CWLKKR K20    W     N34222295W118384968                       E0120     NAR           WLKKR                    292252002
+SUSAP KVNYK2CWUXAK K20    W     N34255000W118270900                       E0120     NAR           WUXAK                    292262002
+SUSAP KVNYK2CYITUN K20    R     N34115567W118291118                       E0119     NAR           YITUN                    292272002
+SUSAP KVNYK2CZEXUG K20    R     N34155244W118300145                       E0119     NAR           ZEXUG                    292282002
+SUSAP KVNYK2CZIDOM K20    R     N34271386W118354065                       E0120     NAR           ZIDOM                    292292002
+SUSAP KVNYK2DCANOG32ALL   010IPIHOK2EA0EE      IF                                             18000                        292302002
+SUSAP KVNYK2DCANOG33AVE   010IPIHOK2EA0E       IF                                             18000                        292312002
+SUSAP KVNYK2DCANOG33AVE   020CASTAK2EA0E       TF                                 + 08300                                  292322002
+SUSAP KVNYK2DCANOG33AVE   030GMN  K2D 0V       TF                                                                          292332002
+SUSAP KVNYK2DCANOG33AVE   040COREZK2EA0E       TF                                                                          292342002
+SUSAP KVNYK2DCANOG33AVE   050AVE  K2D 0VE      TF                                                                          292352002
+SUSAP KVNYK2DCANOG33FIM   010IPIHOK2EA0E       IF                                             18000                        292362002
+SUSAP KVNYK2DCANOG33FIM   020SUANAK2EA0E       TF                                                                          292372002
+SUSAP KVNYK2DCANOG33FIM   030FIM  K2D 0VE      TF                                                                          292382002
+SUSAP KVNYK2DCANOG33GMN   010IPIHOK2EA0E       IF                                             18000                        292392002
+SUSAP KVNYK2DCANOG33GMN   020CASTAK2EA0E       TF                                 + 08300                                  292402002
+SUSAP KVNYK2DCANOG33GMN   030GMN  K2D 0VE      TF                                                                          292412002
+SUSAP KVNYK2DHARYS34RW16R 010         0        VA                     1635        + 01303     18000                        292421913
+SUSAP KVNYK2DHARYS34RW16R 020PPRRYK2PC0EY      DF                                                                          292431913
+SUSAP KVNYK2DHARYS34RW16R 030         0 E      VM                     1100                                                 292441913
+SUSAP KVNYK2DHARYS35      010BSHOWK2PC0E       IF                                 + 06000     18000                        292451913
+SUSAP KVNYK2DHARYS35      020HARYSK2PC0EE      TF                                                                          292461913
+SUSAP KVNYK2DHARYS36BLH   010HARYSK2PC0E       IF                                             18000                        292471913
+SUSAP KVNYK2DHARYS36BLH   020SLAPPK2EA0E       TF                                 + 13000                                  292481913
+SUSAP KVNYK2DHARYS36BLH   030YAAPYK2EA0E       TF                                 + 15000                                  292491913
+SUSAP KVNYK2DHARYS36BLH   040JETHKK2EA0E       TF                                 - FL190                                  292501913
+SUSAP KVNYK2DHARYS36BLH   050AERROK2EA0E       TF                                                                          292511913
+SUSAP KVNYK2DHARYS36BLH   060DECASK2EA0E       TF                                                                          292521913
+SUSAP KVNYK2DHARYS36BLH   070BLH  K2D 0VE      TF                                                                          292531913
+SUSAP KVNYK2DHARYS36HAILO 010HARYSK2PC0E       IF                                             18000                        292541913
+SUSAP KVNYK2DHARYS36HAILO 020SLAPPK2EA0E       TF                                 + 13000                                  292551913
+SUSAP KVNYK2DHARYS36HAILO 030YAAPYK2EA0E       TF                                 + 15000                                  292561913
+SUSAP KVNYK2DHARYS36HAILO 040JETHKK2EA0E       TF                                 - FL190                                  292571913
+SUSAP KVNYK2DHARYS36HAILO 050BBITEK2EA0E       TF                                 + FL200                                  292581913
+SUSAP KVNYK2DHARYS36HAILO 060ANTLPK2EA0E       TF                                                                          292591913
+SUSAP KVNYK2DHARYS36HAILO 070GUNNRK2EA0E       TF                                                                          292601913
+SUSAP KVNYK2DHARYS36HAILO 080ARRMYK2EA0E       TF                                                                          292611913
+SUSAP KVNYK2DHARYS36HAILO 090HAILOK2EA0EE      TF                                                                          292621913
+SUSAP KVNYK2DHARYS36HEC   010HARYSK2PC0E       IF                                             18000                        292631913
+SUSAP KVNYK2DHARYS36HEC   020SLAPPK2EA0E       TF                                 + 13000                                  292641913
+SUSAP KVNYK2DHARYS36HEC   030YAAPYK2EA0E       TF                                 + 15000                                  292651913
+SUSAP KVNYK2DHARYS36HEC   040JETHKK2EA0E       TF                                 - FL190                                  292661913
+SUSAP KVNYK2DHARYS36HEC   050BBITEK2EA0E       TF                                 + FL200                                  292671913
+SUSAP KVNYK2DHARYS36HEC   060ANTLPK2EA0E       TF                                                                          292681913
+SUSAP KVNYK2DHARYS36HEC   070HEC  K2D 0VE      TF                                                                          292691913
+SUSAP KVNYK2DHARYS36LAS   010HARYSK2PC0E       IF                                             18000                        292701913
+SUSAP KVNYK2DHARYS36LAS   020SLAPPK2EA0E       TF                                 + 13000                                  292711913
+SUSAP KVNYK2DHARYS36LAS   030YAAPYK2EA0E       TF                                 + 15000                                  292721913
+SUSAP KVNYK2DHARYS36LAS   040JETHKK2EA0E       TF                                 - FL190                                  292731913
+SUSAP KVNYK2DHARYS36LAS   050BBITEK2EA0E       TF                                 + FL200                                  292741913
+SUSAP KVNYK2DHARYS36LAS   060ANTLPK2EA0E       TF                                                                          292751913
+SUSAP KVNYK2DHARYS36LAS   070NNAVYK2EA0E       TF                                                                          292761913
+SUSAP KVNYK2DHARYS36LAS   080BLAZNK2EA0E       TF                                                                          292771913
+SUSAP KVNYK2DHARYS36LAS   090LAS  K2D 0VE      TF                                                                          292781913
+SUSAP KVNYK2DHARYS36MISEN 010HARYSK2PC0E       IF                                             18000                        292791913
+SUSAP KVNYK2DHARYS36MISEN 020SLAPPK2EA0E       TF                                 + 13000                                  292801913
+SUSAP KVNYK2DHARYS36MISEN 030YAAPYK2EA0E       TF                                 + 15000                                  292811913
+SUSAP KVNYK2DHARYS36MISEN 040JETHKK2EA0E       TF                                 - FL190                                  292821913
+SUSAP KVNYK2DHARYS36MISEN 050BBITEK2EA0E       TF                                 + FL200                                  292831913
+SUSAP KVNYK2DHARYS36MISEN 060ANTLPK2EA0E       TF                                                                          292841913
+SUSAP KVNYK2DHARYS36MISEN 070NNAVYK2EA0E       TF                                                                          292851913
+SUSAP KVNYK2DHARYS36MISEN 080MISENK2EA0EE      TF                                                                          292861913
+SUSAP KVNYK2DHAYEZ84RW34L 010         0        VA                     3435        + 01303     18000                        292871812
+SUSAP KVNYK2DHAYEZ84RW34L 020CONDSK2PC0E       DF                                 + 02400                                  292881812
+SUSAP KVNYK2DHAYEZ84RW34L 030TRAFFK2PC0E       TF                                 + 03500                                  292891812
+SUSAP KVNYK2DHAYEZ84RW34L 040LYDEYK2PC0E       TF                                 + 05000                                  292901812
+SUSAP KVNYK2DHAYEZ84RW34L 050HAYEZK2PC0EE      TF                                 + 06100          250               -     292911812
+SUSAP KVNYK2DHAYEZ86BLH   010HAYEZK2PC0E       IF                                 + 06100     18000250               -     292921812
+SUSAP KVNYK2DHAYEZ86BLH   020WUXAKK2PC0E       TF                                 + 08500                                  292931812
+SUSAP KVNYK2DHAYEZ86BLH   030SLAPPK2EA0E       TF                                 + 13000                                  292941812
+SUSAP KVNYK2DHAYEZ86BLH   040YAAPYK2EA0E       TF                                 + 15000                                  292951812
+SUSAP KVNYK2DHAYEZ86BLH   050JETHKK2EA0E       TF                                 - FL190                                  292961812
+SUSAP KVNYK2DHAYEZ86BLH   060AERROK2EA0E       TF                                                                          292971812
+SUSAP KVNYK2DHAYEZ86BLH   070DECASK2EA0E       TF                                                                          292981812
+SUSAP KVNYK2DHAYEZ86BLH   080BLH  K2D 0VE      TF                                                                          292991812
+SUSAP KVNYK2DHAYEZ86COREZ 010HAYEZK2PC0E       IF                                 + 06100     18000250               -     293001812
+SUSAP KVNYK2DHAYEZ86COREZ 020DYSPOK2PC0E       TF                                 + 07000                                  293011812
+SUSAP KVNYK2DHAYEZ86COREZ 030OROSZK2EA0E       TF                                 + 09000                                  293021812
+SUSAP KVNYK2DHAYEZ86COREZ 040BRRKKK2EA0E       TF                                                                          293031812
+SUSAP KVNYK2DHAYEZ86COREZ 050SHORSK2EA0E       TF                                                                          293041812
+SUSAP KVNYK2DHAYEZ86COREZ 060MDWAYK2EA0E       TF                                                                          293051812
+SUSAP KVNYK2DHAYEZ86COREZ 070COREZK2EA0EE      TF                                                                          293061812
+SUSAP KVNYK2DHAYEZ86CSTRO 010HAYEZK2PC0E       IF                                 + 06100     18000250               -     293071812
+SUSAP KVNYK2DHAYEZ86CSTRO 020DYSPOK2PC0E       TF                                 + 07000                                  293081812
+SUSAP KVNYK2DHAYEZ86CSTRO 030OROSZK2EA0E       TF                                 + 09000                                  293091812
+SUSAP KVNYK2DHAYEZ86CSTRO 040HEYJOK2EA0E       TF                                                                          293101812
+SUSAP KVNYK2DHAYEZ86CSTRO 050CSTROK2EA0EE      TF                                                                          293111812
+SUSAP KVNYK2DHAYEZ86FIM   010HAYEZK2PC0E       IF                                 + 06100     18000250               -     293121812
+SUSAP KVNYK2DHAYEZ86FIM   020DYSPOK2PC0E       TF                                 + 07000                                  293131812
+SUSAP KVNYK2DHAYEZ86FIM   030FIM  K2D 0VE      TF                                                                          293141812
+SUSAP KVNYK2DHAYEZ86HAILO 010HAYEZK2PC0E       IF                                 + 06100     18000250               -     293151812
+SUSAP KVNYK2DHAYEZ86HAILO 020WUXAKK2PC0E       TF                                 + 08500                                  293161812
+SUSAP KVNYK2DHAYEZ86HAILO 030SLAPPK2EA0E       TF                                 + 13000                                  293171812
+SUSAP KVNYK2DHAYEZ86HAILO 040YAAPYK2EA0E       TF                                 + 15000                                  293181812
+SUSAP KVNYK2DHAYEZ86HAILO 050JETHKK2EA0E       TF                                 - FL190                                  293191812
+SUSAP KVNYK2DHAYEZ86HAILO 060BBITEK2EA0E       TF                                 + FL200                                  293201812
+SUSAP KVNYK2DHAYEZ86HAILO 070ANTLPK2EA0E       TF                                                                          293211812
+SUSAP KVNYK2DHAYEZ86HAILO 080GUNNRK2EA0E       TF                                                                          293221812
+SUSAP KVNYK2DHAYEZ86HAILO 090ARRMYK2EA0E       TF                                                                          293231812
+SUSAP KVNYK2DHAYEZ86HAILO 100HAILOK2EA0EE      TF                                                                          293241812
+SUSAP KVNYK2DHAYEZ86HEC   010HAYEZK2PC0E       IF                                 + 06100     18000250               -     293251812
+SUSAP KVNYK2DHAYEZ86HEC   020WUXAKK2PC0E       TF                                 + 08500                                  293261812
+SUSAP KVNYK2DHAYEZ86HEC   030SLAPPK2EA0E       TF                                 + 13000                                  293271812
+SUSAP KVNYK2DHAYEZ86HEC   040YAAPYK2EA0E       TF                                 + 15000                                  293281812
+SUSAP KVNYK2DHAYEZ86HEC   050JETHKK2EA0E       TF                                 - FL190                                  293291812
+SUSAP KVNYK2DHAYEZ86HEC   060BBITEK2EA0E       TF                                 + FL200                                  293301812
+SUSAP KVNYK2DHAYEZ86HEC   070ANTLPK2EA0E       TF                                                                          293311812
+SUSAP KVNYK2DHAYEZ86HEC   080HEC  K2D 0VE      TF                                                                          293321812
+SUSAP KVNYK2DHAYEZ86LAS   010HAYEZK2PC0E       IF                                 + 06100     18000250               -     293331812
+SUSAP KVNYK2DHAYEZ86LAS   020WUXAKK2PC0E       TF                                 + 08500                                  293341812
+SUSAP KVNYK2DHAYEZ86LAS   030SLAPPK2EA0E       TF                                 + 13000                                  293351812
+SUSAP KVNYK2DHAYEZ86LAS   040YAAPYK2EA0E       TF                                 + 15000                                  293361812
+SUSAP KVNYK2DHAYEZ86LAS   050JETHKK2EA0E       TF                                 - FL190                                  293371812
+SUSAP KVNYK2DHAYEZ86LAS   060BBITEK2EA0E       TF                                 + FL200                                  293381812
+SUSAP KVNYK2DHAYEZ86LAS   070ANTLPK2EA0E       TF                                                                          293391812
+SUSAP KVNYK2DHAYEZ86LAS   080NNAVYK2EA0E       TF                                                                          293401812
+SUSAP KVNYK2DHAYEZ86LAS   090BLAZNK2EA0E       TF                                                                          293411812
+SUSAP KVNYK2DHAYEZ86LAS   100LAS  K2D 0VE      TF                                                                          293421812
+SUSAP KVNYK2DHAYEZ86MISEN 010HAYEZK2PC0E       IF                                 + 06100     18000250               -     293431812
+SUSAP KVNYK2DHAYEZ86MISEN 020WUXAKK2PC0E       TF                                 + 08500                                  293441812
+SUSAP KVNYK2DHAYEZ86MISEN 030SLAPPK2EA0E       TF                                 + 13000                                  293451812
+SUSAP KVNYK2DHAYEZ86MISEN 040YAAPYK2EA0E       TF                                 + 15000                                  293461812
+SUSAP KVNYK2DHAYEZ86MISEN 050JETHKK2EA0E       TF                                 - FL190                                  293471812
+SUSAP KVNYK2DHAYEZ86MISEN 060BBITEK2EA0E       TF                                 + FL200                                  293481812
+SUSAP KVNYK2DHAYEZ86MISEN 070ANTLPK2EA0E       TF                                                                          293491812
+SUSAP KVNYK2DHAYEZ86MISEN 080NNAVYK2EA0E       TF                                                                          293501812
+SUSAP KVNYK2DHAYEZ86MISEN 090MISENK2EA0EE      TF                                                                          293511812
+SUSAP KVNYK2DNUAL1 2ALL   010IPIHOK2EA0EE      IF                                             18000                        293522002
+SUSAP KVNYK2DNUAL1 3DAG   010IPIHOK2EA0E       IF                                             18000                        293532002
+SUSAP KVNYK2DNUAL1 3DAG   020TWINEK2EA0E       TF                                                                          293542002
+SUSAP KVNYK2DNUAL1 3DAG   030LANGEK2EA0E       TF                                                                          293552002
+SUSAP KVNYK2DNUAL1 3DAG   040SLAPPK2EA0E       TF                                                                          293562002
+SUSAP KVNYK2DNUAL1 3DAG   050BOGETK2EA0E       TF                                                                          293572002
+SUSAP KVNYK2DNUAL1 3DAG   060PMD  K2D 0V       TF                                                                          293582002
+SUSAP KVNYK2DNUAL1 3DAG   070ETHERK2EA0E       TF                                                                          293592002
+SUSAP KVNYK2DNUAL1 3DAG   080DAG  K2D 0VE      TF                                                                          293602002
+SUSAP KVNYK2DNUAL1 3PMD   010IPIHOK2EA0E       IF                                             18000                        293612002
+SUSAP KVNYK2DNUAL1 3PMD   020TWINEK2EA0E       TF                                                                          293622002
+SUSAP KVNYK2DNUAL1 3PMD   030LANGEK2EA0E       TF                                                                          293632002
+SUSAP KVNYK2DNUAL1 3PMD   040SLAPPK2EA0E       TF                                                                          293642002
+SUSAP KVNYK2DNUAL1 3PMD   050BOGETK2EA0E       TF                                                                          293652002
+SUSAP KVNYK2DNUAL1 3PMD   060PMD  K2D 0VE      TF                                                                          293662002
+SUSAP KVNYK2DRSCO3 4RW16R 010         0        VA                     1635        + 01303     18000                        293671913
+SUSAP KVNYK2DRSCO3 4RW16R 020PPRRYK2PC0EY      DF                                                                          293681913
+SUSAP KVNYK2DRSCO3 4RW16R 030         0 E      VM                     1100                                                 293691913
+SUSAP KVNYK2DRSCO3 5      010BSHOWK2PC0E       IF                                 + 05300     18000                        293701913
+SUSAP KVNYK2DRSCO3 5      020CCHUMK2EA0E       TF                                 + 06800                                  293711913
+SUSAP KVNYK2DRSCO3 5      030KIMMOK2EA0E       TF                                 + 07100                                  293721913
+SUSAP KVNYK2DRSCO3 5      040SLAPPK2EA0E       TF                                                                          293731913
+SUSAP KVNYK2DRSCO3 5      050JARZOK2EA0E       TF                                                                          293741913
+SUSAP KVNYK2DRSCO3 5      060VVERAK2EA0EE      TF                                                                          293751913
+SUSAP KVNYK2DRSCO3 6DAG   010VVERAK2EA0E       IF                                             18000                        293761913
+SUSAP KVNYK2DRSCO3 6DAG   020SSETHK2EA0E       TF                                                                          293771913
+SUSAP KVNYK2DRSCO3 6DAG   030DAG  K2D 0VE      TF                                                                          293781913
+SUSAP KVNYK2DRSCO3 6HEC   010VVERAK2EA0E       IF                                             18000                        293791913
+SUSAP KVNYK2DRSCO3 6HEC   020SSETHK2EA0E       TF                                                                          293801913
+SUSAP KVNYK2DRSCO3 6HEC   030HEC  K2D 0VE      TF                                                                          293811913
+SUSAP KVNYK2DVVERA24RW34L 010CCHUMK2EA0E       IF                                 + 06800     18000                        293821711
+SUSAP KVNYK2DVVERA24RW34L 020KIMMOK2EA0E       TF                                 + 07000                                  293831711
+SUSAP KVNYK2DVVERA24RW34L 030SLAPPK2EA0E       TF                                                                          293841711
+SUSAP KVNYK2DVVERA24RW34L 040JARZOK2EA0E       TF                                                                          293851711
+SUSAP KVNYK2DVVERA24RW34L 050VVERAK2EA0EE      TF                                                                          293861711
+SUSAP KVNYK2DVVERA26DAG   010VVERAK2EA0E       IF                                             18000                        293871711
+SUSAP KVNYK2DVVERA26DAG   020SSETHK2EA0E       TF                                                                          293881711
+SUSAP KVNYK2DVVERA26DAG   030DAG  K2D 0VE      TF                                                                          293891711
+SUSAP KVNYK2DVVERA26HEC   010VVERAK2EA0E       IF                                             18000                        293901711
+SUSAP KVNYK2DVVERA26HEC   020SSETHK2EA0E       TF                                                                          293911711
+SUSAP KVNYK2DVVERA26HEC   030HEC  K2D 0VE      TF                                                                          293921711
+SUSAP KVNYK2DWLKKR44RW16R 010         0        VA                     1635        + 01303     18000                        293931913
+SUSAP KVNYK2DWLKKR44RW16R 020PPRRYK2PC0EY      DF                                                                          293941913
+SUSAP KVNYK2DWLKKR44RW16R 030         0 E      VM                     2100                                                 293951913
+SUSAP KVNYK2DWLKKR45      010LUVVYK2PC0E       IF                                 + 06000     18000                        293961913
+SUSAP KVNYK2DWLKKR45      020WLKKRK2PC0EE      TF                                 + 08000                                  293971913
+SUSAP KVNYK2DWLKKR46COREZ 010WLKKRK2PC0E       IF                                 + 08000     18000                        293981913
+SUSAP KVNYK2DWLKKR46COREZ 020OROSZK2EA0E       TF                                 + 09000                                  293991913
+SUSAP KVNYK2DWLKKR46COREZ 030BRRKKK2EA0E       TF                                                                          294001913
+SUSAP KVNYK2DWLKKR46COREZ 040SHORSK2EA0E       TF                                                                          294011913
+SUSAP KVNYK2DWLKKR46COREZ 050MDWAYK2EA0E       TF                                                                          294021913
+SUSAP KVNYK2DWLKKR46COREZ 060COREZK2EA0EE      TF                                                                          294031913
+SUSAP KVNYK2DWLKKR46CSTRO 010WLKKRK2PC0E       IF                                 + 08000     18000                        294041913
+SUSAP KVNYK2DWLKKR46CSTRO 020OROSZK2EA0E       TF                                 + 09000                                  294051913
+SUSAP KVNYK2DWLKKR46CSTRO 030HEYJOK2EA0E       TF                                                                          294061913
+SUSAP KVNYK2DWLKKR46CSTRO 040CSTROK2EA0EE      TF                                                                          294071913
+SUSAP KVNYK2DWLKKR46OROSZ 010WLKKRK2PC0E       IF                                 + 08000     18000                        294081913
+SUSAP KVNYK2DWLKKR46OROSZ 020OROSZK2EA0EE      TF                                 + 09000                                  294091913
+SUSAP KVNYK2EFERN7 1AVE   010AVE  K2D 0V       IF                                             18000                        294101612
+SUSAP KVNYK2EFERN7 1AVE   020DERBBK2EA0E       TF                     12900290                                             294111612
+SUSAP KVNYK2EFERN7 1AVE   030REYESK2EA0E  H    TF                     12900430                                             294121612
+SUSAP KVNYK2EFERN7 1AVE   040PIRUEK2EA0E       TF                     13000120                                             294131612
+SUSAP KVNYK2EFERN7 1AVE   050FIM  K2D 0VE      TF                     13000100                                             294141612
+SUSAP KVNYK2EFERN7 1DERBB 010DERBBK2EA0E       IF                                             18000                        294151612
+SUSAP KVNYK2EFERN7 1DERBB 020REYESK2EA0E  H    TF                     12900430                                             294161612
+SUSAP KVNYK2EFERN7 1DERBB 030PIRUEK2EA0E       TF                     13000120                                             294171612
+SUSAP KVNYK2EFERN7 1DERBB 040FIM  K2D 0VE      TF                     13000100                                             294181612
+SUSAP KVNYK2EFERN7 1FLW   010FLW  K2D 0V       IF                                             18000                        294191612
+SUSAP KVNYK2EFERN7 1FLW   020BURNZK2EA0E       TF                     11600460                                             294201612
+SUSAP KVNYK2EFERN7 1FLW   030BAILLK2EA0E       TF                     11700100                                             294211612
+SUSAP KVNYK2EFERN7 1FLW   040FIM  K2D 0VE      TF                     11700100                                             294221612
+SUSAP KVNYK2EFERN7 1OHIGH 010OHIGHK2EA0E       IF                                             18000                        294231612
+SUSAP KVNYK2EFERN7 1OHIGH 020CANYNK2EA0E       TF                     08700120                                             294241612
+SUSAP KVNYK2EFERN7 1OHIGH 030FIM  K2D 0VE      TF                     08700100                                             294251612
+SUSAP KVNYK2EFERN7 3RW16R 010FIM  K2D 0V       IF                                             18000                        294261612
+SUSAP KVNYK2EFERN7 3RW16R 020UMBERK2EA0EE      TF                     05300200                                             294271612
+SUSAP KVNYK2EFERN7 3RW34L 010FIM  K2D 0V       IF                                             18000                        294281612
+SUSAP KVNYK2EFERN7 3RW34L 020TOAKSK2EA0EE      TF                     13600110                                             294291612
+SUSAP KVNYK2EIVINS14HIHWY 010HIHWYK2EA0E       IF                                 B FL220FL20018000280                     294301802
+SUSAP KVNYK2EIVINS14HIHWY 020MAIDDK2EA0E       TF                                 B FL19017000                             294311802
+SUSAP KVNYK2EIVINS14HIHWY 030PEPRZK2EA0E       TF                                 B 1600014000     270                     294321802
+SUSAP KVNYK2EIVINS14HIHWY 040HEVVYK2EA0E       TF                                                                          294331802
+SUSAP KVNYK2EIVINS14HIHWY 050ROKKRK2EA0E       TF                                 B 1200011000     250                     294341802
+SUSAP KVNYK2EIVINS14HIHWY 060ZEPPEK2EA0E       TF                                 B 1000009000                             294351802
+SUSAP KVNYK2EIVINS14HIHWY 070IVINSK2EA0EE      TF                                 + 08000                                  294361802
+SUSAP KVNYK2EIVINS14HONZK 010HONZKK2EA0E       IF                                 + FL240     18000                        294371802
+SUSAP KVNYK2EIVINS14HONZK 020PRPLEK2EA0E       TF                                 B FL220FL200     280                     294381802
+SUSAP KVNYK2EIVINS14HONZK 030XXELLK2EA0E       TF                                 B FL19017000                             294391802
+SUSAP KVNYK2EIVINS14HONZK 040YUTOOK2EA0E       TF                                 B 1600014000     270                     294401802
+SUSAP KVNYK2EIVINS14HONZK 050TRAVVK2EA0E       TF                                                                          294411802
+SUSAP KVNYK2EIVINS14HONZK 060ROKKRK2EA0E       TF                                 B 1200011000     250                     294421802
+SUSAP KVNYK2EIVINS14HONZK 070ZEPPEK2EA0E       TF                                 B 1000009000                             294431802
+SUSAP KVNYK2EIVINS14HONZK 080IVINSK2EA0EE      TF                                 + 08000                                  294441802
+SUSAP KVNYK2EIVINS14PRPLE 010PRPLEK2EA0E       IF                                 B FL220FL20018000280                     294451802
+SUSAP KVNYK2EIVINS14PRPLE 020XXELLK2EA0E       TF                                 B FL19017000                             294461802
+SUSAP KVNYK2EIVINS14PRPLE 030YUTOOK2EA0E       TF                                 B 1600014000     270                     294471802
+SUSAP KVNYK2EIVINS14PRPLE 040TRAVVK2EA0E       TF                                                                          294481802
+SUSAP KVNYK2EIVINS14PRPLE 050ROKKRK2EA0E       TF                                 B 1200011000     250                     294491802
+SUSAP KVNYK2EIVINS14PRPLE 060ZEPPEK2EA0E       TF                                 B 1000009000                             294501802
+SUSAP KVNYK2EIVINS14PRPLE 070IVINSK2EA0EE      TF                                 + 08000                                  294511802
+SUSAP KVNYK2EIVINS14RDHOT 010RDHOTK2EA0E       IF                                             18000                        294521802
+SUSAP KVNYK2EIVINS14RDHOT 020HONZKK2EA0E       TF                                 + FL240                                  294531802
+SUSAP KVNYK2EIVINS14RDHOT 030PRPLEK2EA0E       TF                                 B FL220FL200     280                     294541802
+SUSAP KVNYK2EIVINS14RDHOT 040XXELLK2EA0E       TF                                 B FL19017000                             294551802
+SUSAP KVNYK2EIVINS14RDHOT 050YUTOOK2EA0E       TF                                 B 1600014000     270                     294561802
+SUSAP KVNYK2EIVINS14RDHOT 060TRAVVK2EA0E       TF                                                                          294571802
+SUSAP KVNYK2EIVINS14RDHOT 070ROKKRK2EA0E       TF                                 B 1200011000     250                     294581802
+SUSAP KVNYK2EIVINS14RDHOT 080ZEPPEK2EA0E       TF                                 B 1000009000                             294591802
+SUSAP KVNYK2EIVINS14RDHOT 090IVINSK2EA0EE      TF                                 + 08000                                  294601802
+SUSAP KVNYK2EIVINS14REBRG 010REBRGK2EA0E       IF                                             18000                        294611802
+SUSAP KVNYK2EIVINS14REBRG 020MMTLYK2EA0E       TF                                                                          294621802
+SUSAP KVNYK2EIVINS14REBRG 030CRUUEK2EA0E       TF                                 + FL290          280                     294631802
+SUSAP KVNYK2EIVINS14REBRG 040EEAZYK2EA0E       TF                                 B FL290FL240     280                     294641802
+SUSAP KVNYK2EIVINS14REBRG 050HIHWYK2EA0E       TF                                 B FL220FL200     280                     294651802
+SUSAP KVNYK2EIVINS14REBRG 060MAIDDK2EA0E       TF                                 B FL19017000                             294661802
+SUSAP KVNYK2EIVINS14REBRG 070PEPRZK2EA0E       TF                                 B 1600014000     270                     294671802
+SUSAP KVNYK2EIVINS14REBRG 080HEVVYK2EA0E       TF                                                                          294681802
+SUSAP KVNYK2EIVINS14REBRG 090ROKKRK2EA0E       TF                                 B 1200011000     250                     294691802
+SUSAP KVNYK2EIVINS14REBRG 100ZEPPEK2EA0E       TF                                 B 1000009000                             294701802
+SUSAP KVNYK2EIVINS14REBRG 110IVINSK2EA0EE      TF                                 + 08000                                  294711802
+SUSAP KVNYK2EIVINS16RW16R 010IVINSK2EA0E       IF                                 + 08000     18000                        294721802
+SUSAP KVNYK2EIVINS16RW16R 020HNTUNK2PC0EY      TF                                   07000                                  294731802
+SUSAP KVNYK2EIVINS16RW16R 030HNTUNK2PC0EE      FM UTI K2      228330230582    D                                            294741802
+SUSAP KVNYK2EIVINS16RW34L 010IVINSK2EA0E       IF                                 + 08000     18000                        294751802
+SUSAP KVNYK2EIVINS16RW34L 020MIKEIK2EA0E       TF                                   07000                                  294761802
+SUSAP KVNYK2EIVINS16RW34L 030EHUNTK2EA0EY      TF                                   06000                                  294771802
+SUSAP KVNYK2EIVINS16RW34L 040EHUNTK2EA0EE      FM UTI K2      225930521258    D                                            294781802
+SUSAP KVNYK2EJANNY54BUGGA 010BUGGAK2EA0E       IF                                             18000                        294791808
+SUSAP KVNYK2EJANNY54BUGGA 020JOEESK2EA0E       TF                                   FL240                                  294801808
+SUSAP KVNYK2EJANNY54BUGGA 030DNUTTK2EA0E       TF                                   FL230                                  294811808
+SUSAP KVNYK2EJANNY54BUGGA 040JOHHNK2EA0E       TF                                   FL220                                  294821808
+SUSAP KVNYK2EJANNY54BUGGA 050BASALK2EA0E       TF                                                                          294831808
+SUSAP KVNYK2EJANNY54BUGGA 060DYVERK2EA0E       TF                                 - FL190                                  294841808
+SUSAP KVNYK2EJANNY54BUGGA 070CHKNZK2EA0E       TF                                                                          294851808
+SUSAP KVNYK2EJANNY54BUGGA 080KOPLEK2EA0E       TF                                   14000                                  294861808
+SUSAP KVNYK2EJANNY54BUGGA 090PMD  K2D 0V       TF                                 - 13000                                  294871808
+SUSAP KVNYK2EJANNY54BUGGA 100JANNYK2EA0EE      TF                                   08000                                  294881808
+SUSAP KVNYK2EJANNY54EED   010EED  K2D 0V       IF                                             18000                        294891808
+SUSAP KVNYK2EJANNY54EED   020COOOPK2EA0E       TF                                                                          294901808
+SUSAP KVNYK2EJANNY54EED   030TAAAPK2EA0E       TF                                                                          294911808
+SUSAP KVNYK2EJANNY54EED   040JOEESK2EA0E       TF                                   FL240                                  294921808
+SUSAP KVNYK2EJANNY54EED   050DNUTTK2EA0E       TF                                   FL230                                  294931808
+SUSAP KVNYK2EJANNY54EED   060JOHHNK2EA0E       TF                                   FL220                                  294941808
+SUSAP KVNYK2EJANNY54EED   070BASALK2EA0E       TF                                                                          294951808
+SUSAP KVNYK2EJANNY54EED   080DYVERK2EA0E       TF                                 - FL190                                  294961808
+SUSAP KVNYK2EJANNY54EED   090CHKNZK2EA0E       TF                                                                          294971808
+SUSAP KVNYK2EJANNY54EED   100KOPLEK2EA0E       TF                                   14000                                  294981808
+SUSAP KVNYK2EJANNY54EED   110PMD  K2D 0V       TF                                 - 13000                                  294991808
+SUSAP KVNYK2EJANNY54EED   120JANNYK2EA0EE      TF                                   08000                                  295001808
+SUSAP KVNYK2EJANNY54KREME 010KREMEK2EA0E       IF                                   FL240     18000                        295011808
+SUSAP KVNYK2EJANNY54KREME 020DNUTTK2EA0E       TF                                   FL230                                  295021808
+SUSAP KVNYK2EJANNY54KREME 030JOHHNK2EA0E       TF                                   FL220                                  295031808
+SUSAP KVNYK2EJANNY54KREME 040BASALK2EA0E       TF                                                                          295041808
+SUSAP KVNYK2EJANNY54KREME 050DYVERK2EA0E       TF                                 - FL190                                  295051808
+SUSAP KVNYK2EJANNY54KREME 060CHKNZK2EA0E       TF                                                                          295061808
+SUSAP KVNYK2EJANNY54KREME 070KOPLEK2EA0E       TF                                   14000                                  295071808
+SUSAP KVNYK2EJANNY54KREME 080PMD  K2D 0V       TF                                 - 13000                                  295081808
+SUSAP KVNYK2EJANNY54KREME 090JANNYK2EA0EE      TF                                   08000                                  295091808
+SUSAP KVNYK2EJANNY54PURSE 010PURSEK2EA0E       IF                                             18000                        295101808
+SUSAP KVNYK2EJANNY54PURSE 020NIPIYK2EA0E       TF                                                                          295111808
+SUSAP KVNYK2EJANNY54PURSE 030KREMEK2EA0E       TF                                   FL240                                  295121808
+SUSAP KVNYK2EJANNY54PURSE 040DNUTTK2EA0E       TF                                   FL230                                  295131808
+SUSAP KVNYK2EJANNY54PURSE 050JOHHNK2EA0E       TF                                   FL220                                  295141808
+SUSAP KVNYK2EJANNY54PURSE 060BASALK2EA0E       TF                                                                          295151808
+SUSAP KVNYK2EJANNY54PURSE 070DYVERK2EA0E       TF                                 - FL190                                  295161808
+SUSAP KVNYK2EJANNY54PURSE 080CHKNZK2EA0E       TF                                                                          295171808
+SUSAP KVNYK2EJANNY54PURSE 090KOPLEK2EA0E       TF                                   14000                                  295181808
+SUSAP KVNYK2EJANNY54PURSE 100PMD  K2D 0V       TF                                 - 13000                                  295191808
+SUSAP KVNYK2EJANNY54PURSE 110JANNYK2EA0EE      TF                                   08000                                  295201808
+SUSAP KVNYK2EJANNY54WELUM 010WELUMK2EA0E       IF                                             18000                        295211808
+SUSAP KVNYK2EJANNY54WELUM 020NIPIYK2EA0E       TF                                                                          295221808
+SUSAP KVNYK2EJANNY54WELUM 030KREMEK2EA0E       TF                                   FL240                                  295231808
+SUSAP KVNYK2EJANNY54WELUM 040DNUTTK2EA0E       TF                                   FL230                                  295241808
+SUSAP KVNYK2EJANNY54WELUM 050JOHHNK2EA0E       TF                                   FL220                                  295251808
+SUSAP KVNYK2EJANNY54WELUM 060BASALK2EA0E       TF                                                                          295261808
+SUSAP KVNYK2EJANNY54WELUM 070DYVERK2EA0E       TF                                 - FL190                                  295271808
+SUSAP KVNYK2EJANNY54WELUM 080CHKNZK2EA0E       TF                                                                          295281808
+SUSAP KVNYK2EJANNY54WELUM 090KOPLEK2EA0E       TF                                   14000                                  295291808
+SUSAP KVNYK2EJANNY54WELUM 100PMD  K2D 0V       TF                                 - 13000                                  295301808
+SUSAP KVNYK2EJANNY54WELUM 110JANNYK2EA0EE      TF                                   08000                                  295311808
+SUSAP KVNYK2EJANNY54WNCHL 010WNCHLK2EA0E       IF                                             18000                        295321808
+SUSAP KVNYK2EJANNY54WNCHL 020GLAZDK2EA0E       TF                                                                          295331808
+SUSAP KVNYK2EJANNY54WNCHL 030SNTRAK2EA0E       TF                                 - FL190                                  295341808
+SUSAP KVNYK2EJANNY54WNCHL 040COWWSK2EA0E       TF                                                                          295351808
+SUSAP KVNYK2EJANNY54WNCHL 050KOPLEK2EA0E       TF                                   14000                                  295361808
+SUSAP KVNYK2EJANNY54WNCHL 060PMD  K2D 0V       TF                                 - 13000                                  295371808
+SUSAP KVNYK2EJANNY54WNCHL 070JANNYK2EA0EE      TF                                   08000                                  295381808
+SUSAP KVNYK2EJANNY55ALL   010JANNYK2EA0E       IF                                   08000     18000                        295391808
+SUSAP KVNYK2EJANNY55ALL   020PUCCKK2EA0E       TF                                   08000                                  295401808
+SUSAP KVNYK2EJANNY55ALL   030EIFELK2EA0E       TF                                 + 07000                                  295411808
+SUSAP KVNYK2EJANNY55ALL   040UMBERK2EA0EE      TF                                 + 06000                                  295421808
+SUSAP KVNYK2ELYNXX81DAG   010DAG  K2D 0V       IF                                             18000                        295430804
+SUSAP KVNYK2ELYNXX81DAG   020WOOLIK2EA0E       TF                     23950661                                             295440804
+SUSAP KVNYK2ELYNXX81DAG   030PMD  K2D 0V       TF                     24500100                                             295450804
+SUSAP KVNYK2ELYNXX81DAG   040JANNYK2EA0E       TF                     24000150                                             295460804
+SUSAP KVNYK2ELYNXX81DAG   050EIFELK2EA0E       TF                     24000069                                             295470804
+SUSAP KVNYK2ELYNXX81DAG   060LYNXXK2EA0EE H    TF                     24000054                                             295480804
+SUSAP KVNYK2ELYNXX81HEC   010HEC  K2D 0V       IF                                             18000                        295490804
+SUSAP KVNYK2ELYNXX81HEC   020BASALK2EA0E       TF                     24830199                                             295500804
+SUSAP KVNYK2ELYNXX81HEC   030KOPLEK2EA0E       TF                     24740500                                             295510804
+SUSAP KVNYK2ELYNXX81HEC   040PMD  K2D 0V       TF                     24740100                                             295520804
+SUSAP KVNYK2ELYNXX81HEC   050JANNYK2EA0E       TF                     24000150                                             295530804
+SUSAP KVNYK2ELYNXX81HEC   060EIFELK2EA0E       TF                     24000069                                             295540804
+SUSAP KVNYK2ELYNXX81HEC   070LYNXXK2EA0EE H    TF                     24000054                                             295550804
+SUSAP KVNYK2ELYNXX81LHS   010LHS  K2D 0V       IF                                             18000                        295560804
+SUSAP KVNYK2ELYNXX81LHS   020LAAMBK2EA0E       TF                     17000052                                             295570804
+SUSAP KVNYK2ELYNXX81LHS   030LYNXXK2EA0EE H    TF                     17000051                                             295580804
+SUSAP KVNYK2ELYNXX81PMD   010PMD  K2D 0V       IF                                             18000                        295590804
+SUSAP KVNYK2ELYNXX81PMD   020JANNYK2EA0E       TF                     24000150                                             295600804
+SUSAP KVNYK2ELYNXX81PMD   030EIFELK2EA0E       TF                     24000069                                             295610804
+SUSAP KVNYK2ELYNXX81PMD   040LYNXXK2EA0EE H    TF                     24000054                                             295620804
+SUSAP KVNYK2ELYNXX82ALL   010LYNXXK2EA0E  H    IF                                             18000                        295630804
+SUSAP KVNYK2ELYNXX82ALL   020VNY  K2D 0VE      TF                     14850180                                             295640804
+SUSAP KVNYK2ETHRNE34PHRED 010PHREDK2EA0E       IF                                             18000                        295651804
+SUSAP KVNYK2ETHRNE34PHRED 020FOILDK2EA0E       TF                                                                          295661804
+SUSAP KVNYK2ETHRNE34PHRED 030QUTIPK2EA0E       TF                                 - FL290                                  295671804
+SUSAP KVNYK2ETHRNE34PHRED 040VLLMAK2EA0E       TF                                                                          295681804
+SUSAP KVNYK2ETHRNE34PHRED 050DROGOK2EA0E       TF                                 + FL240                                  295691804
+SUSAP KVNYK2ETHRNE34PHRED 060DEWWWK2EA0E       TF                                 + FL210                                  295701804
+SUSAP KVNYK2ETHRNE34PHRED 070DNERYK2EA0E       TF                                 - FL200                                  295711804
+SUSAP KVNYK2ETHRNE34PHRED 080ARRYAK2EA0E       TF                                   16000                                  295721804
+SUSAP KVNYK2ETHRNE34PHRED 090YATZEK2EA0E       TF                                 B 1500014000                             295731804
+SUSAP KVNYK2ETHRNE34PHRED 100IRONNK2EA0E       TF                                   13000                                  295741804
+SUSAP KVNYK2ETHRNE34PHRED 110THRNEK2EA0EE      TF                                 - 11000                                  295751804
+SUSAP KVNYK2ETHRNE35ALL   010THRNEK2EA0E       IF                                 - 11000     18000                        295761804
+SUSAP KVNYK2ETHRNE35ALL   020BFOONK2EA0E       TF                                   10000                                  295771804
+SUSAP KVNYK2ETHRNE35ALL   030CRCUSK2EA0E       TF                                   10000                                  295781804
+SUSAP KVNYK2ETHRNE35ALL   040NNEDDK2EA0EY      TF                                   08000                                  295791804
+SUSAP KVNYK2ETHRNE35ALL   050NNEDDK2EA0EE      FM TFD K2      273631492720    D                                            295801804
+SUSAP KVNYK2EWEESL14EHF   010EHF  K2D 0V       IF                                             18000                        295811612
+SUSAP KVNYK2EWEESL14EHF   020BASKKK2EA0E       TF                                                                          295821612
+SUSAP KVNYK2EWEESL14EHF   030AMANYK2EA0E       TF                                                                          295831612
+SUSAP KVNYK2EWEESL14EHF   040WEESLK2EA0EE      TF                                                                          295841612
+SUSAP KVNYK2EWEESL14NINTY 010NINTYK2EA0E       IF                                             18000                        295851612
+SUSAP KVNYK2EWEESL14NINTY 020WEESLK2EA0EE      TF                                                                          295861612
+SUSAP KVNYK2EWEESL14WRING 010WRINGK2EA0E       IF                                             18000                        295871612
+SUSAP KVNYK2EWEESL14WRING 020AMANYK2EA0E       TF                                                                          295881612
+SUSAP KVNYK2EWEESL14WRING 030WEESLK2EA0EE      TF                                                                          295891612
+SUSAP KVNYK2EWEESL15ALL   010WEESLK2EA0E       IF                                             18000                        295901612
+SUSAP KVNYK2EWEESL15ALL   020GRRITK2EA0E       TF                                                                          295911612
+SUSAP KVNYK2EWEESL15ALL   030SWIIMK2EA0E       TF                                   09000                                  295921612
+SUSAP KVNYK2EWEESL15ALL   040LYNXXK2EA0EY      TF                                   09000                                  295931612
+SUSAP KVNYK2EWEESL15ALL   050LYNXXK2EA0EE      FM TFD K2      276134851920    D                                            295941612
+SUSAP KVNYK2FI16RY AFIM   010FIM  K2D 0V       IF                                             18000                 0 NS   295951608
+SUSAP KVNYK2FI16RY AFIM   020ZIDOMK2PC0E  A    TF                                 + 06000                           0 NS   295961608
+SUSAP KVNYK2FI16RY AFIM   030UMBERK2EA0E  B    TF                                 + 06000                           0 NS   295971608
+SUSAP KVNYK2FI16RY AFIM   040JINATK2PC0EE      CF IVNYK2      3435013216350040PI  + 04900                           0 NS   295981608
+SUSAP KVNYK2FI16RY AVNY   010VNY  K2D 0V       IF                                             18000                 0 NS   295991608
+SUSAP KVNYK2FI16RY AVNY   020ZIDOMK2PC0E  A    TF                                 + 06000                           0 NS   296001608
+SUSAP KVNYK2FI16RY AVNY   030UMBERK2EA0E  B    TF                                 + 06000                           0 NS   296011608
+SUSAP KVNYK2FI16RY AVNY   040JINATK2PC0EE      CF IVNYK2      3435013216350040PI  + 04900                           0 NS   296021608
+SUSAP KVNYK2FI16RY I      010JINATK2PC0E  I    IF IVNYK2      34350132        PI  J 049000380018000                 0 NS   296031608
+SUSAP KVNYK2FI16RY I      020FURRYK2PC0E  F    CF IVNYK2      3435009216400040PI  H 0380003800        -350VNY   K2D 0 NS   296041608
+SUSAP KVNYK2FI16RY I      030RW16RK2PG0GY M    CF IVNYK2      3435001216400080PI    00842             -350          0 NS   296051608
+SUSAP KVNYK2FI16RY I      040         0  M     CA                     1635        + 01700                           0 NS   296061608
+SUSAP KVNYK2FI16RY I      050         0        VI                     2100                                          0 NS   296071608
+SUSAP KVNYK2FI16RY I      060VTU  K2D 0VY      CF VTU K2      0000000026700240D   + 04600                           0 NS   296081608
+SUSAP KVNYK2FI16RY I      070VTU  K2D 0VE  L   HM                     1306T010    + 04600                           0 NS   296091608
+SUSAP KVNYK2FI16RZ AFIM   010FIM  K2D 0V       IF                                             18000                 0 DS   296101608
+SUSAP KVNYK2FI16RZ AFIM   020ZIDOMK2PC0E  A    TF                                 + 06000                           0 DS   296111608
+SUSAP KVNYK2FI16RZ AFIM   030UMBERK2EA0E  B    TF                                 + 06000                           0 DS   296121608
+SUSAP KVNYK2FI16RZ AFIM   040JINATK2PC0EE  R   CFYIVNYK2      3435013216350040PI  + 04900                           0 DS   296131610
+SUSAP KVNYK2FI16RZ AVNY   010VNY  K2D 0V       IF                                             18000                 0 DS   296141608
+SUSAP KVNYK2FI16RZ AVNY   020ZIDOMK2PC0E  A    TF                                 + 06000                           0 DS   296151608
+SUSAP KVNYK2FI16RZ AVNY   030UMBERK2EA0E  B    TF                                 + 06000                           0 DS   296161608
+SUSAP KVNYK2FI16RZ AVNY   040JINATK2PC0EE  R   CFYIVNYK2      3435013216350040PI  + 04900                           0 DS   296171610
+SUSAP KVNYK2FI16RZ I      010JINATK2PC0E  I    IF IVNYK2      34350132        PI  J 049000380018000                 0 DS   296181608
+SUSAP KVNYK2FI16RZ I      020FURRYK2PC0E  F    CF IVNYK2      3435009216400040PI  H 0380003800        -350VNY   K2D 0 DS   296191608
+SUSAP KVNYK2FI16RZ I      030RW16RK2PG0GY M    CF IVNYK2      3435001216400080PI    00842             -350          0 DS   296201608
+SUSAP KVNYK2FI16RZ I      040         0  M     CD VNY K2              16350015D   - 01750                           0 DS   296211610
+SUSAP KVNYK2FI16RZ I      050HIRVIK2PC0EY      CF VNY K2      1520008015200060D                                     0 DS   296221610
+SUSAP KVNYK2FI16RZ I      060SMO  K2D 0V       DF                                 + 04600                           0 DS   296231610
+SUSAP KVNYK2FI16RZ I      070VTU  K2D 0VY      CF SMO K2      2672030226720302D   + 04600                           0 DS   296241610
+SUSAP KVNYK2FI16RZ I      080VTU  K2D 0VE  L   HM                     1306T010    + 04600                           0 DS   296251608
+SUSAP KVNYK2FLDA-C AFIM   010FIM  K2D 0V  A    FC FIM K2      0000000013600085D   + 04600     18000                 0 NC   296262004
+SUSAP KVNYK2FLDA-C AFIM   020TOAKSK2EA0EE B    CF IBURK2      2589020213600020PI  + 04600                           0 NC   296272004
+SUSAP KVNYK2FLDA-C ALAX   010LAX  K2D 0V       IF                                             18000                 0 NC   296281308
+SUSAP KVNYK2FLDA-C ALAX   020SILEXK2EA0EY      TF                                 + 04600                           0 NC   296292004
+SUSAP KVNYK2FLDA-C ALAX   030SILEXK2EA0EE AR   HF IBURK2      259001190789T010PI  + 03700                           0 NC   296302004
+SUSAP KVNYK2FLDA-C AVNY   010VNY  K2D 0V       IF                                             18000                 0 NC   296311308
+SUSAP KVNYK2FLDA-C AVNY   020SILEXK2EA0EY      TF                                 + 04400                           0 NC   296322004
+SUSAP KVNYK2FLDA-C AVNY   030SILEXK2EA0EE AR   HF IBURK2      259001190789T010PI  + 03700                           0 NC   296332004
+SUSAP KVNYK2FLDA-C AVTU   010VTU  K2D 0V  A    FC VTU K2      0000000005370125D   + 04600     18000                 0 NC   296342004
+SUSAP KVNYK2FLDA-C AVTU   020TOAKSK2EA0EE B    CF IBURK2      2589020205370020PI  + 04600                           0 NC   296352004
+SUSAP KVNYK2FLDA-C X      010TOAKSK2EA0E  I    IF IBURK2      25890202        PI  + 04600     18000                 0 NC   296362004
+SUSAP KVNYK2FLDA-C X      020SILEXK2EA0E  F    CF IBURK2      2590011907900083PI  + 03400                 VNY   K2D 0 NC   296372004
+SUSAP KVNYK2FLDA-C X      030BUDDEK2EA0EY M    CF IBURK2      2589005907900060PI    02060              000          0 NC   296382004
+SUSAP KVNYK2FLDA-C X      040         0  M     CA                     0789        + 01900                           0 NC   296392004
+SUSAP KVNYK2FLDA-C X      050         0    R   VIY                    2100                                          0 NC   296402004
+SUSAP KVNYK2FLDA-C X      060VTU  K2D 0VY      CF VTU K2      0000000026600230D   + 04600                           0 NC   296412004
+SUSAP KVNYK2FLDA-C X      070VTU  K2D 0VE  L   HM                     1306T010    + 04600                           0 NC   296422004
+SUSAP KVNYK2FVOR-A AFIM   010FIM  K2D 0V  A    IF                                             18000                 0 NC   296431611
+SUSAP KVNYK2FVOR-A AFIM   020SUANAK2EA0E  B    TF                                 + 04400                           0 NC   296441611
+SUSAP KVNYK2FVOR-A AFIM   030CANOGK2EA0EE      TF                                 + 03400                           0 NC   296451611
+SUSAP KVNYK2FVOR-A AGINNA 010GINNAK2EA0E  A    IF                                             18000                 0 NC   296461611
+SUSAP KVNYK2FVOR-A AGINNA 020SUANAK2EA0E  B    TF                                 + 04400                           0 NC   296471611
+SUSAP KVNYK2FVOR-A AGINNA 030CANOGK2EA0EE      TF                                 + 03400                           0 NC   296481611
+SUSAP KVNYK2FVOR-A ALAX   010LAX  K2D 0V       IF                                             18000                 0 NC   296491611
+SUSAP KVNYK2FVOR-A ALAX   020CANOGK2EA0EY      TF                                 + 04400                           0 NC   296501611
+SUSAP KVNYK2FVOR-A ALAX   030CANOGK2EA0EE AR   HF                     0750T010    + 03700                           0 NC   296511611
+SUSAP KVNYK2FVOR-A ASMO   010SMO  K2D 0V       IF                                             18000                 0 NC   296521611
+SUSAP KVNYK2FVOR-A ASMO   020CANOGK2EA0EY      TF                                 + 04400                           0 NC   296531611
+SUSAP KVNYK2FVOR-A ASMO   030CANOGK2EA0EE AR   HF                     0750T010    + 03700                           0 NC   296541611
+SUSAP KVNYK2FVOR-A AVNY   010VNY  K2D 0V       IF                                             18000                 0 NC   296551611
+SUSAP KVNYK2FVOR-A AVNY   020CANOGK2EA0EY      TF                                 + 04600                           0 NC   296561611
+SUSAP KVNYK2FVOR-A AVNY   030CANOGK2EA0EE AR   HF                     0750T010    + 03700                           0 NC   296571611
+SUSAP KVNYK2FVOR-A AVTU   010VTU  K2D 0V  A    IF                                             18000                 0 NC   296581611
+SUSAP KVNYK2FVOR-A AVTU   020SUANAK2EA0E  B    TF                                 + 04600                           0 NC   296591611
+SUSAP KVNYK2FVOR-A AVTU   030CANOGK2EA0EE      TF                                 + 03400                           0 NC   296601611
+SUSAP KVNYK2FVOR-A S      020CANOGK2EA0E  F    IF                                 + 03400     18000       VNY   K2D 0 NC   296611611
+SUSAP KVNYK2FVOR-A S      030VNY  K2D 0VY M    CF VNY K2      0000000007500051D     02060              000          0 NC   296621611
+SUSAP KVNYK2FVOR-A S      040         0  M     CA                     0750        + 01202                           0 NC   296631611
+SUSAP KVNYK2FVOR-A S      050AMTRAK2EA0EY      CF VNY K2      1010020210100192D   + 04000                           0 NC   296641611
+SUSAP KVNYK2FVOR-A S      060AMTRAK2EA0EE  R   HM                     1014T010    + 04000                           0 NC   296651611
+SUSAP KVNYK2FVOR-B AFIM   010FIM  K2D 0V  A    IF                                             18000                 0  C   296661612
+SUSAP KVNYK2FVOR-B AFIM   020GRANSK2PC0EE B    TF                                 + 06000                           0  C   296671612
+SUSAP KVNYK2FVOR-B AGMN   010GMN  K2D 0V  A    IF                                             18000                 0  C   296681612
+SUSAP KVNYK2FVOR-B AGMN   020CANTIK2PC0E       TF                                 + 09000                           0  C   296691612
+SUSAP KVNYK2FVOR-B AGMN   030GRANSK2PC0EE B    TF                                 + 06000                           0  C   296701612
+SUSAP KVNYK2FVOR-B ASAUGS 010SAUGSK2EA0E  A    IF                                             18000                 0  C   296711612
+SUSAP KVNYK2FVOR-B ASAUGS 020GRANSK2PC0EE B    TF                                 + 06000                           0  C   296721612
+SUSAP KVNYK2FVOR-B AVNY   010VNY  K2D 0V       IF                                             18000                 0  C   296731612
+SUSAP KVNYK2FVOR-B AVNY   020PURSYK2PC0E       TF                                 + 05400                           0  C   296741612
+SUSAP KVNYK2FVOR-B AVNY   030PURSYK2PC0EE AR   PI VNY K2      3350005029000100D   + 05400                           0  C   296751612
+SUSAP KVNYK2FVOR-B V      010GRANSK2PC0E  I    IF VNY K2      33500149        D   + 06000     18000                 0  C   296761612
+SUSAP KVNYK2FVOR-B V      020PURSYK2PC0E  F    CF VNY K2      3350005015500099D   + 03500                 VNY   K2D 0  C   296771612
+SUSAP KVNYK2FVOR-B V      021ZEXUGK2PC0E S     CF VNY K2      3350002515500025D   + 02580              000          0  C   296781612
+SUSAP KVNYK2FVOR-B V      030VNY  K2D 0VY M    CF VNY K2      0000000015500025D     01740              000          0  C   296791612
+SUSAP KVNYK2FVOR-B V      040YITUNK2PC0E M     CF VNY K2      1550001515500015D   - 01750                           0  C   296801612
+SUSAP KVNYK2FVOR-B V      050AMTRAK2EA0EY      CF VNY K2      1014020210100155D   + 04000                           0  C   296811702
+SUSAP KVNYK2FVOR-B V      060AMTRAK2EA0EE  R   HM VNY K2      101402021014T010D   + 04000                           0  C   296821612
+SUSAP KVNYK2GRW16L   0040131640 N34125425W118292268         +0206300791143450075D                                          296831612
+SUSAP KVNYK2GRW16R   0080011640 N34125396W118292713         +0207100793143249150IIVNY1                                     296841612
+SUSAP KVNYK2GRW34L   0080013440 N34114918W118292101         +0192600746000054150V                                          296851812
+SUSAP KVNYK2GRW34R   0040133440 N34122882W118292027         +0200600772000026075V                                          296861612
+SUSAP KVNYK2IIVNY1   111130RW16RN34114034W1182920161635N34124488W1182929250897 09010536350E01204900784                     296881905
+SUSAP KVNYK2IIVNY1   2S                            17552N                                                                  296881905
+SUSAP KVNYK2SVNY  K2D                 0   00509504725095185073251852750932527500504425                                 M   296892004

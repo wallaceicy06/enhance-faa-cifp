@@ -34,15 +34,44 @@ type locApchData struct {
 	LocalizerID      string
 }
 
+type Option func(p *processor)
+
+// RemoveDuplicateLocalizers is an option that enables or disables removal of
+// duplicate localizers in the data. If enabled, duplicate localizers that
+// are specified as an LDA with or without glideslope will be removed from
+// the output data. (e.g. KVNY includes a duplicate IBUR localizer for the
+// LDA-C approach)
+func RemoveDuplicateLocalizers(enabled bool) Option {
+	return func(p *processor) {
+		p.RemoveDuplicateLocalizers = enabled
+	}
+}
+
 // Process reads ARINC data from in and writes the modified data to out. All
 // localizers in the input data will be augmented with an extension field that
 // includes a more accurate bearing for the localizer. This bearing is computed
 // as the course of the leg from the final approach fix to the missed approach
 // point.
-func Process(in io.Reader, out io.Writer) error {
-	s := bufio.NewScanner(in)
+func Process(in io.ReadSeeker, out io.Writer, opts ...Option) error {
+	p := newProcessor(opts...)
+	log.Println(p)
 
-	p := newProcessor()
+	// If duplicate localizer removal is enabled, the data must be pre-processed
+	// to collect all localizers.
+	if p.RemoveDuplicateLocalizers {
+		s := bufio.NewScanner(in)
+		for s.Scan() {
+			p.preProcess(s.Bytes())
+		}
+		if err := s.Err(); err != nil {
+			return fmt.Errorf("problem parsing data: %v", err)
+		}
+	}
+
+	if _, err := in.Seek(0, io.SeekStart); err != nil {
+		return fmt.Errorf("could not seek to start of file: %v", err)
+	}
+	s := bufio.NewScanner(in)
 	for s.Scan() {
 		processed, err := p.processRecord(s.Bytes())
 		if err != nil {
@@ -60,15 +89,51 @@ func Process(in io.Reader, out io.Writer) error {
 }
 
 type processor struct {
-	Airports       map[string]*airportData
-	OtherWaypoints map[string]*geo.Point
+	Airports                  map[string]*airportData
+	OtherWaypoints            map[string]*geo.Point
+	DuplicateLocalizers       map[string]bool
+	RemoveDuplicateLocalizers bool
 }
 
-func newProcessor() *processor {
-	return &processor{
-		Airports:       make(map[string]*airportData),
-		OtherWaypoints: make(map[string]*geo.Point),
+func newProcessor(options ...Option) *processor {
+	p := &processor{
+		Airports:            make(map[string]*airportData),
+		OtherWaypoints:      make(map[string]*geo.Point),
+		DuplicateLocalizers: make(map[string]bool),
 	}
+	for _, o := range options {
+		o(p)
+	}
+	return p
+}
+
+func (p *processor) preProcess(recordBytes []byte) error {
+	r := arinc.Record{}
+	dec := fixedwidth.NewDecoder(bytes.NewReader(recordBytes))
+	dec.SetTrimSpace(false)
+	if err := dec.Decode(&r); err != nil {
+		return fmt.Errorf("problem unmarshalling data: %v", err)
+	}
+	if r.SectionCode == arinc.SectionCodeAirport {
+		a := arinc.AirportEnrouteRecord{}
+		if err := fixedwidth.Unmarshal(recordBytes, &a); err != nil {
+			return fmt.Errorf("problem unmarshalling airport: %v", err)
+		}
+		if r.SectionCode == arinc.SectionCodeAirport && a.SubsectionCode == arinc.SubsectionCodeLocGS {
+			loc := arinc.AirportLocGSPrimaryRecord{}
+			if err := fixedwidth.Unmarshal(recordBytes, &loc); err != nil {
+				return fmt.Errorf("problem unmarshalling data: %v", err)
+			}
+
+			if _, ok := p.DuplicateLocalizers[loc.LocalizerID]; ok {
+				log.Printf("Found duplicate localizer at %q: %q, already exists at %q", loc.AirportID, loc.LocalizerID, a)
+				p.DuplicateLocalizers[loc.LocalizerID] = true
+			} else {
+				p.DuplicateLocalizers[loc.LocalizerID] = false
+			}
+		}
+	}
+	return nil
 }
 
 func (p *processor) processRecord(recordBytes []byte) ([]byte, error) {
@@ -173,6 +238,12 @@ func (p *processor) processRecord(recordBytes []byte) ([]byte, error) {
 					return nil, fmt.Errorf("problem unmarshalling data: %v", err)
 				}
 
+				if dup, ok := p.DuplicateLocalizers[loc.LocalizerID]; ok && dup {
+					if loc.ILSCategory == "A" || loc.ILSCategory == "L" {
+						log.Printf("Skipping duplicate localizer LDA facility: %q at %q", loc.LocalizerID, loc.AirportID)
+						return nil, nil
+					}
+				}
 				contRecord, err := p.processLocalizer(&loc)
 				if err != nil {
 					log.Printf("Skipping localizer %q at %q: %v", loc.LocalizerID, loc.AirportID, err)

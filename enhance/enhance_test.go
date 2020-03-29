@@ -11,23 +11,22 @@ import (
 	geo "github.com/kellydunn/golang-geo"
 )
 
-const (
-	testDataFile    = "test_data.txt"
-	testDataOutFile = "test_data_out.txt"
-)
-
-type badReader struct {
-	io.Reader
+type badReadSeeker struct {
+	io.ReadSeeker
 }
 
-func (*badReader) Read(p []byte) (n int, err error) {
+func (*badReadSeeker) Seek(offset int64, whence int) (int64, error) {
+	return 0, nil
+}
+
+func (*badReadSeeker) Read([]byte) (n int, err error) {
 	return 0, fmt.Errorf("problem reading")
 }
 
 func TestProcessBadReader(t *testing.T) {
 	for _, tt := range []struct {
 		name    string
-		in      io.Reader
+		in      io.ReadSeeker
 		want    string
 		wantErr bool
 	}{
@@ -38,7 +37,7 @@ func TestProcessBadReader(t *testing.T) {
 		},
 		{
 			name:    "BadReader",
-			in:      &badReader{},
+			in:      &badReadSeeker{},
 			wantErr: true,
 		},
 		{
@@ -81,6 +80,74 @@ func TestProcessBadWriter(t *testing.T) {
 	}
 }
 
+func TestPreProcess(t *testing.T) {
+	for _, tt := range []struct {
+		name          string
+		processor     *processor
+		record        string
+		want          string
+		wantProcessor *processor
+		wantErr       bool
+	}{
+		{
+			name:      "NotLocalizer",
+			processor: newProcessor(),
+			record:    "SUSAD        PYE   K2011370VDHW N38000000W122000000    N38044712W122520418E0170013402     NARPOINT REYES                   236192002",
+			wantProcessor: &processor{
+				Airports:            map[string]*airportData{},
+				OtherWaypoints:      map[string]*geo.Point{},
+				DuplicateLocalizers: map[string]bool{},
+			},
+		},
+		{
+			name:      "LocalizerNotDuplicate",
+			processor: newProcessor(),
+			record:    "SUSAP KHWDK2IIHWD0   111150RW28LN37394620W1220746752879                   0109     0500   E0150                            108901212",
+			wantProcessor: &processor{
+				Airports:       map[string]*airportData{},
+				OtherWaypoints: map[string]*geo.Point{},
+				DuplicateLocalizers: map[string]bool{
+					"IHWD": false,
+				},
+			},
+		},
+		{
+			name: "LocalizerDuplicate",
+			processor: &processor{
+				Airports:       map[string]*airportData{},
+				OtherWaypoints: map[string]*geo.Point{},
+				DuplicateLocalizers: map[string]bool{
+					"IBUR": false,
+				},
+			},
+			record: "SUSAP KVNYK2IIBURA   010950RW34LN34115264W1182220920789                   1007+    0500   E0120                            296871905",
+			wantProcessor: &processor{
+				Airports:       map[string]*airportData{},
+				OtherWaypoints: map[string]*geo.Point{},
+				DuplicateLocalizers: map[string]bool{
+					"IBUR": true,
+				},
+			},
+		},
+	} {
+		t.Run(tt.name, func(t *testing.T) {
+			err := tt.processor.preProcess([]byte(tt.record))
+			if tt.wantErr {
+				if err == nil {
+					t.Fatalf("processRecord(%q) = _, <nil> want <non-nil>", tt.record)
+				}
+				return
+			}
+			if err != nil {
+				t.Fatalf("processRecord(%q) = _, %v want <nil>", tt.record, err)
+			}
+			if diff := cmp.Diff(tt.wantProcessor, tt.processor, cmp.AllowUnexported(geo.Point{})); diff != "" {
+				t.Errorf("processor had diffs (-got +want): %s", diff)
+			}
+		})
+	}
+}
+
 func TestProcessRecord(t *testing.T) {
 	for _, tt := range []struct {
 		name          string
@@ -100,6 +167,7 @@ func TestProcessRecord(t *testing.T) {
 				OtherWaypoints: map[string]*geo.Point{
 					"ILI": geo.NewPoint(59, -155),
 				},
+				DuplicateLocalizers: map[string]bool{},
 			},
 		},
 		{
@@ -114,8 +182,9 @@ func TestProcessRecord(t *testing.T) {
 			record:    "SCAND        ADK   PA011400 DUW                    ADK N51521587W176402739E0070003291     NARMOUNT MOFFETT                 002361703",
 			want:      "SCAND        ADK   PA011400 DUW                    ADK N51521587W176402739E0070003291     NARMOUNT MOFFETT                 002361703\n",
 			wantProcessor: &processor{
-				Airports:       map[string]*airportData{},
-				OtherWaypoints: map[string]*geo.Point{},
+				Airports:            map[string]*airportData{},
+				OtherWaypoints:      map[string]*geo.Point{},
+				DuplicateLocalizers: map[string]bool{},
 			},
 		},
 		{
@@ -128,6 +197,7 @@ func TestProcessRecord(t *testing.T) {
 				OtherWaypoints: map[string]*geo.Point{
 					"PYE": geo.NewPoint(38, -122),
 				},
+				DuplicateLocalizers: map[string]bool{},
 			},
 		},
 		{
@@ -146,6 +216,7 @@ func TestProcessRecord(t *testing.T) {
 				OtherWaypoints: map[string]*geo.Point{
 					"SUNOL": geo.NewPoint(37, -121),
 				},
+				DuplicateLocalizers: map[string]bool{},
 			},
 		},
 		{
@@ -166,7 +237,8 @@ func TestProcessRecord(t *testing.T) {
 						Approaches: map[string]*locApchData{},
 					},
 				},
-				OtherWaypoints: map[string]*geo.Point{},
+				OtherWaypoints:      map[string]*geo.Point{},
+				DuplicateLocalizers: map[string]bool{},
 			},
 		},
 		{
@@ -178,7 +250,8 @@ func TestProcessRecord(t *testing.T) {
 						Approaches: map[string]*locApchData{},
 					},
 				},
-				OtherWaypoints: map[string]*geo.Point{},
+				OtherWaypoints:      map[string]*geo.Point{},
+				DuplicateLocalizers: map[string]bool{},
 			},
 			record: "SUSAP KHWDK2CSUDGE K20    W     N37000000W121000000                       E0132     NAR           SUDGE                    108112002",
 			want:   "SUSAP KHWDK2CSUDGE K20    W     N37000000W121000000                       E0132     NAR           SUDGE                    108112002\n",
@@ -191,7 +264,8 @@ func TestProcessRecord(t *testing.T) {
 						Approaches: map[string]*locApchData{},
 					},
 				},
-				OtherWaypoints: map[string]*geo.Point{},
+				OtherWaypoints:      map[string]*geo.Point{},
+				DuplicateLocalizers: map[string]bool{},
 			},
 		},
 		{
@@ -203,7 +277,8 @@ func TestProcessRecord(t *testing.T) {
 						Approaches: map[string]*locApchData{},
 					},
 				},
-				OtherWaypoints: map[string]*geo.Point{},
+				OtherWaypoints:      map[string]*geo.Point{},
+				DuplicateLocalizers: map[string]bool{},
 			},
 			record:  "SUSAP KHWDK2CSUDGE K20    W     NBAD00000W121000000                       E0132     NAR           SUDGE                    108112002",
 			wantErr: true,
@@ -219,7 +294,8 @@ func TestProcessRecord(t *testing.T) {
 						Approaches: map[string]*locApchData{},
 					},
 				},
-				OtherWaypoints: map[string]*geo.Point{},
+				OtherWaypoints:      map[string]*geo.Point{},
+				DuplicateLocalizers: map[string]bool{},
 			},
 			record: "SUSAP KHWDK2FL28L  ASJC   010SJC  K2D 0V  A    IF                                             18000                 0 DS   108481212",
 			want:   "SUSAP KHWDK2FL28L  ASJC   010SJC  K2D 0V  A    IF                                             18000                 0 DS   108481212\n",
@@ -232,7 +308,8 @@ func TestProcessRecord(t *testing.T) {
 						Approaches: map[string]*locApchData{},
 					},
 				},
-				OtherWaypoints: map[string]*geo.Point{},
+				OtherWaypoints:      map[string]*geo.Point{},
+				DuplicateLocalizers: map[string]bool{},
 			},
 		},
 		{
@@ -246,7 +323,8 @@ func TestProcessRecord(t *testing.T) {
 						Approaches: map[string]*locApchData{},
 					},
 				},
-				OtherWaypoints: map[string]*geo.Point{},
+				OtherWaypoints:      map[string]*geo.Point{},
+				DuplicateLocalizers: map[string]bool{},
 			},
 			record: "SUSAP KHWDK2FL28L  L      020FERNEK2PC0E  F    CF IHWDK2      1079007428800053PI  + 02500                 OAK   K2D 0 DS   108521310",
 			want:   "SUSAP KHWDK2FL28L  L      020FERNEK2PC0E  F    CF IHWDK2      1079007428800053PI  + 02500                 OAK   K2D 0 DS   108521310\n",
@@ -264,7 +342,8 @@ func TestProcessRecord(t *testing.T) {
 						},
 					},
 				},
-				OtherWaypoints: map[string]*geo.Point{},
+				OtherWaypoints:      map[string]*geo.Point{},
+				DuplicateLocalizers: map[string]bool{},
 			},
 		},
 		{
@@ -283,7 +362,8 @@ func TestProcessRecord(t *testing.T) {
 						},
 					},
 				},
-				OtherWaypoints: map[string]*geo.Point{},
+				OtherWaypoints:      map[string]*geo.Point{},
+				DuplicateLocalizers: map[string]bool{},
 			},
 			record: "SUSAP KHWDK2IIHWD0   111150RW28LN37394620W1220746752879                   0109     0500   E0150                            108901212",
 			want:   "SUSAP KHWDK2IIHWD0   111150RW28LN37394620W1220746752879                   0109     0500   E0150                            108901212\nSUSAP KHWDK2IIHWD0   2S                            30341N                                                                  108901212\n",
@@ -301,14 +381,59 @@ func TestProcessRecord(t *testing.T) {
 						},
 					},
 				},
+				OtherWaypoints:      map[string]*geo.Point{},
+				DuplicateLocalizers: map[string]bool{},
+			},
+		},
+		{
+			name: "SkipDuplicateLocalizer",
+			processor: &processor{
+				Airports: map[string]*airportData{
+					"KVNY": &airportData{
+						Waypoints: map[string]*geo.Point{
+							"SILEX": geo.NewPoint(34.20, -118.61),
+						},
+						Approaches: map[string]*locApchData{
+							"LDA-C": &locApchData{
+								FinalApproachFix: "SILEX",
+								LocalizerID:      "IBUR",
+							},
+						},
+					},
+				},
 				OtherWaypoints: map[string]*geo.Point{},
+				DuplicateLocalizers: map[string]bool{
+					"IBUR": true,
+				},
+			},
+			record: "SUSAP KVNYK2IIBURA   010950RW34LN34115264W1182220920789                   1007+    0500   E0120                            296871905\n",
+			want:   "",
+			wantProcessor: &processor{
+				Airports: map[string]*airportData{
+					"KVNY": &airportData{
+						Waypoints: map[string]*geo.Point{
+							"SILEX": geo.NewPoint(34.20, -118.61),
+						},
+						Approaches: map[string]*locApchData{
+							"LDA-C": &locApchData{
+								FinalApproachFix: "SILEX",
+								LocalizerID:      "IBUR",
+							},
+						},
+					},
+				},
+				OtherWaypoints: map[string]*geo.Point{},
+				DuplicateLocalizers: map[string]bool{
+					"IBUR": true,
+				},
 			},
 		},
 		{
 			name: "SkipLocalizerNoApproach",
 			processor: &processor{
-				Airports:       map[string]*airportData{},
-				OtherWaypoints: map[string]*geo.Point{},
+				Airports:            map[string]*airportData{},
+				OtherWaypoints:      map[string]*geo.Point{},
+				DuplicateLocalizers: map[string]bool{},
 			},
 			record: "SUSAP KHWDK2IIHWD0   111150RW28LN37394620W1220746752879                   0109     0500   E0150                            108901212",
 			want:   "SUSAP KHWDK2IIHWD0   111150RW28LN37394620W1220746752879                   0109     0500   E0150                            108901212\n",
@@ -319,7 +444,8 @@ func TestProcessRecord(t *testing.T) {
 						Approaches: map[string]*locApchData{},
 					},
 				},
-				OtherWaypoints: map[string]*geo.Point{},
+				OtherWaypoints:      map[string]*geo.Point{},
+				DuplicateLocalizers: map[string]bool{},
 			},
 		},
 		{
@@ -338,7 +464,8 @@ func TestProcessRecord(t *testing.T) {
 						},
 					},
 				},
-				OtherWaypoints: map[string]*geo.Point{},
+				OtherWaypoints:      map[string]*geo.Point{},
+				DuplicateLocalizers: map[string]bool{},
 			},
 			record: "SUSAP KHWDK2IIHWD0   111150RW28LNBAD94620W1220746752879                   0109     0500   E0150                            108901212",
 			want:   "SUSAP KHWDK2IIHWD0   111150RW28LNBAD94620W1220746752879                   0109     0500   E0150                            108901212\n",
@@ -356,7 +483,106 @@ func TestProcessRecord(t *testing.T) {
 						},
 					},
 				},
-				OtherWaypoints: map[string]*geo.Point{},
+				OtherWaypoints:      map[string]*geo.Point{},
+				DuplicateLocalizers: map[string]bool{},
+			},
+		},
+		{
+			name: "DontSkipDuplicateLocalizer",
+			processor: &processor{
+				Airports: map[string]*airportData{
+					"KVNY": &airportData{
+						Waypoints: map[string]*geo.Point{
+							"SILEX": geo.NewPoint(34.20, -118.61),
+						},
+						Approaches: map[string]*locApchData{
+							"LDA-C": &locApchData{
+								FinalApproachFix: "SILEX",
+								LocalizerID:      "IBUR",
+							},
+						},
+					},
+				},
+				OtherWaypoints:      map[string]*geo.Point{},
+				DuplicateLocalizers: map[string]bool{},
+			},
+			record: "SUSAP KVNYK2IIBURA   010950RW34LN34115264W1182220920789                   1007+    0500   E0120                            296871905\n",
+			want:   "SUSAP KVNYK2IIBURA   110950RW34LN34115264W1182220920789                   1007+    0500   E0120                            296871905\nSUSAP KVNYK2IIBURA   2S                            09053N                                                                  296871905\n",
+			wantProcessor: &processor{
+				Airports: map[string]*airportData{
+					"KVNY": &airportData{
+						Waypoints: map[string]*geo.Point{
+							"SILEX": geo.NewPoint(34.20, -118.61),
+						},
+						Approaches: map[string]*locApchData{
+							"LDA-C": &locApchData{
+								FinalApproachFix: "SILEX",
+								LocalizerID:      "IBUR",
+							},
+						},
+					},
+				},
+				OtherWaypoints:      map[string]*geo.Point{},
+				DuplicateLocalizers: map[string]bool{},
+			},
+		},
+		{
+			name: "SkipLocalizerNoApproach",
+			processor: &processor{
+				Airports:            map[string]*airportData{},
+				OtherWaypoints:      map[string]*geo.Point{},
+				DuplicateLocalizers: map[string]bool{},
+			},
+			record: "SUSAP KHWDK2IIHWD0   111150RW28LN37394620W1220746752879                   0109     0500   E0150                            108901212",
+			want:   "SUSAP KHWDK2IIHWD0   111150RW28LN37394620W1220746752879                   0109     0500   E0150                            108901212\n",
+			wantProcessor: &processor{
+				Airports: map[string]*airportData{
+					"KHWD": &airportData{
+						Waypoints:  map[string]*geo.Point{},
+						Approaches: map[string]*locApchData{},
+					},
+				},
+				OtherWaypoints:      map[string]*geo.Point{},
+				DuplicateLocalizers: map[string]bool{},
+			},
+		},
+		{
+			name: "SkipLocalizerBadLatLon",
+			processor: &processor{
+				Airports: map[string]*airportData{
+					"KHWD": &airportData{
+						Waypoints: map[string]*geo.Point{
+							"FERNE": geo.NewPoint(37.59, -121.99),
+						},
+						Approaches: map[string]*locApchData{
+							"L28L": &locApchData{
+								FinalApproachFix: "FERNE",
+								LocalizerID:      "IHWD",
+							},
+						},
+					},
+				},
+				OtherWaypoints:      map[string]*geo.Point{},
+				DuplicateLocalizers: map[string]bool{},
+			},
+			record: "SUSAP KHWDK2IIHWD0   111150RW28LNBAD94620W1220746752879                   0109     0500   E0150                            108901212",
+			want:   "SUSAP KHWDK2IIHWD0   111150RW28LNBAD94620W1220746752879                   0109     0500   E0150                            108901212\n",
+			wantProcessor: &processor{
+				Airports: map[string]*airportData{
+					"KHWD": &airportData{
+						Waypoints: map[string]*geo.Point{
+							"FERNE": geo.NewPoint(37.59, -121.99),
+						},
+						Approaches: map[string]*locApchData{
+							"L28L": &locApchData{
+								FinalApproachFix: "FERNE",
+								LocalizerID:      "IHWD",
+							},
+						},
+					},
+				},
+				OtherWaypoints:      map[string]*geo.Point{},
+				DuplicateLocalizers: map[string]bool{},
 			},
 		},
 		{
@@ -375,6 +601,7 @@ func TestProcessRecord(t *testing.T) {
 				OtherWaypoints: map[string]*geo.Point{
 					"SAC": geo.NewPoint(38.44, -121.55),
 				},
+				DuplicateLocalizers: map[string]bool{},
 			},
 			record: "SUSAP KSACK2IISAC1   111030RW02 N38311332W1212917310191N38302558W1212950951089 10860600300E01405700020                     973081402",
 			want:   "SUSAP KSACK2IISAC1   111030RW02 N38311332W1212917310191N38302558W1212950951089 10860600300E01405700020                     973081402\nSUSAP KSACK2IISAC1   2S                            03105N                                                                  973081402\n",
@@ -392,6 +619,7 @@ func TestProcessRecord(t *testing.T) {
 				OtherWaypoints: map[string]*geo.Point{
 					"SAC": geo.NewPoint(38.44, -121.55),
 				},
+				DuplicateLocalizers: map[string]bool{},
 			},
 		},
 
@@ -408,7 +636,8 @@ func TestProcessRecord(t *testing.T) {
 						},
 					},
 				},
-				OtherWaypoints: map[string]*geo.Point{},
+				OtherWaypoints:      map[string]*geo.Point{},
+				DuplicateLocalizers: map[string]bool{},
 			},
 			record: "SUSAP KSACK2IISAC1   111030RW02 N38311332W1212917310191N38302558W1212950951089 10860600300E01405700020                     973081402",
 			want:   "SUSAP KSACK2IISAC1   111030RW02 N38311332W1212917310191N38302558W1212950951089 10860600300E01405700020                     973081402\n",
@@ -423,7 +652,8 @@ func TestProcessRecord(t *testing.T) {
 						},
 					},
 				},
-				OtherWaypoints: map[string]*geo.Point{},
+				OtherWaypoints:      map[string]*geo.Point{},
+				DuplicateLocalizers: map[string]bool{},
 			},
 		},
 	} {
@@ -448,22 +678,53 @@ func TestProcessRecord(t *testing.T) {
 	}
 }
 
-func TestProcessCompleteFile(t *testing.T) {
-	testData, err := ioutil.ReadFile(testDataFile)
-	if err != nil {
-		t.Fatalf("Could not read test data file: %v", err)
-	}
-	testDataOut, err := ioutil.ReadFile(testDataOutFile)
-	if err != nil {
-		t.Fatalf("Could not read test data file: %v", err)
-	}
+const (
+	testDataFile    = "test_data.txt"
+	testDataOutFile = "test_data_out.txt"
+)
 
-	in := bytes.NewReader(testData)
-	var out bytes.Buffer
-	if err := Process(in, &out); err != nil {
-		t.Fatalf("Process() = %v want <nil>", err)
-	}
-	if !bytes.Equal(out.Bytes(), testDataOut) {
-		t.Errorf("Process() out content not as expected")
+func TestProcessCompleteFile(t *testing.T) {
+	for _, tt := range []struct {
+		name        string
+		inFile      string
+		options     []Option
+		wantOutFile string
+	}{
+		{
+			name:        "Basic",
+			inFile:      "test_data.txt",
+			wantOutFile: "test_data_out.txt",
+		},
+		{
+			name:        "LocDuplicatesDoNotRemove",
+			inFile:      "test_data_locduplicates.txt",
+			wantOutFile: "test_data_locduplicates_donotremove_out.txt",
+		},
+		{
+			name:        "LocDuplicatesRemove",
+			inFile:      "test_data_locduplicates.txt",
+			options:     []Option{RemoveDuplicateLocalizers(true)},
+			wantOutFile: "test_data_locduplicates_remove_out.txt",
+		},
+	} {
+		t.Run(tt.name, func(t *testing.T) {
+			testData, err := ioutil.ReadFile(tt.inFile)
+			if err != nil {
+				t.Fatalf("Could not read test data file: %v", err)
+			}
+			want, err := ioutil.ReadFile(tt.wantOutFile)
+			if err != nil {
+				t.Fatalf("Could not read test data file: %v", err)
+			}
+
+			in := bytes.NewReader(testData)
+			var got bytes.Buffer
+			if err := Process(in, &got, tt.options...); err != nil {
+				t.Fatalf("Process() = %v want <nil>", err)
+			}
+			if diff := cmp.Diff(want, got.Bytes()); diff != "" {
+				t.Errorf("Process() out content not as expected: %s", diff)
+			}
+		})
 	}
 }
