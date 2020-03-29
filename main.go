@@ -11,7 +11,10 @@ import (
 	"github.com/wallaceicy06/enhance-faa-cifp/enhance"
 )
 
-var outFile = flag.String("output", "", "path of the file to output augmented procedures")
+var (
+	removeDuplicateLocalizers = flag.Bool("remove_duplicate_locs", true, "if true, then duplicate LDA localizers are removed from the output data")
+	outFile                   = flag.String("output", "", "path of the file to output augmented procedures")
+)
 
 func init() {
 	flag.Usage = func() {
@@ -43,7 +46,7 @@ func main() {
 		defer outWriter.Close()
 	}
 
-	if err := enhance.Process(inReader, outWriter); err != nil {
+	if err := enhance.Process(inReader, outWriter, enhance.RemoveDuplicateLocalizers(*removeDuplicateLocalizers)); err != nil {
 		log.Fatalf("Could not process data: %v", err)
 	}
 	log.Printf("Processed data.")

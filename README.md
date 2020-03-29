@@ -41,7 +41,7 @@ are for Unix-like systems. I am very sorry if you use Windows.
    ```shell
    go install github.com/wallaceicy06/enhance-faa-cifp
    ```
-   
+
 1. Make sure that `$GOPATH/bin` is in your `$PATH`.
 
     ```shell
@@ -67,6 +67,17 @@ directory, and place the file in the "Custom Data" folder with the name
     ```shell
     cp /path/to/FAACIFP_enhanced "${HOME}/Library/Application\ Support/Steam/steamapps/common/X-Plane\ 11/Custom\ Data/earth_424.dat"
     ```
+
+By default, the program removes duplicate localizers that are specified for
+airports that use another airport's localizer on one of their approaches (e.g.
+[KVNY LDA-C](https://skyvector.com/files/tpp/2004/pdf/00552LDAC.PDF)). The
+reason these are removed is that it causes unpredictable behavior when using the
+localizer in X-Plane. If you would like to turn this functionality off, set the
+`remove_duplicate_locs` flag to `false`:
+
+```shell
+ enhance-faa-cifp --output=/path/to/FAACIFP_enhanced --remove_duplicate_locs=false /path/to/FAACIFP18
+```
 
 ### Help
 
