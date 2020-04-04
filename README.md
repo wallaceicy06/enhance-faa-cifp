@@ -93,17 +93,12 @@ I wrote this enhancer because I discovered the bug myself while practicing the
 ILS 28R at
 [KMOD](https://skyvector.com/airport/MOD/Modesto-City-Co-Harry-Sham-Field-Airport)
 in X-Plane. I popped out of the clouds to see that the runway was offset
-hundreds of feet to my left. Having flown the approach in real life, I know that
-this is not accurate. This project was my deep dive into learning why that error happened, and to offer a potential fix.
+hundreds of feet to my left. Having flown the approach in real life, I know
+that this is not accurate. This project was my deep dive into learning why that
+error happened, and to offer a potential fix.
 
-We are often reminded during instrument training that flying a localizer
-approach with a GPS is illegal. This little project proved to me why doing so
-would be unsafe. The GPS database onboard airplanes (based on this CIFP data)
-may not have an accurate estimate for the localizer bearing. This could lead you
-to be hundreds of feet off when tracking the approach course as displayed by the
-GPS. This could potentially put your airplane outside the boundaries of safe
-obstacle clearance. Always make sure to use the raw VHF signal from the
-localizer when flying a localizer approach in real life!
+You can read more about my process solving this bug in my [blog
+post](https://seanharger.com/posts/hundredths-of-degrees-from-death/).
 
 ## Contributing
 
