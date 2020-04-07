@@ -3,6 +3,8 @@
 This program augments a provided coded instrument flight procedures (CIFP)
 database with more accurate [localizer](https://en.wikipedia.org/wiki/Instrument_landing_system_localizer) bearings for flight simulators.
 
+![](https://github.com/wallaceicy06/enhance-faa-cifp/workflows/Go/badge.svg)
+
 ## Background
 
 The Federal Aviation Administration (FAA) CIFP file is released every 28 days
