@@ -7,9 +7,9 @@ import (
 	"io"
 	"log"
 
+	fixedwidth "github.com/ianlopshire/go-fixedwidth"
 	geo "github.com/kellydunn/golang-geo"
 	"github.com/wallaceicy06/enhance-faa-cifp/arinc"
-	fixedwidth "github.com/wallaceicy06/go-fixedwidth"
 )
 
 type airportData struct {
@@ -109,7 +109,6 @@ func newProcessor(options ...Option) *processor {
 func (p *processor) preProcess(recordBytes []byte) error {
 	r := arinc.Record{}
 	dec := fixedwidth.NewDecoder(bytes.NewReader(recordBytes))
-	dec.SetTrimSpace(false)
 	if err := dec.Decode(&r); err != nil {
 		return fmt.Errorf("problem unmarshalling data: %v", err)
 	}
@@ -148,11 +147,12 @@ func (p *processor) processRecord(recordBytes []byte) ([]byte, error) {
 	out := &bytes.Buffer{}
 	r := arinc.Record{}
 	dec := fixedwidth.NewDecoder(bytes.NewReader(recordBytes))
-	dec.SetTrimSpace(false)
 	if err := dec.Decode(&r); err != nil {
 		return nil, fmt.Errorf("problem unmarshalling data: %v", err)
 	}
+
 	if r.SectionCode == arinc.SectionCodeNavaid {
+		fmt.Printf("record: %+v\n", r)
 		switch r.SubsectionCode {
 		case arinc.SubsectionCodeNavaidNDB:
 			n := arinc.NDBNavaidRecord{}
