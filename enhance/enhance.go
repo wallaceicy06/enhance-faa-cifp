@@ -152,7 +152,6 @@ func (p *processor) processRecord(recordBytes []byte) ([]byte, error) {
 	}
 
 	if r.SectionCode == arinc.SectionCodeNavaid {
-		fmt.Printf("record: %+v\n", r)
 		switch r.SubsectionCode {
 		case arinc.SubsectionCodeNavaidNDB:
 			n := arinc.NDBNavaidRecord{}
