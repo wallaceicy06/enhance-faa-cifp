@@ -235,6 +235,7 @@ func TestProcessRecord(t *testing.T) {
 					"KHWD": &airportData{
 						Waypoints:  map[string]*geo.Point{},
 						Approaches: map[string]*locApchData{},
+						MagVar:     -15.0,
 					},
 				},
 				OtherWaypoints:      map[string]*geo.Point{},

@@ -200,6 +200,28 @@ func LatLon(latitude, longitude string) (float64, float64, error) {
 	return lat, lon, nil
 }
 
+// ParseBearing returns the decimal bearing equivalent of the provided
+// string bearing. If the bearing is referenced to true north, then
+// isTrue is returned as true. If any error occurs, an error is returned.
+func ParseBearing(bearing string) (_ float64, isTrue bool, _ error) {
+	if len(bearing) != 4 {
+		return 0, false, fmt.Errorf("Could not parse magnetic variation, invalid length %d want 4.", len(bearing))
+	}
+	if bearing[3] == 'T' {
+		num, err := strconv.ParseFloat(bearing[0:3], 64)
+		if err != nil {
+			return 0, false, fmt.Errorf("Could not parse bearing: %v", err)
+		}
+		return num, true, nil
+	}
+
+	num, err := strconv.ParseFloat(bearing[0:4], 64)
+	if err != nil {
+		return 0, false, fmt.Errorf("Could not parse bearing: %v", err)
+	}
+	return num / 10, false, nil
+}
+
 // EncodeBearing encodes the specified bearing into a five character string,
 // where the decimal point is implied after the third character. If the provided
 // bearing is negative or greater than 360, then the output is undefined.

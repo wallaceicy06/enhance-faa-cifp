@@ -199,6 +199,62 @@ func TestParseMagneticVar(t *testing.T) {
 	}
 }
 
+func TestParseBearing(t *testing.T) {
+	for _, tt := range []struct {
+		name     string
+		bearing  string
+		want     float64
+		wantTrue bool
+		wantErr  bool
+	}{
+		{
+			name:    "Simple",
+			bearing: "2570",
+			want:    257.0,
+		},
+		{
+			name:    "Decimal",
+			bearing: "0147",
+			want:    14.7,
+		},
+		{
+			name:     "True",
+			bearing:  "347T",
+			want:     347.0,
+			wantTrue: true,
+		},
+		{
+			name:    "InvalidData",
+			bearing: "ABCD",
+			wantErr: true,
+		},
+		{
+			name:    "InvalidLength",
+			bearing: "347",
+			wantErr: true,
+		},
+	} {
+		t.Run(tt.name, func(t *testing.T) {
+			got, isTrue, err := ParseBearing(tt.bearing)
+			if tt.wantErr {
+				if err == nil {
+					t.Fatalf("ParseBearing(%q) = _, _, <nil> want _, _, <non-nil>", tt.bearing)
+				}
+				return
+			}
+			if err != nil {
+				t.Fatalf("ParseBearing(%q) = _, _, %v want _, _, <nil>", tt.bearing, err)
+			}
+			if isTrue != tt.wantTrue {
+				t.Errorf("ParseBearing(%q) = _, %t, _ want _, %t, _", tt.bearing, isTrue, tt.wantTrue)
+			}
+			if got != tt.want {
+				t.Errorf("ParseBearing(%q) = %f, _, _ want %f, _, _", tt.bearing, got, tt.want)
+			}
+		})
+	}
+}
+
 func TestIsLocalizerFrontCourseApproach(t *testing.T) {
 	for _, tt := range []struct {
 		name   string

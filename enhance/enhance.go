@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"io"
 	"log"
+	"math"
 
 	fixedwidth "github.com/ianlopshire/go-fixedwidth"
 	geo "github.com/kellydunn/golang-geo"
@@ -13,6 +14,7 @@ import (
 )
 
 type airportData struct {
+	MagVar     float64
 	Waypoints  map[string]*geo.Point
 	Approaches map[string]*locApchData
 }
@@ -201,6 +203,17 @@ func (p *processor) processRecord(recordBytes []byte) ([]byte, error) {
 					Approaches: make(map[string]*locApchData),
 				}
 			}
+			if a.SubsectionCode == arinc.SubsectionCodeAirportRefPoint {
+				aptRef := arinc.AirportPrimaryRecord{}
+				if err := fixedwidth.Unmarshal(recordBytes, &aptRef); err != nil {
+					return nil, fmt.Errorf("problem unmarshalling airport: %v", err)
+				}
+				v, _, err := arinc.ParseMagneticVar(aptRef.MagneticVar)
+				if err != nil {
+					return nil, fmt.Errorf("could not parse magnetic variation: %v", err)
+				}
+				p.Airports[a.AirportID].MagVar = v
+			}
 			if a.SubsectionCode == arinc.SubsectionCodeTerminalWaypoint {
 				wpt := arinc.WaypointPrimaryRecord{}
 				if err := fixedwidth.Unmarshal(recordBytes, &wpt); err != nil {
@@ -246,6 +259,7 @@ func (p *processor) processRecord(recordBytes []byte) ([]byte, error) {
 					log.Printf("Skipping localizer %q at %q: %v", loc.LocalizerID, loc.AirportID, err)
 					return writeRecord(out, r)
 				}
+
 				// There is some bug in the fixedwidth parser that causes these fields to not be parsed properly.
 				// This is quick fix for the interim.
 				contRecord.Data = loc.Data
@@ -284,6 +298,28 @@ func (p *processor) processLocalizer(loc *arinc.AirportLocGSPrimaryRecord) (*ari
 	// This corects a bug in the golang-geo library that causes negative bearings.
 	if bearing < 0 {
 		bearing = 360 + bearing
+	}
+
+	// This section checks that the new bearing is close to the old one. If it
+	// is not, then a warning is logged but the new bearing is still used.
+	magVar := p.Airports[loc.AirportID].MagVar
+	oldBrg, isTrue, err := arinc.ParseBearing(loc.LocalizerBearing)
+	if err != nil {
+		return nil, fmt.Errorf("could not parse localizer bearing: %v", err)
+	}
+	oldTrueBearing := oldBrg
+	if !isTrue {
+		oldTrueBearing = oldBrg - magVar
+		if oldTrueBearing < 0 {
+			oldTrueBearing = 360 + oldTrueBearing
+		} else if oldTrueBearing >= 360 {
+			oldTrueBearing = oldTrueBearing - 360
+		}
+	}
+	// The various checks ensure that false postives are not encountered when
+	// the final approach course is near 360 degrees. (i.e. 0.0 and 360.0)
+	if math.Abs(bearing-oldTrueBearing) > 5 && math.Abs(bearing+360-oldTrueBearing) > 5 && math.Abs(bearing-oldTrueBearing-360) > 5 {
+		log.Printf("New localizer bearing at %q (%f) is more than 5 degrees off the old one %f.", loc.LocalizerID, bearing, oldTrueBearing)
 	}
 
 	loc.ContinuationRecordNumber = "1"
