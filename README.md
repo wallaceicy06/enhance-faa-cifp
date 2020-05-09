@@ -97,7 +97,7 @@ test it in practice. The ones I am aware of are listed below:
 - Some localizer bearings are more than 5 degrees off the original one published
   by the FAA. The ones I have detected are IBRL, IPIA, IVVS, and IYKM. A
   warning is logged for these localizers, but the new (potentially incorrect)
-  value is persisted. See [issue #1](/wallaceicy06/enhance-faa-cifp/issues/1).
+  value is persisted. See wallaceicy06/enhance-faa-cifp#1.
 
 ## Side Note For Pilots
 
