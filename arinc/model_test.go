@@ -136,9 +136,64 @@ func TestEncodeBearing(t *testing.T) {
 		},
 	} {
 		t.Run(tt.name, func(t *testing.T) {
-			t.Parallel()
 			if got := EncodeBearing(tt.bearing); got != tt.want {
 				t.Errorf("EncodeBearing(%f) = %q want %q", tt.bearing, got, tt.want)
+			}
+		})
+	}
+}
+
+func TestParseMagneticVar(t *testing.T) {
+	for _, tt := range []struct {
+		name     string
+		magVar   string
+		want     float64
+		wantTrue bool
+		wantErr  bool
+	}{
+		{
+			name:   "West",
+			magVar: "W0140",
+			want:   14.0,
+		},
+		{
+			name:   "East",
+			magVar: "E0135",
+			want:   -13.5,
+		},
+		{
+			name:     "True",
+			magVar:   "T0000",
+			want:     0,
+			wantTrue: true,
+		},
+		{
+			name:    "InvalidDirection",
+			magVar:  "Y0140",
+			wantErr: true,
+		},
+		{
+			name:    "InvalidLength",
+			magVar:  "Y",
+			wantErr: true,
+		},
+	} {
+		t.Run(tt.name, func(t *testing.T) {
+			got, isTrue, err := ParseMagneticVar(tt.magVar)
+			if tt.wantErr {
+				if err == nil {
+					t.Fatalf("ParseMagneticVar(%q) = _, _, <nil> want _, _, <non-nil>", tt.magVar)
+				}
+				return
+			}
+			if err != nil {
+				t.Fatalf("ParseMagneticVar(%q) = _, _, %v want _, _, <nil>", tt.magVar, err)
+			}
+			if isTrue != tt.wantTrue {
+				t.Errorf("ParseMagneticVar(%q) = _, %t, _ want _, %t, _", tt.magVar, isTrue, tt.wantTrue)
+			}
+			if got != tt.want {
+				t.Errorf("ParseMagneticVar(%q) = %f, _, _ want %f, _, _", tt.magVar, got, tt.want)
 			}
 		})
 	}
@@ -177,7 +232,6 @@ func TestIsLocalizerFrontCourseApproach(t *testing.T) {
 		},
 	} {
 		t.Run(tt.name, func(t *testing.T) {
-			t.Parallel()
 			got := tt.record.IsLocalizerFrontCourseApproach()
 			if got != tt.want {
 				t.Errorf("IsLocalizerFrontCourseApproach() = %t want %t", got, tt.want)
@@ -209,7 +263,6 @@ func TestIsFinalApproachFix(t *testing.T) {
 		},
 	} {
 		t.Run(tt.name, func(t *testing.T) {
-			t.Parallel()
 			got := tt.record.IsFinalApproachFix()
 			if got != tt.want {
 				t.Errorf("IsLocalizerFrontCourseApproach() = %t want %t", got, tt.want)

@@ -12,6 +12,7 @@ const (
 
 	SubsectionCodeNavaidNDB         = "B"
 	SubsectionCodeNavaidVHF         = ""
+	SubsectionCodeAirportRefPoint   = "A"
 	SubsectionCodeEnrouteWaypoint   = "A"
 	SubsectionCodeTerminalWaypoint  = "C"
 	SubsectionCodeApproachProcedure = "F"
@@ -80,6 +81,60 @@ type AirportEnrouteRecord struct {
 	ICAOCode       string `fixed:"11,12,left"`
 	SubsectionCode string `fixed:"13,13,left"`
 	Data           string `fixed:"14,123,left"`
+}
+
+// AirportPrimaryRecord is a record associated with an airport.
+type AirportPrimaryRecord struct {
+	AirportEnrouteRecord     `fixed:"1,13,left"`
+	AtaIataDesignator        string `fixed:"14,16,left"`
+	ContinuationRecordNumber string `fixed:"17,18,left"`
+	SpeedLimitAltitude       string `fixed:"23,27,left"`
+	LongestRunway            string `fixed:"28,30,left"`
+	IFRCapability            string `fixed:"31,31,left"`
+	LongestRunwaySurfaceCode string `fixed:"32,32,left"`
+	AirportRefPointLatitude  string `fixed:"33,41,left"`
+	AirportRefPointLongitude string `fixed:"42,51,left"`
+	MagneticVar              string `fixed:"52,56,left"`
+	AirportElevation         string `fixed:"57,61,left"`
+	SpeedLimit               string `fixed:"62,64,left"`
+	RecommendedNavaid        string `fixed:"65,68,left"`
+	ICAOCode                 string `fixed:"69,70,left"`
+	TransitionsAltitude      string `fixed:"71,75,left"`
+	TransitionLevel          string `fixed:"76,80,left"`
+	PublicMilitaryIndicator  string `fixed:"81,81,left"`
+	TimeZone                 string `fixed:"82,84,left"`
+	DaylightIndicator        string `fixed:"85,85,left"`
+	MagneticTrueIndicator    string `fixed:"86,86,left"`
+	DatumCode                string `fixed:"87,89,left"`
+	Name                     string `fixed:"94,123,left"`
+}
+
+// ParseMagneticVar returns the magnetic variation as a floating
+// point value where the value is positive for west variation and
+// negative for east variation. If the magnetic variation indicates
+// that values are to be referenced to "true north", then the isTrue
+// boolean is set to true. If any error occurs, then values are undefined
+// and an error is returned.
+func ParseMagneticVar(magVar string) (_ float64, isTrue bool, _ error) {
+	if len(magVar) != 5 {
+		return 0, false, fmt.Errorf("Could not parse magnetic variation, invalid length %d want 5.", len(magVar))
+	}
+	var eastWestFactor float64
+	switch magVar[0] {
+	case 'E':
+		eastWestFactor = -1.0
+	case 'W':
+		eastWestFactor = 1.0
+	case 'T':
+		return 0, true, nil
+	default:
+		return 0, false, fmt.Errorf("Could not parse magnetic variation, invalid direction indicator %q", magVar[0])
+	}
+	num, err := strconv.ParseFloat(magVar[1:5], 64)
+	if err != nil {
+		return 0, false, fmt.Errorf("Could not parse numerical portion of magnetic variation: %v", err)
+	}
+	return num * eastWestFactor / 10, false, nil
 }
 
 // WaypointPrimaryRecord is a record associated with a waypoint.
