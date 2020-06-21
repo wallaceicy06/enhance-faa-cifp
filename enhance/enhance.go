@@ -60,6 +60,9 @@ func Process(in io.ReadSeeker, out io.Writer, opts ...Option) error {
 	// If duplicate localizer removal is enabled, the data must be pre-processed
 	// to collect all localizers.
 	if p.RemoveDuplicateLocalizers {
+		if _, err := in.Seek(0, io.SeekStart); err != nil {
+			return fmt.Errorf("could not seek to start of file: %v", err)
+		}
 		s := bufio.NewScanner(in)
 		for s.Scan() {
 			p.preProcess(s.Bytes())
@@ -124,7 +127,6 @@ func (p *processor) preProcess(recordBytes []byte) error {
 			if err := fixedwidth.Unmarshal(recordBytes, &loc); err != nil {
 				return fmt.Errorf("problem unmarshalling data: %v", err)
 			}
-
 			if _, ok := p.DuplicateLocalizers[loc.LocalizerID]; ok {
 				p.DuplicateLocalizers[loc.LocalizerID] = true
 			} else {
